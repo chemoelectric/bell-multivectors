@@ -93,5 +93,51 @@ Aspect, and Zeilinger were awarded a Nobel prize by mistake, and an
 industry in “quantum computers” exists even though such devices cannot
 possibly function as expected.
 
+In particular, the form of the CHSH inequality is obviously incorrect.
+There _must_ be a mathematical error in its derivation. I have no
+interest here in fishing out that error. It is enough to observe that
+physicists such as Clauser have “done the calculations” but not done
+actual mathematics. Actual mathematics requires reasoning ahead, such
+as that the correlation must be a function of the difference of the
+polarizer settings. Clauser’s true mistake was to believe his
+inequality had any chance of being correct.
+
 ***
+
+I am not going to spend time fiddling around with whatever
+unenlightening things the “quantum physics” literature has to say
+about the polarizing beam splitters. What it amounts to is that, in
+quantum mechanics, the polarizers are represented by the Law of Malus,
+just as they are in wave mechanics. The loss in intensity of an
+electromagnetic wave passing through the polarizer corresponds
+one-to-one with the probability that a photon will be retransmitted.
+We merely have to write out the different cases in tensor form.
+
+We are using the ordinary Law of Malus, but written as a point in a
+tensor space, to cover the various possible cases. Writing the Law of
+Malus as a point in a tensor space does not make it
+magical.footnote:[Physicists will abuse me for calling “magic” what
+they call “science,” but they can stuff it. I have finally had it up
+to my eyeballs with their nonsense, which not only passes for
+mathematics while being sacred scripture, and for science while being
+holy revelations, and for engineering while being divine alchemy, but
+is a threat to world peace. The United States Department of Defense
+spends how much money on “quantum computers”? And experimental
+research is filled with biased data. That garbage can get published
+where the nominal values are not checked is infuriating. Experiments
+such as Aspect’s violate even the predictions of quantum mechanics!
+Which one might know if one read papers in lower circulation journals
+(except the language of even these physics papers is so opaque it is
+almost impossible to understand), or actually did the mathematics for
+oneself. Whereas “quantum computers” research is starting to fill up
+with reports in “elite” journals of data being _deliberately_ faked. A
+reason for faking data is obvious: the devices cannot possibly
+function as expected. Frankly, though, that Aspect-type experiments
+violate QM must surely be known to many and therefore deliberately
+kept quiet about, even if only to avoid abuse.] There is no violation
+of action by direct contact. There is no “instantaneous action at a
+distance.” Keep that in mind. Our photons are unentangled, and they
+are passing through ordinary polarizing filters.
+
+
 
