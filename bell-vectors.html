@@ -478,25 +478,15 @@ distinction is one of orthogonality.</p>
 <p>To further mathematize our notations, instead of bras we will write
 row matrices and instead of kets we will write column matrices. Thus:</p>
 </div>
-<div class="stemblock">
-<div class="content">
-\$"⟨→↑|" = ((e_1,e_2))\$
-</div>
-</div>
-<div class="stemblock">
-<div class="content">
-\$"⟨↑→|" = ((e_2,e_1))\$
-</div>
-</div>
-<div class="stemblock">
-<div class="content">
-\$"|→↑⟩" = ((e_1),(e_2))\$
-</div>
-</div>
-<div class="stemblock">
-<div class="content">
-\$"|↑→⟩" = ((e_2),(e_1))\$
-</div>
+<div class="paragraph">
+<p>
+\begin{align*}
+\text{⟨→↑|} &amp;= \begin{pmatrix}e_1  &amp; e_2\end{pmatrix}  \\
+\text{⟨↑→|} &amp;= \begin{pmatrix}e_2  &amp; e_1\end{pmatrix}  \\
+\text{|→↑⟩} &amp;= \begin{pmatrix}e_1 \\ e_2\end{pmatrix}  \\
+\text{|↑→⟩} &amp;= \begin{pmatrix}e_2 \\ e_1\end{pmatrix}  \\
+\end{align*}
+</p>
 </div>
 <div class="paragraph">
 <p>The liturgical language removed, the photons no longer are
@@ -554,7 +544,7 @@ physicists such as Clauser have “done the calculations” but not done
 actual mathematics. Actual mathematics requires reasoning ahead, such
 as that the correlation must be a function of the difference of the
 polarizer settings. Clauser’s true mistake was to believe his
-inequality had any chance of being correct.</p>
+inequality had any chance to be correct.</p>
 </div>
 <hr>
 <div class="paragraph">
@@ -580,7 +570,7 @@ ordinary polarizing filters.</p>
 <p>Physicists sometimes brag that their tensor space is a <em>Hilbert</em>
 space, and the coordinates are complex numbers. “Look how <em>smart</em> we
 are!” They are using complex numbers to represent rotations. Remember,
-after all, that \$e^(i phi) = cos phi + i sin phi\$, and so is
+after all, that \$e^(i varphi) = cos varphi + i sin varphi\$, and so is
 analogous to a clock face. Complex numbers, however, are properly
 roots of polynomials, not geometric entities. We can instead try to
 impress people even more by using geometric algebra, even though
@@ -603,13 +593,13 @@ I_{12} = e_1\wedge e_2 = e_1 e_2
 </div>
 <div class="paragraph">
 <p>We can get any vector on the clock face by using a geometric rotor.
-For an angle \$phi\$ a convenient rotor and its inverse are</p>
+For an angle \$varphi\$ a convenient rotor and its inverse are</p>
 </div>
 <div class="paragraph">
 <p>
 \begin{align*}
-R_\phi &amp;= \cos\frac\phi2 - I_{12} \sin\frac\phi2 = \cos\frac\phi2 - e_1 e_2 \sin\frac\phi2 \\
-R_\phi^{-1} &amp;= \cos\frac\phi2 + I_{12} \sin\frac\phi2 = \cos\frac\phi2 + e_1 e_2 \sin\frac\phi2
+R_\varphi &amp;= \cos\frac\varphi2 - I_{12} \sin\frac\varphi2 = \cos\frac\varphi2 - e_1 e_2 \sin\frac\varphi2 \\
+R_\varphi^{-1} &amp;= \cos\frac\varphi2 + I_{12} \sin\frac\varphi2 = \cos\frac\varphi2 + e_1 e_2 \sin\frac\varphi2
 \end{align*}
 </p>
 </div>
@@ -619,10 +609,10 @@ R_\phi^{-1} &amp;= \cos\frac\phi2 + I_{12} \sin\frac\phi2 = \cos\frac\phi2 + e_1
 <div class="paragraph">
 <p>
 \begin{align*}
-e_\phi &amp;= R_\phi \, e_1 \, R_\phi^{-1} \\
-      &amp;= (\cos\frac\phi2 - e_1 e_2 \sin\frac\phi2) \, e_1 \, (\cos\frac\phi2 + e_1 e_2 \sin\frac\phi2) \\
-      &amp;= e_1 \cos^2\frac\phi2 - e_1 e_2 e_1 \cos\frac\phi2\sin\frac\phi2
-          + e_1 e_1 e_2 \cos\frac\phi2\sin\frac\phi2 - e_1 e_2 e_1 e_1 e_2 \sin^2\frac\phi2
+e_\varphi &amp;= R_\varphi \, e_1 \, R_\varphi^{-1} \\
+      &amp;= (\cos\frac\varphi2 - e_1 e_2 \sin\frac\varphi2) \, e_1 \, (\cos\frac\varphi2 + e_1 e_2 \sin\frac\varphi2) \\
+      &amp;= e_1 \cos^2\frac\varphi2 - e_1 e_2 e_1 \cos\frac\varphi2\sin\frac\varphi2
+          + e_1 e_1 e_2 \cos\frac\varphi2\sin\frac\varphi2 - e_1 e_2 e_1 e_1 e_2 \sin^2\frac\varphi2
 \end{align*}
 </p>
 </div>
@@ -656,7 +646,7 @@ e_1 e_1 e_2 &amp;= e_2 \\
 <div class="paragraph">
 <p>
 \begin{align*}
-e_\phi &amp;= (\cos^2\frac\phi2 - \sin^2\frac\phi2)\,e_1 + (2\,\cos\frac\phi2\sin\frac\phi2)\,e_2
+e_\varphi &amp;= (\cos^2\frac\varphi2 - \sin^2\frac\varphi2)\,e_1 + (2\,\cos\frac\varphi2\sin\frac\varphi2)\,e_2
 \end{align*}
 </p>
 </div>
@@ -679,7 +669,7 @@ Edition</em>, where we find the following double-angle relations on page
 <div class="paragraph">
 <p>
 \begin{align*}
-e_\phi &amp;= e_1\cos\phi + e_2\sin\phi
+e_\varphi &amp;= e_1\cos\varphi + e_2\sin\varphi
 \end{align*}
 </p>
 </div>
@@ -712,35 +702,35 @@ Law of Malus, is a factor of</p>
 <div class="paragraph">
 <p>
 \begin{equation}
-\cos^2 (\theta - \phi) = (e_\theta\cdot e_\phi)^2
+\cos^2 (\vartheta - \varphi) = (e_\vartheta\cdot e_\varphi)^2
 \end{equation}
 </p>
 </div>
 <div class="paragraph">
-<p>where \$theta\$ is the angle of polarization of the filter and
-\$phi\$ is the angle of polarization of the impinging
+<p>where \$vartheta\$ is the angle of polarization of the filter and
+\$varphi\$ is the angle of polarization of the impinging
 plane-polarized light. For a lossless <em>beam-splitting</em> polarizer, one
 channel follows that rule and the other channel the complementary rule</p>
 </div>
 <div class="paragraph">
 <p>
 \begin{equation}
-\sin^2(\theta - \phi) = 1 - (e_\theta\cdot e_\phi)^2
+\sin^2(\vartheta - \varphi) = 1 - (e_\vartheta\cdot e_\varphi)^2
 \end{equation}
 </p>
 </div>
 <div class="paragraph">
 <p>The impinging photon is polarized either \$e_1\$ or \$e_2\$.
-Therefore the dot product is either \$e_theta*e_1 = cos theta\$ or
-\$e_theta*e_2 = sin theta\$, and the loss of intensity according to
-the Law of Malus is \$cos^2 theta\$ or \$sin^2 theta\$,
+Therefore the dot product is either \$e_vartheta*e_1 = cos vartheta\$ or
+\$e_vartheta*e_2 = sin vartheta\$, and the loss of intensity according to
+the Law of Malus is \$cos^2 vartheta\$ or \$sin^2 vartheta\$,
 respectively. What is more, the Law of Malus for the complementary
 channel of a beam splitter is</p>
 </div>
 <div class="paragraph">
 <p>
 \begin{equation}
-1-(e_\theta\cdot e_1)^2 = 1-\cos^2\theta = \sin^2\theta
+1-(e_\vartheta\cdot e_1)^2 = 1-\cos^2\vartheta = \sin^2\vartheta
 \end{equation}
 </p>
 </div>
@@ -750,7 +740,7 @@ channel of a beam splitter is</p>
 <div class="paragraph">
 <p>
 \begin{equation}
-1-(e_\theta\cdot e_2)^2 = 1-\sin^2\theta = \cos^2\theta
+1-(e_\vartheta\cdot e_2)^2 = 1-\sin^2\vartheta = \cos^2\vartheta
 \end{equation}
 </p>
 </div>
@@ -763,6 +753,37 @@ reversed.</p>
 <p>Of course this makes intuitive sense. Nevertheless, it is worth doing
 the mathematics, to verify we are not making any errors.<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p>
 </div>
+<hr>
+<div class="paragraph">
+<p>Before we attempt to arrange the different cases into a tensor
+notation, let us see what they are.</p>
+</div>
+<div class="paragraph">
+<p>Let us call the setting for the left polarizing beam splitter
+\$alpha\$ and that for the right splitter \$beta\$. For the
+photons transmitted by the source, there are two cases,
+\$"initial-case"_1 = ((e_1),(e_2))\$ and \$"initial-case"_2 =
+((e_2),(e_1))\$, where the upper half of the column represents the left
+arm of the experiment, and the bottom half represents the right
+arm.<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup></p>
+</div>
+<div class="paragraph">
+<p>I will introduce the shorthands</p>
+</div>
+<div class="paragraph">
+<p>
+\begin{align*}
+\langle\alpha\rangle &amp;= \alpha + \pi/2\\
+\langle\beta\rangle &amp;= \beta + \pi/2
+\end{align*}
+</p>
+</div>
+<div class="paragraph">
+<p>and refer to the final possible light pulses using the unit vectors
+\(e_\alpha\), \(e_\beta\), \(e_{\langle\alpha\rangle}\), and
+\(e_{\langle\beta\rangle}\).<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup> The latter two vectors are for retransmission along the
+complementary path of the respective polarizing beam splitter.</p>
+</div>
 </div>
 <div id="footnotes">
 <hr>
@@ -772,10 +793,16 @@ the mathematics, to verify we are not making any errors.<sup class="footnote">[<
 <div class="footnote" id="_footnotedef_2">
 <a href="#_footnoteref_2">2</a>. This kind of verification obviously <em>has not</em> been done by the physicists who claim there is “entanglement.” Their quasi-mathematics is packed with errors, which they sometimes accidentally discover but then write off as “loopholes” that somehow might be eliminated by experimental controls.
 </div>
+<div class="footnote" id="_footnotedef_3">
+<a href="#_footnoteref_3">3</a>. Remember that \$"prop"_1\$ represents a proposition, not an “entangled pair.” It says that either of the two initial cases has probability one half.
+</div>
+<div class="footnote" id="_footnotedef_4">
+<a href="#_footnoteref_4">4</a>. I leave it an open question whether a retransmitted photon is polarized along the line of the polarizer or if the vector sum of retransmitted photons averages out as polarized along this line. Either kind of polarizer might suffice in some role.
+</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-06-16 11:53:30 -0500
+Last updated 2026-06-16 13:50:45 -0500
 </div>
 </div>
 <script type="text/x-mathjax-config">
