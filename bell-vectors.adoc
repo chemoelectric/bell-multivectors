@@ -25,10 +25,9 @@ into “an entangled pair.” But we will undo this “entanglement” by
 defining mathematical notations.
 
 Let us define the following. For one of the photons we write the
-vector in a common notation for basis vectors, as
-stem:[e_1="↑"].footnote:[I prefer not to use boldface, even for
-vectors.] The other photon we write as an orthogonal basis vector
-thus: stem:[e_2="→"].
+vector in a common notation for basis vectors, as stem:[e_1="↑"]. The
+other photon we write as an orthogonal basis vector thus:
+stem:[e_2="→"].
 
 Notice, by the way, that this notation does not mislead us about the
 direction of the plane polarization. In fact, the basis vectors are
@@ -81,4 +80,5 @@ You might not have noticed that stem:["prop"_1] is a point in a tensor
 space. This fact is of no major importance. That it represents a
 proposition of probability theory is important.
 
-----
+***
+
