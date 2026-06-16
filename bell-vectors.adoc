@@ -244,39 +244,42 @@ Law of Malus, is a factor of
 $$
 \begin{equation}
 \cos^2 (\vartheta - \varphi) = (e_\vartheta\cdot e_\varphi)^2
+       = {\lVert \text{proj}_{e_\vartheta}e_\varphi\rVert}^2
 \end{equation}
 $$
 
 where stem:[vartheta] is the angle of polarization of the filter and
 stem:[varphi] is the angle of polarization of the impinging
-plane-polarized light. For a lossless _beam-splitting_ polarizer, one
+plane-polarized light. Here \(\text{proj}_{e_\vartheta}e_\varphi\) is
+the projection of \(e_\varphi\) onto \(e_\vartheta\), and the double
+bars denote magnitude. For a lossless _beam-splitting_ polarizer, one
 channel follows that rule and the other channel the complementary rule
 
 $$
 \begin{equation}
 \sin^2(\vartheta - \varphi) = 1 - (e_\vartheta\cdot e_\varphi)^2
+                 = 1 - {\lVert \text{proj}_{e_\vartheta}e_\varphi\rVert}^2
 \end{equation}
 $$
 
 The impinging photon is polarized either stem:[e_1] or stem:[e_2].
-Therefore the dot product is either stem:[e_vartheta*e_1 = cos vartheta] or
-stem:[e_vartheta*e_2 = sin vartheta], and the loss of intensity according to
-the Law of Malus is stem:[cos^2 vartheta] or stem:[sin^2 vartheta],
-respectively. What is more, the Law of Malus for the complementary
-channel of a beam splitter is
+Therefore the intensity loss is in the regular channel of a beam
+splitter is one of
 
 $$
-\begin{equation}
-1-(e_\vartheta\cdot e_1)^2 = 1-\cos^2\vartheta = \sin^2\vartheta
-\end{equation}
+\begin{align*}
+(e_\vartheta\cdot e_1)^2  &= {\lVert\text{proj}_{e_\vartheta}e_1\rVert}^2  = \cos^2 \vartheta \\
+(e_\vartheta\cdot e_2)^2  &= {\lVert\text{proj}_{e_\vartheta}e_2\rVert}^2  = \sin^2 \vartheta \\
+\end{align*}
 $$
 
-or
+and for the respective complementary channel is
 
 $$
-\begin{equation}
-1-(e_\vartheta\cdot e_2)^2 = 1-\sin^2\vartheta = \cos^2\vartheta
-\end{equation}
+\begin{align*}
+1-\cos^2\vartheta &= \sin^2\vartheta \\
+1-\sin^2\vartheta &= \cos^2\vartheta
+\end{align*}
 $$
 
 and so the rule for a complementary channel is simply the rule for the
