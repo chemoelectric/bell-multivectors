@@ -132,7 +132,7 @@ ordinary polarizing filters.
 Physicists sometimes brag that their tensor space is a _Hilbert_
 space, and the coordinates are complex numbers. “Look how _smart_ we
 are!” They are using complex numbers to represent rotations. Remember,
-after all, that stem:[e^(i phi) = cos phi + i sin phi], and so is
+after all, that stem:[e^(i varphi) = cos varphi + i sin varphi], and so is
 analogous to a clock face. Complex numbers, however, are properly
 roots of polynomials, not geometric entities. We can instead try to
 impress people even more by using geometric algebra, even though
@@ -151,12 +151,12 @@ stem:[I_12] is a counterclockwise-oriented unit of area in the
 stem:[(e_1,e_2)]-plane.
 
 We can get any vector on the clock face by using a geometric rotor.
-For an angle stem:[phi] a convenient rotor and its inverse are
+For an angle stem:[varphi] a convenient rotor and its inverse are
 
 $$
 \begin{align*}
-R_\phi &= \cos\frac\phi2 - I_{12} \sin\frac\phi2 = \cos\frac\phi2 - e_1 e_2 \sin\frac\phi2 \\
-R_\phi^{-1} &= \cos\frac\phi2 + I_{12} \sin\frac\phi2 = \cos\frac\phi2 + e_1 e_2 \sin\frac\phi2
+R_\varphi &= \cos\frac\varphi2 - I_{12} \sin\frac\varphi2 = \cos\frac\varphi2 - e_1 e_2 \sin\frac\varphi2 \\
+R_\varphi^{-1} &= \cos\frac\varphi2 + I_{12} \sin\frac\varphi2 = \cos\frac\varphi2 + e_1 e_2 \sin\frac\varphi2
 \end{align*}
 $$
 
@@ -164,10 +164,10 @@ Thus any unit vector on the clock face can be obtained by computing
 
 $$
 \begin{align*}
-e_\phi &= R_\phi \, e_1 \, R_\phi^{-1} \\
-      &= (\cos\frac\phi2 - e_1 e_2 \sin\frac\phi2) \, e_1 \, (\cos\frac\phi2 + e_1 e_2 \sin\frac\phi2) \\
-      &= e_1 \cos^2\frac\phi2 - e_1 e_2 e_1 \cos\frac\phi2\sin\frac\phi2
-          + e_1 e_1 e_2 \cos\frac\phi2\sin\frac\phi2 - e_1 e_2 e_1 e_1 e_2 \sin^2\frac\phi2
+e_\varphi &= R_\varphi \, e_1 \, R_\varphi^{-1} \\
+      &= (\cos\frac\varphi2 - e_1 e_2 \sin\frac\varphi2) \, e_1 \, (\cos\frac\varphi2 + e_1 e_2 \sin\frac\varphi2) \\
+      &= e_1 \cos^2\frac\varphi2 - e_1 e_2 e_1 \cos\frac\varphi2\sin\frac\varphi2
+          + e_1 e_1 e_2 \cos\frac\varphi2\sin\frac\varphi2 - e_1 e_2 e_1 e_1 e_2 \sin^2\frac\varphi2
 \end{align*}
 $$
 
@@ -195,7 +195,7 @@ Therefore:
 
 $$
 \begin{align*}
-e_\phi &= (\cos^2\frac\phi2 - \sin^2\frac\phi2)\,e_1 + (2\,\cos\frac\phi2\sin\frac\phi2)\,e_2
+e_\varphi &= (\cos^2\frac\varphi2 - \sin^2\frac\varphi2)\,e_1 + (2\,\cos\frac\varphi2\sin\frac\varphi2)\,e_2
 \end{align*}
 $$
 
@@ -214,7 +214,7 @@ Therefore:
 
 $$
 \begin{align*}
-e_\phi &= e_1\cos\phi + e_2\sin\phi
+e_\varphi &= e_1\cos\varphi + e_2\sin\varphi
 \end{align*}
 $$
 
@@ -243,31 +243,31 @@ Law of Malus, is a factor of
 
 $$
 \begin{equation}
-\cos^2 (\theta - \phi) = (e_\theta\cdot e_\phi)^2
+\cos^2 (\vartheta - \varphi) = (e_\vartheta\cdot e_\varphi)^2
 \end{equation}
 $$
 
-where stem:[theta] is the angle of polarization of the filter and
-stem:[phi] is the angle of polarization of the impinging
+where stem:[vartheta] is the angle of polarization of the filter and
+stem:[varphi] is the angle of polarization of the impinging
 plane-polarized light. For a lossless _beam-splitting_ polarizer, one
 channel follows that rule and the other channel the complementary rule
 
 $$
 \begin{equation}
-\sin^2(\theta - \phi) = 1 - (e_\theta\cdot e_\phi)^2
+\sin^2(\vartheta - \varphi) = 1 - (e_\vartheta\cdot e_\varphi)^2
 \end{equation}
 $$
 
 The impinging photon is polarized either stem:[e_1] or stem:[e_2].
-Therefore the dot product is either stem:[e_theta*e_1 = cos theta] or
-stem:[e_theta*e_2 = sin theta], and the loss of intensity according to
-the Law of Malus is stem:[cos^2 theta] or stem:[sin^2 theta],
+Therefore the dot product is either stem:[e_vartheta*e_1 = cos vartheta] or
+stem:[e_vartheta*e_2 = sin vartheta], and the loss of intensity according to
+the Law of Malus is stem:[cos^2 vartheta] or stem:[sin^2 vartheta],
 respectively. What is more, the Law of Malus for the complementary
 channel of a beam splitter is
 
 $$
 \begin{equation}
-1-(e_\theta\cdot e_1)^2 = 1-\cos^2\theta = \sin^2\theta
+1-(e_\vartheta\cdot e_1)^2 = 1-\cos^2\vartheta = \sin^2\vartheta
 \end{equation}
 $$
 
@@ -275,7 +275,7 @@ or
 
 $$
 \begin{equation}
-1-(e_\theta\cdot e_2)^2 = 1-\sin^2\theta = \cos^2\theta
+1-(e_\vartheta\cdot e_2)^2 = 1-\sin^2\vartheta = \cos^2\vartheta
 \end{equation}
 $$
 
@@ -291,3 +291,35 @@ with errors, which they sometimes accidentally discover but then write
 off as “loopholes” that somehow might be eliminated by experimental
 controls.]
 
+***
+
+Before we attempt to arrange the different cases into a tensor
+notation, let us see what they are.
+
+Let us call the setting for the left polarizing beam splitter
+stem:[alpha] and that for the right splitter stem:[beta]. For the
+photons transmitted by the source, there are two cases,
+stem:["initial-case"_1 = ((e_1),(e_2))] and stem:["initial-case"_2 =
+((e_2),(e_1))], where the upper half of the column represents the left
+arm of the experiment, and the bottom half represents the right
+arm.footnote:[Remember that stem:["prop"_1] represents a proposition,
+not an “entangled pair.” It says that either of the two initial cases
+has probability one half.]
+
+I will introduce the shorthands
+
+$$
+\begin{align*}
+\langle\alpha\rangle &= \alpha + \pi/2\\
+\langle\beta\rangle &= \beta + \pi/2
+\end{align*}
+$$
+
+and refer to the final possible light pulses using the unit vectors
+\(e_\alpha\), \(e_\beta\), \(e_{\langle\alpha\rangle}\), and
+\(e_{\langle\beta\rangle}\).footnote:[I leave it an open question
+whether a retransmitted photon is polarized along the line of the
+polarizer or if the vector sum of retransmitted photons averages out
+as polarized along this line. Either kind of polarizer might suffice
+in some role.] The latter two vectors are for retransmission along the
+complementary path of the respective polarizing beam splitter.
