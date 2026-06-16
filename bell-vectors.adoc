@@ -1,0 +1,84 @@
+= Analysis of the Two-Channel Optical Bell Test, Using Vectors and Matrices
+
+:stem: mathjax
+
+:toc:
+
+Let us demonstrate that the supposed “entangled pairs” of photons in
+the two-channel optical Bell test are actually ordinary
+plane-polarized photons. The silly Dirac notation is just a liturgical
+language for probability theory, in the pseudoscientific
+quasi-religion called “quantum physics.”
+
+To demonstrate that the silly Dirac notation is just a vector notation
+for probability theory, first let us define real math notations to
+mean the same as the silly Dirac scribbles.
+
+Suppose we have a light source generating photons of complementary
+plane polarizations. We do not specify in what planes they are
+polarized, except that, of course, the planes are orthogonal to each
+other. One photon will be represented in the Dirac notation by
+stem:["↑"] and the other by stem:["→"]. Thus we can write bras
+stem:["⟨↑→|"] and stem:["⟨→↑|"] and kets stem:["|↑→⟩"] and
+stem:["|→↑⟩"]. Writing these liturgical notations turns the photons
+into “an entangled pair.” But we will undo this “entanglement” by
+defining mathematical notations.
+
+Let us define the following. For one of the photons we write the
+vector in a common notation for basis vectors, as
+stem:[e_1="↑"].footnote:[I prefer not to use boldface, even for
+vectors.] The other photon we write as an orthogonal basis vector
+thus: stem:[e_2="→"].
+
+Notice, by the way, that this notation does not mislead us about the
+direction of the plane polarization. In fact, the basis vectors are
+agnostic about what distinguishes the photons, as long as the
+distinction is one of orthogonality.
+
+To further mathematize our notations, instead of bras we will write
+row matrices and instead of kets we will write column matrices. Thus:
+
+[stem]
+++++
+"⟨↑→|" = ((e_1,e_2))
+++++
+[stem]
+++++
+"⟨→↑|" = ((e_2,e_1))
+++++
+[stem]
+++++
+"|↑→⟩" = ((e_1),(e_2))
+++++
+[stem]
+++++
+"|→↑⟩" = ((e_2),(e_1))
+++++
+
+Having removed the liturgical language, the photons now are no longer
+“entangled.” Let us now write down the initial condition of the
+experiment, using column matrices. Call it stem:["prop"_1], meaning
+_proposition one_.
+
+[stem]
+++++
+"prop"_1 = 1/2((e_1),(e_2)) + 1/2((e_2),(e_1))
+++++
+
+Let us assume the photons are ejected in directions left and right.
+One should read stem:["prop"_1] as follows: “There is probability
+stem:[1/2] of an stem:[e_1] photon on the left and an stem:[e_2]
+photon on the right, and probability stem:[1/2] of an stem:[e_2]
+photon on the left and an stem:[e_1] photon on the right.”
+
+Of course the Dirac notation also would mean this, if it did not have
+a liturgical magic that transformed photons into “entangled pairs.”
+But we are not using Dirac notation, so there is no magic. We are
+stuck with stem:["prop"_1] instead of a magical entity that defies
+Newton’s laws of motion.
+
+You might not have noticed that stem:["prop"_1] is a point in a tensor
+space. This fact is of no major importance. That it represents a
+proposition of probability theory is important.
+
+----
