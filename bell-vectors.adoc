@@ -54,7 +54,7 @@ row matrices and instead of kets we will write column matrices. Thus:
 "|→↑⟩" = ((e_2),(e_1))
 ++++
 
-Having removed the liturgical language, the photons now are no longer
+The liturgical language removed, the photons no longer are
 “entangled.” Let us now write down the initial condition of the
 experiment, using column matrices. Call it stem:["prop"_1], meaning
 _proposition one_.
