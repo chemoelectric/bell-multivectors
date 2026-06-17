@@ -236,16 +236,18 @@ uv = u\cdot v + u\wedge v
 $$
 
 where \(u\cdot v\) is the same as the dot product in ordinary
-(Gibbs-Heaviside) vector algebra and \(u\wedge v\) is a _bivector_. A
-bivector is a finite planar area that is oriented either
-counterclockwise or clockwise.
+(Gibbs-Heaviside) vector algebra and the wedge product \(u\wedge v\)
+is a _bivector_. A bivector is a finite planar area that is oriented
+either counterclockwise or clockwise. You can picture a bivector as an
+entity normal to which is the familiar cross product.
 
-_It is allowed_ to add scalars, vectors, and bivectors to each other.
-Your friends are likely to argue with you, when you tell them scalars
-and vectors _can_ be added to each other. Your friends are cursed with
-school educations they have not overcome. It is important to overcome
-one’s school education. The mathematics will work out just fine, no
-matter what your teachers told you.
+_It is allowed_ to add scalars, vectors, and bivectors to each other,
+with the result that you get a _multivector_. At least if you are as
+old as I am, your friends are likely to argue vociferously with you,
+when you tell them scalars and vectors _can_ be added to each other.
+Your friends are cursed with school educations they have not overcome.
+It is important to overcome one’s school education. The mathematics
+will work out just fine, no matter what your teachers told you.
 
 The following identities are important to us:
 
@@ -270,6 +272,22 @@ e_1\wedge e_2 &= e_1 e_2 = -e_2\wedge e_1 = -e_2 e_1
 $$
 
 We already have used some of these identities.
+
+Let us also introduce the _grade_ operator, which returns the scalar,
+vector, or bivector part of a multivector:
+
+$$
+\begin{align*}
+{\left\langle{5 + e_1 + e_1\wedge e_2}\right\rangle}_0 &= 5 \\
+{\left\langle{5 + e_1 + e_1\wedge e_2}\right\rangle}_1 &= e_1 \\
+{\left\langle{5 + e_1 + e_1\wedge e_2}\right\rangle}_2 &= e_1\wedge e_2 \\
+\end{align*}
+$$
+
+Below we will use the operations described above. We will also do
+projections of vectors onto other vectors, but in geometric algebra
+this is a non-fundamental operation I shall not bother to explore in
+detail.
 
 ***
 
@@ -350,24 +368,126 @@ I will introduce the shorthands
 
 $$
 \begin{align*}
-\langle\alpha\rangle &= \alpha + \pi/2\\
-\langle\beta\rangle &= \beta + \pi/2
+\lbrace\alpha\rbrace &= \alpha - \pi/2\\
+\lbrace\beta\rbrace &= \beta - \pi/2
 \end{align*}
 $$
 
 and refer to the final possible light pulses using the unit vectors
-\(e_\alpha\), \(e_\beta\), \(e_{\langle\alpha\rangle}\), and
-\(e_{\langle\beta\rangle}\).footnote:[I leave it an open question
+\(e_\alpha\), \(e_\beta\), \(e_{\lbrace\alpha\rbrace}\), and
+\(e_{\lbrace\beta\rbrace}\).footnote:[I leave it an open question
 whether a retransmitted photon is polarized along the line of the
 polarizer or if the vector sum of retransmitted photons averages out
 as polarized along this line. Either kind of polarizer might suffice
 in some role.] The latter two vectors are for retransmission along the
 complementary path of the respective polarizing beam splitter.
 
-I will describe the polarizers by their settings vectors.
+One could just go ahead now and analyze the experiment using
+probability theory, but the purpose of this exhibition is to wow the
+proletariat with tensor spaces. In other words, we are mocking
+physicists for believing writing probability theory in a cumbersome
+vector notation performs magical miracles. So we must invent some very
+clever way to write the analysis. It would be helpful if we were even
+cleverer than physicists!
+
+***
+
+It is called the “two-channel” Bell test because there two polarizer
+channels in either arm. There are four polarizer channels in all. The
+respective vectors for the four channels are:
 
 $$
 \begin{align*}
-x &= y
+e_\alpha &= e_1\cos\alpha + e_2\sin\alpha
+\\
+e_{\lbrace\alpha\rbrace} &= e_1\sin\alpha + e_2\cos\alpha
+\\
+e_\beta &= e_1\cos\beta + e_2\sin\beta
+\\
+e_{\lbrace\beta\rbrace} &= e_1\sin\beta + e_2\cos\beta
 \end{align*}
 $$
+
+One can write this as matrices:
+
+$$
+\begin{equation}
+\begin{pmatrix}
+e_\alpha \\ e_{\lbrace\alpha\rbrace} \\
+\hline
+e_\beta \\ e_{\lbrace\beta\rbrace}
+\end{pmatrix} =
+  \begin{pmatrix}
+  \cos\alpha & \sin\alpha \\
+  \sin\alpha & \cos\alpha \\
+  \hline
+  \cos\alpha & \sin\alpha \\
+  \sin\alpha & \cos\alpha
+  \end{pmatrix}
+  \begin{pmatrix}e_1\\e_2\end{pmatrix}
+\end{equation}
+$$
+
+Notice that nothing magical happens when we write the same thing with
+matrices as we wrote before without matrices. It does, however, for
+instance, become more obvious how to invert the equations. For
+
+$$
+\begin{align*}
+\begin{pmatrix}
+  \cos\alpha & \sin\alpha \\
+  \sin\alpha & \cos\alpha
+\end{pmatrix}
+  \begin{pmatrix}
+    \cos\alpha & -\sin\alpha \\
+    -\sin\alpha & \cos\alpha
+  \end{pmatrix} &=
+  {\cos 2\alpha}
+  \begin{pmatrix}
+    1 & 0 \\ 0 & 1
+  \end{pmatrix} \\
+\begin{pmatrix}
+  \cos\beta & \sin\beta \\
+  \sin\beta & \cos\beta
+\end{pmatrix}
+  \begin{pmatrix}
+    \cos\beta & -\sin\beta \\
+    -\sin\beta & \cos\beta
+  \end{pmatrix} &=
+  {\cos 2\beta}
+  \begin{pmatrix}
+    1 & 0 \\ 0 & 1
+  \end{pmatrix}
+\end{align*}
+$$
+
+Nothing magical happens. Curiously, however, we get the expressions
+\(\cos 2\alpha\) and \(\cos 2\beta\) that resemble the correlation of
+the Bell test.
+
+Perhaps this is a hint that correlations are due to polarization and
+_not_ magical “entanglement.”
+
+***
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+Furthermore, the probabilities of photons being retransmitted along
+channels can be calculated by matrix and dot multiplications:
+
+$$
+\begin{equation}
+{\left\langle
+\begin{pmatrix}e_\alpha \\ e_{\lbrace\alpha\rbrace}\end{pmatrix}
+\begin{pmatrix}e_\alpha  & e_{\lbrace\alpha\rbrace}\end{pmatrix}
+\right\rangle}_0
+\end{equation} =
+  \begin{pmatrix}
+  \cos^2
+  \end{pmatrix}
+$$
+
+Here the grade operation is a clever way to make the vector
+multiplications be dot multiplications.
