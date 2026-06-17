@@ -480,3 +480,88 @@ _not_ magical “entanglement.”
 
 ***
 
+Let us now do something physicists seem not to have done clearly. They
+have not, because they believe (fallaciously) that their Hilbert
+tensor space represents _physical_ entities. Thus they merely “do the
+calculations” and see what _physical_ entities pop into existence.
+They simply follow liturgical procedures laid out for them decades ago
+by their Church Fathers (Bohr, Pauli, Dirac, von Neumann, etc.). We,
+on the other, know that our spaces represent _logical_ entities. Thus
+we must decide _what_ it is we wish to _deduce_. Otherwise we have no
+guidance.
+
+There is no _a priori_ reason to throw away information about the
+initial state of the experiment. Thus we might want to know the
+probabilities \(P_{11},P_{21},\ldots,P_{42}\) in
+
+$$
+\begin{align*}
+\text{prop}_2 =
+ &\
+  P_{11}
+     \begin{pmatrix}
+       e_\alpha & e_1 \\
+       e_\beta & e_2
+     \end{pmatrix} +
+  P_{21}
+     \begin{pmatrix}
+       e_{\lbrace\alpha\rbrace} & e_1 \\
+       e_\beta & e_2
+     \end{pmatrix} +
+  P_{31}
+     \begin{pmatrix}
+       e_\alpha & e_1 \\
+       e_{\lbrace\beta\rbrace} & e_2
+     \end{pmatrix} +
+  P_{41}
+     \begin{pmatrix}
+       e_{\lbrace\alpha\rbrace} & e_1 \\
+       e_{\lbrace\beta\rbrace} & e_2
+     \end{pmatrix}
+     \\ &+
+  P_{12}
+     \begin{pmatrix}
+       e_\alpha & e_2 \\
+       e_\beta & e_1
+     \end{pmatrix} +
+  P_{22}
+     \begin{pmatrix}
+       e_{\lbrace\alpha\rbrace} & e_2 \\
+       e_\beta & e_1
+     \end{pmatrix} +
+  P_{32}
+     \begin{pmatrix}
+       e_\alpha & e_2 \\
+       e_{\lbrace\beta\rbrace} & e_1
+     \end{pmatrix} +
+  P_{42}
+     \begin{pmatrix}
+       e_{\lbrace\alpha\rbrace} & e_2 \\
+       e_{\lbrace\beta\rbrace} & e_1
+     \end{pmatrix}
+\end{align*}
+$$
+
+This proposition is in a tensor space of one more dimension than that
+of \(\text{prop}_1\). Again the upper row represents the left arm of
+the experiment and the lower row represents the right arm. Once the
+probabilities are known, marginalization can find \(P_1,P_2,P_3,P_4\)
+in the following:
+
+$$
+\begin{equation}
+\text{prop}_3 =
+  P_1\begin{pmatrix}
+       e_\alpha \\ e_\beta
+     \end{pmatrix} +
+  P_2\begin{pmatrix}
+       e_{\lbrace\alpha\rbrace} \\ e_\beta
+     \end{pmatrix} +
+  P_3\begin{pmatrix}
+       e_\alpha \\ e_{\lbrace\beta\rbrace}
+     \end{pmatrix} +
+  P_4\begin{pmatrix}
+       e_{\lbrace\alpha\rbrace} \\ e_{\lbrace\beta\rbrace}
+     \end{pmatrix}
+\end{equation}
+$$
