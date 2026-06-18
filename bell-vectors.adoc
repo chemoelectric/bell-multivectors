@@ -1,4 +1,4 @@
-= Analysis of the Two-Channel Optical Bell Test, Using Vectors and Matrices
+= Analysis of the two-channel optical Bell test, using multivectors and matrices
 
 :stem: mathjax
 
@@ -67,238 +67,29 @@ the two-channel optical Bell test (the Aspect experiment) using not a
 complex tensor space, but something even fancier. I will use a tensor
 space of _multivectors_.
 
+== Multivectors and geometric algebra
 
+Ordinary Gibbs-Heaviside vectors are nice enough, but, like
+physicists, we want to impress the plebeians. Physicists do this by
+using complex numbers to represent rotations in a plane, but are not
+complex numbers are more properly roots of univariate real
+polynomials? A much more general set of methods is _geometric
+algebra_, from which we will draw just a miniscule subset of what it
+contains and can do.
 
+In geometric algebra, you can add a scalar and a vector. At least if
+you are as old as I am, you are likely to have an acquaintance who
+will argue with you vociferously that you _cannot_ add a scalar and a
+vector. Such an acquaintance is a person who has obtained a high
+school or university education, but has not _overcome_ that education.
+It is important to obtain an education, but current educations are
+very bad, and so it is necessary also to _overcome_ the damage done. A
+school education has solidified the brain rather than made it more
+plastic, and also much of what is taught is simply wrong, or limited
+to a context but taught as if it were universal.
 
-
-
-
-== What follows is old text to be discarded but kept here for reference.
-
-Let us demonstrate that the supposed “entangled pairs” of photons in
-the two-channel optical Bell test are actually ordinary
-plane-polarized photons. The silly Dirac notation is just a liturgical
-language for probability theory, in the pseudoscientific
-quasi-religion called “quantum physics.”
-
-To demonstrate that the silly Dirac notation is just a vector notation
-for probability theory, first let us define real math notations to
-mean the same as the silly Dirac scribbles.
-
-Suppose we have a light source generating photons of complementary
-plane polarizations. We do not specify in what planes they are
-polarized, except that, of course, the planes are orthogonal to each
-other. One photon will be represented in the Dirac notation by
-stem:["→"] and the other by stem:["↑"]. Thus we can write bras
-stem:["⟨→↑|"] and stem:["⟨↑→|"] and kets stem:["|→↑⟩"] and
-stem:["|↑→⟩"]. Writing these liturgical notations turns the photons
-into “an entangled pair.” But we will undo this “entanglement” by
-defining mathematical notations.
-
-Let us define the following. For one of the photons we write the
-vector in a common notation for basis vectors, as stem:[e_1="→"]. The
-other photon we write as an orthogonal basis vector thus:
-stem:[e_2="↑"].
-
-Notice, by the way, that this notation does not mislead us about the
-direction of the plane polarization. In fact, the basis vectors are
-agnostic about what distinguishes the photons, as long as the
-distinction is one of orthogonality.
-
-To further mathematize our notations, instead of bras we will write
-row matrices and instead of kets we will write column matrices. Thus:
-
-$$
-\begin{align*}
-\text{⟨→↑|} &= \begin{pmatrix}e_1  & e_2\end{pmatrix}  \\
-\text{⟨↑→|} &= \begin{pmatrix}e_2  & e_1\end{pmatrix}  \\
-\text{|→↑⟩} &= \begin{pmatrix}e_1 \\ e_2\end{pmatrix}  \\
-\text{|↑→⟩} &= \begin{pmatrix}e_2 \\ e_1\end{pmatrix}  \\
-\end{align*}
-$$
-
-The liturgical language removed, the photons no longer are
-“entangled.” Let us now write down the initial condition of the
-experiment, using column matrices. Call it stem:["prop"_1], meaning
-_proposition one_.
-
-$$
-\begin{equation}
-\text{prop}_1 = \frac12\begin{pmatrix}e_1\\e_2\end{pmatrix}
-              + \frac12\begin{pmatrix}e_2\\e_1\end{pmatrix}
-\end{equation}
-$$
-
-Let us assume the photons are transmitted in directions left and
-right. One should read stem:["prop"_1] as follows: “There is
-probability stem:[1/2] of an stem:[e_1] photon on the left and an
-stem:[e_2] photon on the right, and probability stem:[1/2] of an
-stem:[e_2] photon on the left and an stem:[e_1] photon on the right.”
-
-Of course the Dirac notation also would mean this, if it did not have
-a liturgical magic that transformed photons into “entangled pairs.”
-But we are not using Dirac notation, so there is no magic. We are
-stuck with stem:["prop"_1] instead of a magical entity that defies
-Newton’s laws of motion.
-
-You might not have noticed that stem:["prop"_1] is a point in a tensor
-space. This fact is of no major importance. That stem:["prop"_1]
-represents a proposition of probability theory is important.
-
-Note carefully something else: we have chosen as basis vectors the
-planes of polarization of the photons, but these planes are not
-specified. The settings of the polarizers will have to be defined in
-terms of stem:[e_1] and stem:[e_2]. But these basis vectors are
-unspecified, and therefore _the calibration of the polarizers will be
-arbitrary_. _The correlation must be a function of the difference
-between the two polarizer settings._
-
-This fact has been ignored by physicists, with the result Clauser,
-Aspect, and Zeilinger were awarded a Nobel prize by mistake, and an
-industry in “quantum computers” exists even though such devices cannot
-possibly function as predicted.
-
-In particular, the form of the CHSH inequality is obviously incorrect.
-There _must_ be a mathematical error in its derivation. I have no
-interest here in fishing out that error. It is enough to observe that
-physicists such as Clauser have “done the calculations” but not done
-actual mathematics. Actual mathematics requires reasoning ahead, such
-as that the correlation must be a function of the difference of the
-polarizer settings. Clauser’s true mistake was to believe his
-inequality had any chance to be correct.
-
-***
-
-I am not going to spend time fiddling around with whatever
-unenlightening things the “quantum physics” literature has to say
-about the polarizing beam splitters. What it amounts to is that, in
-quantum mechanics, the polarizers are represented by the Law of Malus,
-just as they are in wave mechanics. The loss in intensity of an
-electromagnetic wave passing through the polarizer corresponds
-one-to-one with the probability that a photon will be retransmitted.
-We merely have to write out the different cases in tensor form.
-
-We are using the ordinary Law of Malus, but written as a point in a
-tensor space, to cover the various possible cases. Writing the Law of
-Malus as a point in a tensor space does not make it
-magical.footnote:[Physicists will abuse me for calling “magic” what
-they call “science,” but they can stuff it. I have finally had it up
-to my eyeballs with their nonsense, which not only passes for
-mathematics while being sacred scripture, and for science while being
-holy revelations, and for engineering while being divine alchemy, but
-is a threat to world peace. The United States Department of Defense
-spends how much money on “quantum computers”? University students also
-are fleeced for millions and millions of dollars. Experimental
-research is filled with biased data, infuriatingly published despite
-the absence of nominal values. Bell and CHSH inequalities, and
-experiments such as Aspect’s, violate even the predictions of quantum
-mechanics! More recently, “quantum computers” research is starting to
-fill up with reports of data being _deliberately_ faked. A reason for
-faking data is obvious: the devices cannot possibly function as
-predicted by physicists.] There is no violation of action by direct
-contact. There is no “instantaneous action at a distance.” Keep that
-in mind. Our photons are unentangled, and they are passing through
-ordinary polarizing filters.
-
-Physicists sometimes brag that their tensor space is a _Hilbert_
-space, and the coordinates are complex numbers. “Look how _smart_ we
-are!” They are using complex numbers to represent rotations. Remember,
-after all, that stem:[e^(i varphi) = cos varphi + i sin varphi], and so is
-analogous to a clock face. Complex numbers, however, are properly
-roots of polynomials, not geometric entities. We can instead try to
-impress people even more by using geometric algebra, even though
-trying to impress laypeople is a stupid activity.
-
-Thus let us define
-
-$$
-\begin{equation}
-I_{12} = e_1\wedge e_2 = e_1 e_2
-\end{equation}
-$$
-
-as the basis bivector. We will use the right-hand rule, and thus
-stem:[I_12] is a counterclockwise-oriented unit of area in the
-stem:[(e_1,e_2)]-plane.
-
-We can get any vector on the clock face by using a geometric rotor.
-For an angle stem:[varphi] a convenient rotor and its inverse are
-
-$$
-\begin{align*}
-R_\varphi &= \cos\frac\varphi2 - I_{12} \sin\frac\varphi2 = \cos\frac\varphi2 - e_1 e_2 \sin\frac\varphi2 \\
-R_\varphi^{-1} &= \cos\frac\varphi2 + I_{12} \sin\frac\varphi2 = \cos\frac\varphi2 + e_1 e_2 \sin\frac\varphi2
-\end{align*}
-$$
-
-Thus any unit vector on the clock face can be obtained by computing
-
-$$
-\begin{align*}
-e_\varphi &= R_\varphi \, e_1 \, R_\varphi^{-1} \\
-      &= (\cos\frac\varphi2 - e_1 e_2 \sin\frac\varphi2) \, e_1 \, (\cos\frac\varphi2 + e_1 e_2 \sin\frac\varphi2) \\
-      &= e_1 \cos^2\frac\varphi2 - e_1 e_2 e_1 \cos\frac\varphi2\sin\frac\varphi2
-          + e_1 e_1 e_2 \cos\frac\varphi2\sin\frac\varphi2 - e_1 e_2 e_1 e_1 e_2 \sin^2\frac\varphi2
-\end{align*}
-$$
-
-To simplify, use the following identities:
-
-$$
-\begin{align*}
-e_1 e_1 &= 1 \\
-e_2 e_2 &= 1 \\
-e_2 e_1 &= - e_1 e_2
-\end{align*}
-$$
-
-Thus:
-
-$$
-\begin{align*}
--e_1 e_2 e_1 &= e_2 \\
-e_1 e_1 e_2 &= e_2 \\
-- e_1 e_2 e_1 e_1 e_2 &= -e_1
-\end{align*}
-$$
-
-Therefore:
-
-$$
-\begin{align*}
-e_\varphi &= (\cos^2\frac\varphi2 - \sin^2\frac\varphi2)\,e_1 + (2\,\cos\frac\varphi2\sin\frac\varphi2)\,e_2
-\end{align*}
-$$
-
-Let us refer to the _CRC Handbook of Mathematical Sciences, 6th
-Edition_, where we find the following double-angle relations on page
-170:
-
-$$
-\begin{align*}
-\sin 2\alpha &= 2\sin\alpha\cos\alpha \\
-\cos 2\alpha &= \cos^2\alpha - \sin^2\alpha
-\end{align*}
-$$
-
-Therefore:
-
-$$
-\begin{align*}
-e_\varphi &= e_1\cos\varphi + e_2\sin\varphi
-\end{align*}
-$$
-
-Of course, we could have come to this conclusion immediately. This
-way, however (like physicists with their Hilbert tensor space and
-other liturgical incantations), we have impressed the laypeople with
-our immense intellect.
-
-***
-
-Here let us insert a diversion on more of geometric algebra.
-
-The geometric product stem:[uv] of vectors stem:[u] and stem:[v] is
+You can also multiply vectors in ways other than dot and cross
+products. The _geometric product_ \(uv\) of vectors \(u\) and \(v\) is
 
 $$
 \begin{equation}
@@ -306,57 +97,29 @@ uv = u\cdot v + u\wedge v
 \end{equation}
 $$
 
-where \(u\cdot v\) is the same as the dot product in ordinary
-(Gibbs-Heaviside) vector algebra and the wedge product \(u\wedge v\)
-is a _bivector_. A bivector is a finite planar area that is oriented
-either counterclockwise or clockwise. You can picture a bivector as an
-entity normal to which is the familiar cross product.
+where \(u\cdot v\) is the familiar dot product, but the _wedge
+product_ \(u\wedge v\) is a new entity called a _bivector_. A bivector
+is a finite planar area that is oriented either counterclockwise or
+clockwise. You can picture a bivector as an entity normal to which is
+the familiar cross product.
 
-_It is allowed_ to add scalars, vectors, and bivectors to each other,
-with the result that you get a _multivector_. At least if you are as
-old as I am, your friends are likely to argue vociferously with you,
-when you tell them scalars and vectors _can_ be added to each other.
-Your friends are cursed with school educations they have not overcome.
-It is important to overcome one’s school education. The mathematics
-will work out just fine, no matter what your teachers told you.
+The sum of any scalars, vectors, and bivectors is called a
+_multivector_.
 
-The following identities are important to us:
+Let us also introduce the _grade_ operator, which returns the scalar
+(_grade{nbsp}0_), vector (_grade{nbsp}1_), or bivector
+(_grade{nbsp}2_) part of a multivector:
 
 $$
 \begin{align*}
-u\cdot v &= \lVert u\rVert\lVert v\rVert &\text{if } u\parallel v \\
-u\cdot v &= 0 &\text{if } u\perp v \\
-u\wedge v &= 0 &\text{if } u\parallel v \\
-u\wedge v &= -v\wedge u &\text{if } u\perp v \\
-\end{align*}
-$$
-
-In particular:
-
-$$
-\begin{align*}
-e_1\cdot e_2 &= e_2\cdot e_1 = 0 \\
-e_1\wedge e_1 &= e_2\wedge e_2 = 0 \\
-e_1\cdot e_1 &= e_1 e_1 = e_2\cdot e_2 = e_2 e_2 = 1 \\
-e_1\wedge e_2 &= e_1 e_2 = -e_2\wedge e_1 = -e_2 e_1
-\end{align*}
-$$
-
-We already have used some of these identities.
-
-Let us also introduce the _grade_ operator, which returns the scalar,
-vector, or bivector part of a multivector:
-
-$$
-\begin{align*}
-{\left\langle{5 + e_1 + e_1\wedge e_2}\right\rangle}_0 &= 5 \\
-{\left\langle{5 + e_1 + e_1\wedge e_2}\right\rangle}_1 &= e_1 \\
-{\left\langle{5 + e_1 + e_1\wedge e_2}\right\rangle}_2 &= e_1\wedge e_2 \\
+{\left\langle{5 + 2e_1 + 7e_1\wedge e_2}\right\rangle}_0 &= 5 \\
+{\left\langle{5 + 2e_1 + 7e_1\wedge e_2}\right\rangle}_1 &= 2e_1 \\
+{\left\langle{5 + 2e_1 + 7e_1\wedge e_2}\right\rangle}_2 &= 7e_1\wedge e_2 \\
 \end{align*}
 $$
 
 Given the grade operation, the dot and wedge products of two vectors
-can be defined in terms of their geometric product as follows:
+can be obtained from their geometric product:
 
 $$
 \begin{align*}
@@ -365,444 +128,760 @@ u\wedge v &= {\left\langle uv\right\rangle}_2
 \end{align*}
 $$
 
-Below we will use the operations described above. We will also do
-projections of vectors onto other vectors, but in geometric algebra
-this is a non-fundamental operation I shall not bother to explore in
-detail.
-
-***
-
-_On y va_.
-
-Let us review the Law of Malus, but equating the intensity of an
-electromagnetic wave with the probability of occurrence of a photon.
-The change in intensity due to a polarizing filter, according to the
-Law of Malus, is a factor
-
-$$
-\begin{equation}
-\cos^2 (\vartheta - \varphi) = (e_\vartheta\cdot e_\varphi)^2
-       = {\lVert \text{proj}_{e_\vartheta}e_\varphi\rVert}^2
-\end{equation}
-$$
-
-where stem:[vartheta] is the angle of polarization of the filter and
-stem:[varphi] is the angle of polarization of the impinging
-plane-polarized light. Here \(\text{proj}_{e_\vartheta}e_\varphi\) is
-the projection of \(e_\varphi\) onto \(e_\vartheta\), and the double
-bars denote magnitude. The polarizer can be visualized as a “magnitude
-window” for the light vector, and intensity (or ability to perform
-work) equals the square of magnitude. For a lossless _beam-splitting_
-polarizer, the regular channel follows that rule and the complementary
-channel the complementary rule
-
-$$
-\begin{equation}
-\sin^2(\vartheta - \varphi) = 1 - (e_\vartheta\cdot e_\varphi)^2
-                 = 1 - {\lVert \text{proj}_{e_\vartheta}e_\varphi\rVert}^2
-\end{equation}
-$$
-
-The impinging photon is polarized either stem:[e_1] or stem:[e_2].
-Therefore the intensity loss is in the regular channel of a beam
-splitter is one of
+Here are some identities:
 
 $$
 \begin{align*}
-(e_\vartheta\cdot e_1)^2  &= {\lVert\text{proj}_{e_\vartheta}e_1\rVert}^2  = \cos^2 \vartheta \\
-(e_\vartheta\cdot e_2)^2  &= {\lVert\text{proj}_{e_\vartheta}e_2\rVert}^2  = \sin^2 \vartheta \\
+u\cdot v &= \lVert u\rVert\lVert v\rVert &\text{if } u\parallel v \\
+u\wedge v &= 0 &\text{if } u\parallel v \\
+u\cdot v &= 0 &\text{if } u\perp v \\
+u\wedge v = uv = -vu &= -v\wedge u &\text{if } u\perp v \\
+u\cdot v  &= v\cdot u & \text{always} \\
+u\wedge v  &= -v\wedge u & \text{always}
 \end{align*}
 $$
 
-and for the respective complementary channel is
 
-$$
-\begin{align*}
-1-\cos^2\vartheta &= \sin^2\vartheta \\
-1-\sin^2\vartheta &= \cos^2\vartheta
-\end{align*}
-$$
 
-and so the rule for a complementary channel is simply the rule for the
-regular channel, but with the roles of stem:[e_1] and stem:[e_2]
-reversed.
 
-Of course this makes intuitive sense. Nevertheless, it is worth doing
-the mathematics, to verify we are not making any errors.footnote:[This
-kind of verification obviously _has not_ been done by the physicists
-who claim there is “entanglement.” Their quasi-mathematics is packed
-with errors, which they sometimes accidentally discover but then write
-off as “loopholes” that somehow might be eliminated by experimental
-controls.]
 
-Let us call the setting for the left polarizing beam splitter
-stem:[alpha] and that for the right splitter stem:[beta]. For the
-photons transmitted by the source, there are two cases,
-stem:["initial-case"_1 = ((e_1),(e_2))] and stem:["initial-case"_2 =
-((e_2),(e_1))], where the upper half of the column represents the left
-arm of the experiment, and the bottom half represents the right
-arm.footnote:[Remember that stem:["prop"_1] represents a proposition,
-not an “entangled pair.” It says that either of the two initial cases
-has probability one half.]
 
-I will introduce the shorthands
 
-$$
-\begin{align*}
-\lbrace\alpha\rbrace &= \alpha - \pi/2\\
-\lbrace\beta\rbrace &= \beta - \pi/2
-\end{align*}
-$$
 
-and refer to the final possible light pulses using the unit vectors
-\(e_\alpha\), \(e_\beta\), \(e_{\lbrace\alpha\rbrace}\), and
-\(e_{\lbrace\beta\rbrace}\).footnote:[I leave it an open question
-whether a retransmitted photon is polarized along the line of the
-polarizer or if the vector sum of retransmitted photons averages out
-as polarized along this line. Either kind of polarizer might suffice
-in some role.] The latter two vectors are for retransmission along the
-complementary path of the respective polarizing beam splitter.
 
-One could just go ahead now and analyze the experiment using
-probability theory, but the purpose of this exhibition is to wow the
-proletariat with tensor spaces. In other words, we are mocking
-physicists for believing writing probability theory in a cumbersome
-vector notation performs magical miracles. So we must invent some very
-clever way to write the analysis. It would be helpful if we were even
-cleverer than physicists!
 
-***
 
-It is called the “two-channel” Bell test because there two polarizer
-channels in either arm. There are four polarizer channels in all. The
-respective vectors for the four channels are:
 
-$$
-\begin{align*}
-e_\alpha &= e_1\cos\alpha + e_2\sin\alpha
-\\
-e_{\lbrace\alpha\rbrace} &= e_1\sin\alpha + e_2\cos\alpha
-\\
-e_\beta &= e_1\cos\beta + e_2\sin\beta
-\\
-e_{\lbrace\beta\rbrace} &= e_1\sin\beta + e_2\cos\beta
-\end{align*}
-$$
-
-One can write this as matrices:
-
-$$
-\begin{equation}
-\begin{pmatrix}
-e_\alpha \\ e_{\lbrace\alpha\rbrace} \\
-\hline
-e_\beta \\ e_{\lbrace\beta\rbrace}
-\end{pmatrix} =
-  \begin{pmatrix}
-  \cos\alpha & \sin\alpha \\
-  \sin\alpha & \cos\alpha \\
-  \hline
-  \cos\beta & \sin\beta \\
-  \sin\beta & \cos\beta
-  \end{pmatrix}
-  \begin{pmatrix}e_1\\e_2\end{pmatrix}
-\end{equation}
-$$
-
-Notice that nothing magical happens when we write the same thing with
-matrices as we wrote before without matrices. It does, however, for
-instance, become more obvious how to invert the equations. For
-
-$$
-\begin{align*}
-\begin{pmatrix}
-  \cos\alpha & \sin\alpha \\
-  \sin\alpha & \cos\alpha
-\end{pmatrix}
-  \begin{pmatrix}
-    \cos\alpha & -\sin\alpha \\
-    -\sin\alpha & \cos\alpha
-  \end{pmatrix} &=
-  {\cos 2\alpha}
-  \begin{pmatrix}
-    1 & 0 \\ 0 & 1
-  \end{pmatrix} \\
-\begin{pmatrix}
-  \cos\beta & \sin\beta \\
-  \sin\beta & \cos\beta
-\end{pmatrix}
-  \begin{pmatrix}
-    \cos\beta & -\sin\beta \\
-    -\sin\beta & \cos\beta
-  \end{pmatrix} &=
-  {\cos 2\beta}
-  \begin{pmatrix}
-    1 & 0 \\ 0 & 1
-  \end{pmatrix}
-\end{align*}
-$$
-
-Nothing magical happens. Curiously, however, we get the expressions
-\(\cos 2\alpha\) and \(\cos 2\beta\) that resemble the correlation of
-the Bell test.
-
-Perhaps this is a hint that correlations are due to polarization and
-_not_ magical “entanglement.”
-
-***
-
-Let us now do something physicists seem not to have done clearly. They
-have not, because they believe (fallaciously) that their Hilbert
-tensor space represents _physical_ entities. Thus they merely “do the
-calculations” and see what _physical_ entities pop into existence.
-They simply follow liturgical procedures laid out for them decades ago
-by their Church Fathers (Bohr, Pauli, Dirac, von Neumann, etc.). We,
-on the other, know that our spaces represent _logical_ entities. Thus
-we must decide _what_ it is we wish to _deduce_. Otherwise we have no
-guidance.
-
-There is no _a priori_ reason to throw away information about the
-initial state of the experiment. Thus we might want to know the
-probabilities \(P_{11},P_{21},\ldots,P_{42}\) in
-
-$$
-\begin{align*}
-\text{prop}_2 =
- &\
-  P_{11}
-     \begin{pmatrix}
-       e_\alpha & e_1 \\
-       e_\beta & e_2
-     \end{pmatrix} +
-  P_{21}
-     \begin{pmatrix}
-       e_{\lbrace\alpha\rbrace} & e_1 \\
-       e_\beta & e_2
-     \end{pmatrix} +
-  P_{31}
-     \begin{pmatrix}
-       e_\alpha & e_1 \\
-       e_{\lbrace\beta\rbrace} & e_2
-     \end{pmatrix} +
-  P_{41}
-     \begin{pmatrix}
-       e_{\lbrace\alpha\rbrace} & e_1 \\
-       e_{\lbrace\beta\rbrace} & e_2
-     \end{pmatrix}
-     \\ &+
-  P_{12}
-     \begin{pmatrix}
-       e_\alpha & e_2 \\
-       e_\beta & e_1
-     \end{pmatrix} +
-  P_{22}
-     \begin{pmatrix}
-       e_{\lbrace\alpha\rbrace} & e_2 \\
-       e_\beta & e_1
-     \end{pmatrix} +
-  P_{32}
-     \begin{pmatrix}
-       e_\alpha & e_2 \\
-       e_{\lbrace\beta\rbrace} & e_1
-     \end{pmatrix} +
-  P_{42}
-     \begin{pmatrix}
-       e_{\lbrace\alpha\rbrace} & e_2 \\
-       e_{\lbrace\beta\rbrace} & e_1
-     \end{pmatrix}
-\end{align*}
-$$
-
-This proposition is in a tensor space of one more dimension than that
-of \(\text{prop}_1\). Again the upper row represents the left arm of
-the experiment and the lower row represents the right arm. If the
-probabilities were known, then we could easily get
-
-$$
-\begin{equation}
-\text{prop}_3 =
-  P_1\begin{pmatrix}
-       e_\alpha \\ e_\beta
-     \end{pmatrix} +
-  P_2\begin{pmatrix}
-       e_{\lbrace\alpha\rbrace} \\ e_\beta
-     \end{pmatrix} +
-  P_3\begin{pmatrix}
-       e_\alpha \\ e_{\lbrace\beta\rbrace}
-     \end{pmatrix} +
-  P_4\begin{pmatrix}
-       e_{\lbrace\alpha\rbrace} \\ e_{\lbrace\beta\rbrace}
-     \end{pmatrix}
-\end{equation}
-$$
-
-by additions:
-
-$$
-\begin{align*}
-P_1 &= P_{11} + P_{12} \\
-P_2 &= P_{21} + P_{22} \\
-P_3 &= P_{31} + P_{32} \\
-P_4 &= P_{41} + P_{42}
-\end{align*}
-$$
-
-Notice that \(text{prop}_2\) and \(\text{prop}_3\) have form similar
-to what a physicist might write for the “entangled state” of an event,
-before someone actually examines the data. Or when the magic occurs
-may be sometime else. Who knows when? What we are reading as
-propositions are points in tensor spaces. Physicists read such points
-as preliminaries to action at a distance.
-
-_Action at a distance would be magic._ Anyone who feels otherwise
-should not be a scientist. People such as Maxwell, Heaviside, and
-Einstein went to enormous trouble to try to explain the universe in
-action-by-direct-contact terms. In particular, there is absolutely no
-possibility “entangled photons” is consistent with Maxwell’s theory of
-electromagnetism, which is explicitly action-by-contact.
-
-It is no wonder they tell us “Quantum physics makes no logical sense,
-and you should not try to understand it.” Physicists imagine “quantum
-physics” is consistent with Maxwell’s theory, though logically it
-cannot be. Only by deliberate ignorance of logic is the consistency
-possible. They are depending on us to be pseudoscientists with purely
-a quasi-religious faith in “quantum” doctrine.
-
-***
-
-Probabilities such as \(P_{11}\) are mutual probabilities. What
-\(P_{11}\) represents is the probability of photons being
-retransmitted in the regular channels on both sides of the experiment,
-_and_ that the light source transmitted photons polarized \(e_1\) on
-the left and \(e_2\) on the right.
-
-John S. Bell misinterprets conditional probability as a notation for
-action by direct contact. In reality, conditional probability is _by
-definition_ a shorthand for the ratio of a mutual probability and one
-of its “constituent” probabilities.footnote:[You can look this up in a
-text on probability theory.] In other words:
-
-$$
-\begin{equation}
-\text{P}(\text{prop}_x|\text{prop}_y) =
-  \frac{\text{P}(\text{prop}_x \wedge \text{prop}_y)}{
-          \text{P}(\text{prop}_y)}
-\end{equation}
-$$
-
-This is not a mathematical theorem, nor is it physics. It cannot be
-simplified for the sake of an “encoding.” It is a _definition_.
-Conditional probability is _verbal shorthand for a ratio_. Bestowing
-any meaning of “causality” on it was and is very, very wrong.
-
-The intuition of a conditional probability as the probability of some
-proposition being true, _given that another proposition is true_, is,
-by contrast, correct. The definition was designed so this would be so.
-(One can convince oneself of this by playing with collections of
-objects.) _There is no implication of causality._
-
-Conditional probability is like a chain rule for solving problems in
-probability theory. You break the mutual probability into a
-conditional probability times the “constituent” probability that is in
-the denominator.
-
-Thus we can find \(P_{11}\) by determining the conditional probability
-of \({\begin{pmatrix}e_\alpha\\e_\beta\end{pmatrix}}\) given
-\({\begin{pmatrix}e_1\\e_2\end{pmatrix}}\), then multiplying that by
-the probability of \({\begin{pmatrix}e_1\\e_2\end{pmatrix}}\), which
-is \(1/2\).
-
-But we saw above that the roles of \(e_1\) and \(e_2\) are reversed
-for the complementary channels. Thus simplifications are possible
-right away:
-
-$$
-\begin{align*}
-P_{11} &= P_{42} \\
-P_{21} &= P_{32} \\
-P_{31} &= P_{22} \\
-P_{41} &= P_{12}
-\end{align*}
-$$
-
-Therefore
-
-$$
-\begin{align*}
-P_1 &= P_{11} + P_{12} = P_{42} + P_{41} = P_4 \\
-P_2 &= P_{21} + P_{22} = P_{32} + P_{31} = P_3
-\end{align*}
-$$
-
-and so
-
-$$
-\begin{align*}
-\text{prop}_2 =
- &\
-  P_{11}
-     \left(
-     \begin{pmatrix}
-       e_\alpha & e_1 \\
-       e_\beta & e_2
-     \end{pmatrix} +
-     \begin{pmatrix}
-       e_{\lbrace\alpha\rbrace} & e_2 \\
-       e_{\lbrace\beta\rbrace} & e_1
-     \end{pmatrix}
-     \right) +
-  P_{21}
-     \left(
-     \begin{pmatrix}
-       e_{\lbrace\alpha\rbrace} & e_1 \\
-       e_\beta & e_2
-     \end{pmatrix} +
-     \begin{pmatrix}
-       e_\alpha & e_2 \\
-       e_{\lbrace\beta\rbrace} & e_1
-     \end{pmatrix}
-     \right) \\ & +
-  P_{31}
-     \left(
-     \begin{pmatrix}
-       e_\alpha & e_1 \\
-       e_{\lbrace\beta\rbrace} & e_2
-     \end{pmatrix} +
-     \begin{pmatrix}
-       e_{\lbrace\alpha\rbrace} & e_2 \\
-       e_\beta & e_1
-     \end{pmatrix}
-     \right) +
-  P_{41}
-     \left(
-     \begin{pmatrix}
-       e_{\lbrace\alpha\rbrace} & e_1 \\
-       e_{\lbrace\beta\rbrace} & e_2
-     \end{pmatrix} +
-     \begin{pmatrix}
-       e_\alpha & e_2 \\
-       e_\beta & e_1
-     \end{pmatrix}
-     \right)
-\end{align*}
-$$
-
-and
-
-$$
-\begin{equation}
-\text{prop}_3 =
-  P_1\left(\begin{pmatrix}
-       e_\alpha \\ e_\beta
-      \end{pmatrix} +
-      \begin{pmatrix}
-       e_{\lbrace\alpha\rbrace} \\ e_{\lbrace\beta\rbrace}
-      \end{pmatrix}\right) +
-  P_2\left(\begin{pmatrix}
-       e_{\lbrace\alpha\rbrace} \\ e_\beta
-      \end{pmatrix} +
-      \begin{pmatrix}
-       e_\alpha \\ e_{\lbrace\beta\rbrace}
-      \end{pmatrix}\right)
-\end{equation}
-$$
+// == What follows is old text to be discarded but kept here for reference.
+// 
+// Let us demonstrate that the supposed “entangled pairs” of photons in
+// the two-channel optical Bell test are actually ordinary
+// plane-polarized photons. The silly Dirac notation is just a liturgical
+// language for probability theory, in the pseudoscientific
+// quasi-religion called “quantum physics.”
+// 
+// To demonstrate that the silly Dirac notation is just a vector notation
+// for probability theory, first let us define real math notations to
+// mean the same as the silly Dirac scribbles.
+// 
+// Suppose we have a light source generating photons of complementary
+// plane polarizations. We do not specify in what planes they are
+// polarized, except that, of course, the planes are orthogonal to each
+// other. One photon will be represented in the Dirac notation by
+// stem:["→"] and the other by stem:["↑"]. Thus we can write bras
+// stem:["⟨→↑|"] and stem:["⟨↑→|"] and kets stem:["|→↑⟩"] and
+// stem:["|↑→⟩"]. Writing these liturgical notations turns the photons
+// into “an entangled pair.” But we will undo this “entanglement” by
+// defining mathematical notations.
+// 
+// Let us define the following. For one of the photons we write the
+// vector in a common notation for basis vectors, as stem:[e_1="→"]. The
+// other photon we write as an orthogonal basis vector thus:
+// stem:[e_2="↑"].
+// 
+// Notice, by the way, that this notation does not mislead us about the
+// direction of the plane polarization. In fact, the basis vectors are
+// agnostic about what distinguishes the photons, as long as the
+// distinction is one of orthogonality.
+// 
+// To further mathematize our notations, instead of bras we will write
+// row matrices and instead of kets we will write column matrices. Thus:
+// 
+// $$
+// \begin{align*}
+// \text{⟨→↑|} &= \begin{pmatrix}e_1  & e_2\end{pmatrix}  \\
+// \text{⟨↑→|} &= \begin{pmatrix}e_2  & e_1\end{pmatrix}  \\
+// \text{|→↑⟩} &= \begin{pmatrix}e_1 \\ e_2\end{pmatrix}  \\
+// \text{|↑→⟩} &= \begin{pmatrix}e_2 \\ e_1\end{pmatrix}  \\
+// \end{align*}
+// $$
+// 
+// The liturgical language removed, the photons no longer are
+// “entangled.” Let us now write down the initial condition of the
+// experiment, using column matrices. Call it stem:["prop"_1], meaning
+// _proposition one_.
+// 
+// $$
+// \begin{equation}
+// \text{prop}_1 = \frac12\begin{pmatrix}e_1\\e_2\end{pmatrix}
+//               + \frac12\begin{pmatrix}e_2\\e_1\end{pmatrix}
+// \end{equation}
+// $$
+// 
+// Let us assume the photons are transmitted in directions left and
+// right. One should read stem:["prop"_1] as follows: “There is
+// probability stem:[1/2] of an stem:[e_1] photon on the left and an
+// stem:[e_2] photon on the right, and probability stem:[1/2] of an
+// stem:[e_2] photon on the left and an stem:[e_1] photon on the right.”
+// 
+// Of course the Dirac notation also would mean this, if it did not have
+// a liturgical magic that transformed photons into “entangled pairs.”
+// But we are not using Dirac notation, so there is no magic. We are
+// stuck with stem:["prop"_1] instead of a magical entity that defies
+// Newton’s laws of motion.
+// 
+// You might not have noticed that stem:["prop"_1] is a point in a tensor
+// space. This fact is of no major importance. That stem:["prop"_1]
+// represents a proposition of probability theory is important.
+// 
+// Note carefully something else: we have chosen as basis vectors the
+// planes of polarization of the photons, but these planes are not
+// specified. The settings of the polarizers will have to be defined in
+// terms of stem:[e_1] and stem:[e_2]. But these basis vectors are
+// unspecified, and therefore _the calibration of the polarizers will be
+// arbitrary_. _The correlation must be a function of the difference
+// between the two polarizer settings._
+// 
+// This fact has been ignored by physicists, with the result Clauser,
+// Aspect, and Zeilinger were awarded a Nobel prize by mistake, and an
+// industry in “quantum computers” exists even though such devices cannot
+// possibly function as predicted.
+// 
+// In particular, the form of the CHSH inequality is obviously incorrect.
+// There _must_ be a mathematical error in its derivation. I have no
+// interest here in fishing out that error. It is enough to observe that
+// physicists such as Clauser have “done the calculations” but not done
+// actual mathematics. Actual mathematics requires reasoning ahead, such
+// as that the correlation must be a function of the difference of the
+// polarizer settings. Clauser’s true mistake was to believe his
+// inequality had any chance to be correct.
+// 
+// ***
+// 
+// I am not going to spend time fiddling around with whatever
+// unenlightening things the “quantum physics” literature has to say
+// about the polarizing beam splitters. What it amounts to is that, in
+// quantum mechanics, the polarizers are represented by the Law of Malus,
+// just as they are in wave mechanics. The loss in intensity of an
+// electromagnetic wave passing through the polarizer corresponds
+// one-to-one with the probability that a photon will be retransmitted.
+// We merely have to write out the different cases in tensor form.
+// 
+// We are using the ordinary Law of Malus, but written as a point in a
+// tensor space, to cover the various possible cases. Writing the Law of
+// Malus as a point in a tensor space does not make it
+// magical.footnote:[Physicists will abuse me for calling “magic” what
+// they call “science,” but they can stuff it. I have finally had it up
+// to my eyeballs with their nonsense, which not only passes for
+// mathematics while being sacred scripture, and for science while being
+// holy revelations, and for engineering while being divine alchemy, but
+// is a threat to world peace. The United States Department of Defense
+// spends how much money on “quantum computers”? University students also
+// are fleeced for millions and millions of dollars. Experimental
+// research is filled with biased data, infuriatingly published despite
+// the absence of nominal values. Bell and CHSH inequalities, and
+// experiments such as Aspect’s, violate even the predictions of quantum
+// mechanics! More recently, “quantum computers” research is starting to
+// fill up with reports of data being _deliberately_ faked. A reason for
+// faking data is obvious: the devices cannot possibly function as
+// predicted by physicists.] There is no violation of action by direct
+// contact. There is no “instantaneous action at a distance.” Keep that
+// in mind. Our photons are unentangled, and they are passing through
+// ordinary polarizing filters.
+// 
+// Physicists sometimes brag that their tensor space is a _Hilbert_
+// space, and the coordinates are complex numbers. “Look how _smart_ we
+// are!” They are using complex numbers to represent rotations. Remember,
+// after all, that stem:[e^(i varphi) = cos varphi + i sin varphi], and so is
+// analogous to a clock face. Complex numbers, however, are properly
+// roots of polynomials, not geometric entities. We can instead try to
+// impress people even more by using geometric algebra, even though
+// trying to impress laypeople is a stupid activity.
+// 
+// Thus let us define
+// 
+// $$
+// \begin{equation}
+// I_{12} = e_1\wedge e_2 = e_1 e_2
+// \end{equation}
+// $$
+// 
+// as the basis bivector. We will use the right-hand rule, and thus
+// stem:[I_12] is a counterclockwise-oriented unit of area in the
+// stem:[(e_1,e_2)]-plane.
+// 
+// We can get any vector on the clock face by using a geometric rotor.
+// For an angle stem:[varphi] a convenient rotor and its inverse are
+// 
+// $$
+// \begin{align*}
+// R_\varphi &= \cos\frac\varphi2 - I_{12} \sin\frac\varphi2 = \cos\frac\varphi2 - e_1 e_2 \sin\frac\varphi2 \\
+// R_\varphi^{-1} &= \cos\frac\varphi2 + I_{12} \sin\frac\varphi2 = \cos\frac\varphi2 + e_1 e_2 \sin\frac\varphi2
+// \end{align*}
+// $$
+// 
+// Thus any unit vector on the clock face can be obtained by computing
+// 
+// $$
+// \begin{align*}
+// e_\varphi &= R_\varphi \, e_1 \, R_\varphi^{-1} \\
+//       &= (\cos\frac\varphi2 - e_1 e_2 \sin\frac\varphi2) \, e_1 \, (\cos\frac\varphi2 + e_1 e_2 \sin\frac\varphi2) \\
+//       &= e_1 \cos^2\frac\varphi2 - e_1 e_2 e_1 \cos\frac\varphi2\sin\frac\varphi2
+//           + e_1 e_1 e_2 \cos\frac\varphi2\sin\frac\varphi2 - e_1 e_2 e_1 e_1 e_2 \sin^2\frac\varphi2
+// \end{align*}
+// $$
+// 
+// To simplify, use the following identities:
+// 
+// $$
+// \begin{align*}
+// e_1 e_1 &= 1 \\
+// e_2 e_2 &= 1 \\
+// e_2 e_1 &= - e_1 e_2
+// \end{align*}
+// $$
+// 
+// Thus:
+// 
+// $$
+// \begin{align*}
+// -e_1 e_2 e_1 &= e_2 \\
+// e_1 e_1 e_2 &= e_2 \\
+// - e_1 e_2 e_1 e_1 e_2 &= -e_1
+// \end{align*}
+// $$
+// 
+// Therefore:
+// 
+// $$
+// \begin{align*}
+// e_\varphi &= (\cos^2\frac\varphi2 - \sin^2\frac\varphi2)\,e_1 + (2\,\cos\frac\varphi2\sin\frac\varphi2)\,e_2
+// \end{align*}
+// $$
+// 
+// Let us refer to the _CRC Handbook of Mathematical Sciences, 6th
+// Edition_, where we find the following double-angle relations on page
+// 170:
+// 
+// $$
+// \begin{align*}
+// \sin 2\alpha &= 2\sin\alpha\cos\alpha \\
+// \cos 2\alpha &= \cos^2\alpha - \sin^2\alpha
+// \end{align*}
+// $$
+// 
+// Therefore:
+// 
+// $$
+// \begin{align*}
+// e_\varphi &= e_1\cos\varphi + e_2\sin\varphi
+// \end{align*}
+// $$
+// 
+// Of course, we could have come to this conclusion immediately. This
+// way, however (like physicists with their Hilbert tensor space and
+// other liturgical incantations), we have impressed the laypeople with
+// our immense intellect.
+// 
+// ***
+// 
+// Here let us insert a diversion on more of geometric algebra.
+// 
+// The geometric product stem:[uv] of vectors stem:[u] and stem:[v] is
+// 
+// $$
+// \begin{equation}
+// uv = u\cdot v + u\wedge v
+// \end{equation}
+// $$
+// 
+// where \(u\cdot v\) is the same as the dot product in ordinary
+// (Gibbs-Heaviside) vector algebra and the wedge product \(u\wedge v\)
+// is a _bivector_. A bivector is a finite planar area that is oriented
+// either counterclockwise or clockwise. You can picture a bivector as an
+// entity normal to which is the familiar cross product.
+// 
+// _It is allowed_ to add scalars, vectors, and bivectors to each other,
+// with the result that you get a _multivector_. At least if you are as
+// old as I am, your friends are likely to argue vociferously with you,
+// when you tell them scalars and vectors _can_ be added to each other.
+// Your friends are cursed with school educations they have not overcome.
+// It is important to overcome one’s school education. The mathematics
+// will work out just fine, no matter what your teachers told you.
+// 
+// The following identities are important to us:
+// 
+// $$
+// \begin{align*}
+// u\cdot v &= \lVert u\rVert\lVert v\rVert &\text{if } u\parallel v \\
+// u\cdot v &= 0 &\text{if } u\perp v \\
+// u\wedge v &= 0 &\text{if } u\parallel v \\
+// u\wedge v &= -v\wedge u &\text{if } u\perp v \\
+// \end{align*}
+// $$
+// 
+// In particular:
+// 
+// $$
+// \begin{align*}
+// e_1\cdot e_2 &= e_2\cdot e_1 = 0 \\
+// e_1\wedge e_1 &= e_2\wedge e_2 = 0 \\
+// e_1\cdot e_1 &= e_1 e_1 = e_2\cdot e_2 = e_2 e_2 = 1 \\
+// e_1\wedge e_2 &= e_1 e_2 = -e_2\wedge e_1 = -e_2 e_1
+// \end{align*}
+// $$
+// 
+// We already have used some of these identities.
+// 
+// Let us also introduce the _grade_ operator, which returns the scalar,
+// vector, or bivector part of a multivector:
+// 
+// $$
+// \begin{align*}
+// {\left\langle{5 + e_1 + e_1\wedge e_2}\right\rangle}_0 &= 5 \\
+// {\left\langle{5 + e_1 + e_1\wedge e_2}\right\rangle}_1 &= e_1 \\
+// {\left\langle{5 + e_1 + e_1\wedge e_2}\right\rangle}_2 &= e_1\wedge e_2 \\
+// \end{align*}
+// $$
+// 
+// Given the grade operation, the dot and wedge products of two vectors
+// can be defined in terms of their geometric product as follows:
+// 
+// $$
+// \begin{align*}
+// u\cdot v &= {\left\langle uv\right\rangle}_0 \\
+// u\wedge v &= {\left\langle uv\right\rangle}_2
+// \end{align*}
+// $$
+// 
+// Below we will use the operations described above. We will also do
+// projections of vectors onto other vectors, but in geometric algebra
+// this is a non-fundamental operation I shall not bother to explore in
+// detail.
+// 
+// ***
+// 
+// _On y va_.
+// 
+// Let us review the Law of Malus, but equating the intensity of an
+// electromagnetic wave with the probability of occurrence of a photon.
+// The change in intensity due to a polarizing filter, according to the
+// Law of Malus, is a factor
+// 
+// $$
+// \begin{equation}
+// \cos^2 (\vartheta - \varphi) = (e_\vartheta\cdot e_\varphi)^2
+//        = {\lVert \text{proj}_{e_\vartheta}e_\varphi\rVert}^2
+// \end{equation}
+// $$
+// 
+// where stem:[vartheta] is the angle of polarization of the filter and
+// stem:[varphi] is the angle of polarization of the impinging
+// plane-polarized light. Here \(\text{proj}_{e_\vartheta}e_\varphi\) is
+// the projection of \(e_\varphi\) onto \(e_\vartheta\), and the double
+// bars denote magnitude. The polarizer can be visualized as a “magnitude
+// window” for the light vector, and intensity (or ability to perform
+// work) equals the square of magnitude. For a lossless _beam-splitting_
+// polarizer, the regular channel follows that rule and the complementary
+// channel the complementary rule
+// 
+// $$
+// \begin{equation}
+// \sin^2(\vartheta - \varphi) = 1 - (e_\vartheta\cdot e_\varphi)^2
+//                  = 1 - {\lVert \text{proj}_{e_\vartheta}e_\varphi\rVert}^2
+// \end{equation}
+// $$
+// 
+// The impinging photon is polarized either stem:[e_1] or stem:[e_2].
+// Therefore the intensity loss is in the regular channel of a beam
+// splitter is one of
+// 
+// $$
+// \begin{align*}
+// (e_\vartheta\cdot e_1)^2  &= {\lVert\text{proj}_{e_\vartheta}e_1\rVert}^2  = \cos^2 \vartheta \\
+// (e_\vartheta\cdot e_2)^2  &= {\lVert\text{proj}_{e_\vartheta}e_2\rVert}^2  = \sin^2 \vartheta \\
+// \end{align*}
+// $$
+// 
+// and for the respective complementary channel is
+// 
+// $$
+// \begin{align*}
+// 1-\cos^2\vartheta &= \sin^2\vartheta \\
+// 1-\sin^2\vartheta &= \cos^2\vartheta
+// \end{align*}
+// $$
+// 
+// and so the rule for a complementary channel is simply the rule for the
+// regular channel, but with the roles of stem:[e_1] and stem:[e_2]
+// reversed.
+// 
+// Of course this makes intuitive sense. Nevertheless, it is worth doing
+// the mathematics, to verify we are not making any errors.footnote:[This
+// kind of verification obviously _has not_ been done by the physicists
+// who claim there is “entanglement.” Their quasi-mathematics is packed
+// with errors, which they sometimes accidentally discover but then write
+// off as “loopholes” that somehow might be eliminated by experimental
+// controls.]
+// 
+// Let us call the setting for the left polarizing beam splitter
+// stem:[alpha] and that for the right splitter stem:[beta]. For the
+// photons transmitted by the source, there are two cases,
+// stem:["initial-case"_1 = ((e_1),(e_2))] and stem:["initial-case"_2 =
+// ((e_2),(e_1))], where the upper half of the column represents the left
+// arm of the experiment, and the bottom half represents the right
+// arm.footnote:[Remember that stem:["prop"_1] represents a proposition,
+// not an “entangled pair.” It says that either of the two initial cases
+// has probability one half.]
+// 
+// I will introduce the shorthands
+// 
+// $$
+// \begin{align*}
+// \lbrace\alpha\rbrace &= \alpha - \pi/2\\
+// \lbrace\beta\rbrace &= \beta - \pi/2
+// \end{align*}
+// $$
+// 
+// and refer to the final possible light pulses using the unit vectors
+// \(e_\alpha\), \(e_\beta\), \(e_{\lbrace\alpha\rbrace}\), and
+// \(e_{\lbrace\beta\rbrace}\).footnote:[I leave it an open question
+// whether a retransmitted photon is polarized along the line of the
+// polarizer or if the vector sum of retransmitted photons averages out
+// as polarized along this line. Either kind of polarizer might suffice
+// in some role.] The latter two vectors are for retransmission along the
+// complementary path of the respective polarizing beam splitter.
+// 
+// One could just go ahead now and analyze the experiment using
+// probability theory, but the purpose of this exhibition is to wow the
+// proletariat with tensor spaces. In other words, we are mocking
+// physicists for believing writing probability theory in a cumbersome
+// vector notation performs magical miracles. So we must invent some very
+// clever way to write the analysis. It would be helpful if we were even
+// cleverer than physicists!
+// 
+// ***
+// 
+// It is called the “two-channel” Bell test because there two polarizer
+// channels in either arm. There are four polarizer channels in all. The
+// respective vectors for the four channels are:
+// 
+// $$
+// \begin{align*}
+// e_\alpha &= e_1\cos\alpha + e_2\sin\alpha
+// \\
+// e_{\lbrace\alpha\rbrace} &= e_1\sin\alpha + e_2\cos\alpha
+// \\
+// e_\beta &= e_1\cos\beta + e_2\sin\beta
+// \\
+// e_{\lbrace\beta\rbrace} &= e_1\sin\beta + e_2\cos\beta
+// \end{align*}
+// $$
+// 
+// One can write this as matrices:
+// 
+// $$
+// \begin{equation}
+// \begin{pmatrix}
+// e_\alpha \\ e_{\lbrace\alpha\rbrace} \\
+// \hline
+// e_\beta \\ e_{\lbrace\beta\rbrace}
+// \end{pmatrix} =
+//   \begin{pmatrix}
+//   \cos\alpha & \sin\alpha \\
+//   \sin\alpha & \cos\alpha \\
+//   \hline
+//   \cos\beta & \sin\beta \\
+//   \sin\beta & \cos\beta
+//   \end{pmatrix}
+//   \begin{pmatrix}e_1\\e_2\end{pmatrix}
+// \end{equation}
+// $$
+// 
+// Notice that nothing magical happens when we write the same thing with
+// matrices as we wrote before without matrices. It does, however, for
+// instance, become more obvious how to invert the equations. For
+// 
+// $$
+// \begin{align*}
+// \begin{pmatrix}
+//   \cos\alpha & \sin\alpha \\
+//   \sin\alpha & \cos\alpha
+// \end{pmatrix}
+//   \begin{pmatrix}
+//     \cos\alpha & -\sin\alpha \\
+//     -\sin\alpha & \cos\alpha
+//   \end{pmatrix} &=
+//   {\cos 2\alpha}
+//   \begin{pmatrix}
+//     1 & 0 \\ 0 & 1
+//   \end{pmatrix} \\
+// \begin{pmatrix}
+//   \cos\beta & \sin\beta \\
+//   \sin\beta & \cos\beta
+// \end{pmatrix}
+//   \begin{pmatrix}
+//     \cos\beta & -\sin\beta \\
+//     -\sin\beta & \cos\beta
+//   \end{pmatrix} &=
+//   {\cos 2\beta}
+//   \begin{pmatrix}
+//     1 & 0 \\ 0 & 1
+//   \end{pmatrix}
+// \end{align*}
+// $$
+// 
+// Nothing magical happens. Curiously, however, we get the expressions
+// \(\cos 2\alpha\) and \(\cos 2\beta\) that resemble the correlation of
+// the Bell test.
+// 
+// Perhaps this is a hint that correlations are due to polarization and
+// _not_ magical “entanglement.”
+// 
+// ***
+// 
+// Let us now do something physicists seem not to have done clearly. They
+// have not, because they believe (fallaciously) that their Hilbert
+// tensor space represents _physical_ entities. Thus they merely “do the
+// calculations” and see what _physical_ entities pop into existence.
+// They simply follow liturgical procedures laid out for them decades ago
+// by their Church Fathers (Bohr, Pauli, Dirac, von Neumann, etc.). We,
+// on the other, know that our spaces represent _logical_ entities. Thus
+// we must decide _what_ it is we wish to _deduce_. Otherwise we have no
+// guidance.
+// 
+// There is no _a priori_ reason to throw away information about the
+// initial state of the experiment. Thus we might want to know the
+// probabilities \(P_{11},P_{21},\ldots,P_{42}\) in
+// 
+// $$
+// \begin{align*}
+// \text{prop}_2 =
+//  &\
+//   P_{11}
+//      \begin{pmatrix}
+//        e_\alpha & e_1 \\
+//        e_\beta & e_2
+//      \end{pmatrix} +
+//   P_{21}
+//      \begin{pmatrix}
+//        e_{\lbrace\alpha\rbrace} & e_1 \\
+//        e_\beta & e_2
+//      \end{pmatrix} +
+//   P_{31}
+//      \begin{pmatrix}
+//        e_\alpha & e_1 \\
+//        e_{\lbrace\beta\rbrace} & e_2
+//      \end{pmatrix} +
+//   P_{41}
+//      \begin{pmatrix}
+//        e_{\lbrace\alpha\rbrace} & e_1 \\
+//        e_{\lbrace\beta\rbrace} & e_2
+//      \end{pmatrix}
+//      \\ &+
+//   P_{12}
+//      \begin{pmatrix}
+//        e_\alpha & e_2 \\
+//        e_\beta & e_1
+//      \end{pmatrix} +
+//   P_{22}
+//      \begin{pmatrix}
+//        e_{\lbrace\alpha\rbrace} & e_2 \\
+//        e_\beta & e_1
+//      \end{pmatrix} +
+//   P_{32}
+//      \begin{pmatrix}
+//        e_\alpha & e_2 \\
+//        e_{\lbrace\beta\rbrace} & e_1
+//      \end{pmatrix} +
+//   P_{42}
+//      \begin{pmatrix}
+//        e_{\lbrace\alpha\rbrace} & e_2 \\
+//        e_{\lbrace\beta\rbrace} & e_1
+//      \end{pmatrix}
+// \end{align*}
+// $$
+// 
+// This proposition is in a tensor space of one more dimension than that
+// of \(\text{prop}_1\). Again the upper row represents the left arm of
+// the experiment and the lower row represents the right arm. If the
+// probabilities were known, then we could easily get
+// 
+// $$
+// \begin{equation}
+// \text{prop}_3 =
+//   P_1\begin{pmatrix}
+//        e_\alpha \\ e_\beta
+//      \end{pmatrix} +
+//   P_2\begin{pmatrix}
+//        e_{\lbrace\alpha\rbrace} \\ e_\beta
+//      \end{pmatrix} +
+//   P_3\begin{pmatrix}
+//        e_\alpha \\ e_{\lbrace\beta\rbrace}
+//      \end{pmatrix} +
+//   P_4\begin{pmatrix}
+//        e_{\lbrace\alpha\rbrace} \\ e_{\lbrace\beta\rbrace}
+//      \end{pmatrix}
+// \end{equation}
+// $$
+// 
+// by additions:
+// 
+// $$
+// \begin{align*}
+// P_1 &= P_{11} + P_{12} \\
+// P_2 &= P_{21} + P_{22} \\
+// P_3 &= P_{31} + P_{32} \\
+// P_4 &= P_{41} + P_{42}
+// \end{align*}
+// $$
+// 
+// Notice that \(text{prop}_2\) and \(\text{prop}_3\) have form similar
+// to what a physicist might write for the “entangled state” of an event,
+// before someone actually examines the data. Or when the magic occurs
+// may be sometime else. Who knows when? What we are reading as
+// propositions are points in tensor spaces. Physicists read such points
+// as preliminaries to action at a distance.
+// 
+// _Action at a distance would be magic._ Anyone who feels otherwise
+// should not be a scientist. People such as Maxwell, Heaviside, and
+// Einstein went to enormous trouble to try to explain the universe in
+// action-by-direct-contact terms. In particular, there is absolutely no
+// possibility “entangled photons” is consistent with Maxwell’s theory of
+// electromagnetism, which is explicitly action-by-contact.
+// 
+// It is no wonder they tell us “Quantum physics makes no logical sense,
+// and you should not try to understand it.” Physicists imagine “quantum
+// physics” is consistent with Maxwell’s theory, though logically it
+// cannot be. Only by deliberate ignorance of logic is the consistency
+// possible. They are depending on us to be pseudoscientists with purely
+// a quasi-religious faith in “quantum” doctrine.
+// 
+// ***
+// 
+// Probabilities such as \(P_{11}\) are mutual probabilities. What
+// \(P_{11}\) represents is the probability of photons being
+// retransmitted in the regular channels on both sides of the experiment,
+// _and_ that the light source transmitted photons polarized \(e_1\) on
+// the left and \(e_2\) on the right.
+// 
+// John S. Bell misinterprets conditional probability as a notation for
+// action by direct contact. In reality, conditional probability is _by
+// definition_ a shorthand for the ratio of a mutual probability and one
+// of its “constituent” probabilities.footnote:[You can look this up in a
+// text on probability theory.] In other words:
+// 
+// $$
+// \begin{equation}
+// \text{P}(\text{prop}_x|\text{prop}_y) =
+//   \frac{\text{P}(\text{prop}_x \wedge \text{prop}_y)}{
+//           \text{P}(\text{prop}_y)}
+// \end{equation}
+// $$
+// 
+// This is not a mathematical theorem, nor is it physics. It cannot be
+// simplified for the sake of an “encoding.” It is a _definition_.
+// Conditional probability is _verbal shorthand for a ratio_. Bestowing
+// any meaning of “causality” on it was and is very, very wrong.
+// 
+// The intuition of a conditional probability as the probability of some
+// proposition being true, _given that another proposition is true_, is,
+// by contrast, correct. The definition was designed so this would be so.
+// (One can convince oneself of this by playing with collections of
+// objects.) _There is no implication of causality._
+// 
+// Conditional probability is like a chain rule for solving problems in
+// probability theory. You break the mutual probability into a
+// conditional probability times the “constituent” probability that is in
+// the denominator.
+// 
+// Thus we can find \(P_{11}\) by determining the conditional probability
+// of \({\begin{pmatrix}e_\alpha\\e_\beta\end{pmatrix}}\) given
+// \({\begin{pmatrix}e_1\\e_2\end{pmatrix}}\), then multiplying that by
+// the probability of \({\begin{pmatrix}e_1\\e_2\end{pmatrix}}\), which
+// is \(1/2\).
+// 
+// But we saw above that the roles of \(e_1\) and \(e_2\) are reversed
+// for the complementary channels. Thus simplifications are possible
+// right away:
+// 
+// $$
+// \begin{align*}
+// P_{11} &= P_{42} \\
+// P_{21} &= P_{32} \\
+// P_{31} &= P_{22} \\
+// P_{41} &= P_{12}
+// \end{align*}
+// $$
+// 
+// Therefore
+// 
+// $$
+// \begin{align*}
+// P_1 &= P_{11} + P_{12} = P_{42} + P_{41} = P_4 \\
+// P_2 &= P_{21} + P_{22} = P_{32} + P_{31} = P_3
+// \end{align*}
+// $$
+// 
+// and so
+// 
+// $$
+// \begin{align*}
+// \text{prop}_2 =
+//  &\
+//   P_{11}
+//      \left(
+//      \begin{pmatrix}
+//        e_\alpha & e_1 \\
+//        e_\beta & e_2
+//      \end{pmatrix} +
+//      \begin{pmatrix}
+//        e_{\lbrace\alpha\rbrace} & e_2 \\
+//        e_{\lbrace\beta\rbrace} & e_1
+//      \end{pmatrix}
+//      \right) +
+//   P_{21}
+//      \left(
+//      \begin{pmatrix}
+//        e_{\lbrace\alpha\rbrace} & e_1 \\
+//        e_\beta & e_2
+//      \end{pmatrix} +
+//      \begin{pmatrix}
+//        e_\alpha & e_2 \\
+//        e_{\lbrace\beta\rbrace} & e_1
+//      \end{pmatrix}
+//      \right) \\ & +
+//   P_{31}
+//      \left(
+//      \begin{pmatrix}
+//        e_\alpha & e_1 \\
+//        e_{\lbrace\beta\rbrace} & e_2
+//      \end{pmatrix} +
+//      \begin{pmatrix}
+//        e_{\lbrace\alpha\rbrace} & e_2 \\
+//        e_\beta & e_1
+//      \end{pmatrix}
+//      \right) +
+//   P_{41}
+//      \left(
+//      \begin{pmatrix}
+//        e_{\lbrace\alpha\rbrace} & e_1 \\
+//        e_{\lbrace\beta\rbrace} & e_2
+//      \end{pmatrix} +
+//      \begin{pmatrix}
+//        e_\alpha & e_2 \\
+//        e_\beta & e_1
+//      \end{pmatrix}
+//      \right)
+// \end{align*}
+// $$
+// 
+// and
+// 
+// $$
+// \begin{equation}
+// \text{prop}_3 =
+//   P_1\left(\begin{pmatrix}
+//        e_\alpha \\ e_\beta
+//       \end{pmatrix} +
+//       \begin{pmatrix}
+//        e_{\lbrace\alpha\rbrace} \\ e_{\lbrace\beta\rbrace}
+//       \end{pmatrix}\right) +
+//   P_2\left(\begin{pmatrix}
+//        e_{\lbrace\alpha\rbrace} \\ e_\beta
+//       \end{pmatrix} +
+//       \begin{pmatrix}
+//        e_\alpha \\ e_{\lbrace\beta\rbrace}
+//       \end{pmatrix}\right)
+// \end{equation}
+// $$
