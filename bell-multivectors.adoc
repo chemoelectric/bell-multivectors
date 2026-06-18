@@ -300,7 +300,7 @@ Later we will encounter matrices with multiple columns, representing
 propositions in tensor spaces of higher dimensionality, and weighted
 sums of matrices, representing propositions of probability theory.
 
-=== Polarizing beam splitters (PBSes)
+=== Polarizing beam splitters (PBS)
 
 The effect of a polarizing filter on plane-polarized light is
 described by the _Law of Malus_: the intensity of the retransmitted
@@ -312,7 +312,7 @@ not retransmitted. In that case intensity can be equated with
 probability of retransmission of a light pulse.
 
 Now let us proceed from simple polarizing filters to _polarizing beam
-splitters (PBSes)_, also known as _beam-splitting polarizers_. These
+splitters (PBS)_, also known as _beam-splitting polarizers_. These
 are devices made, one way or another, from two complementary
 polarizing filters, that split a light beam into complementary
 polarizations. In one channel the light will be polarized along the
@@ -373,6 +373,70 @@ $$
         = \sin^2(\vartheta+\pi/2) = \cos^2\vartheta
 \end{align*}
 $$
+
+The apparatus of the experiment has two PBS. Let us call the angles of
+the main axes of transmission \(\zeta\) (zeta) for the left PBS and
+\(\eta\) (eta) for the right PBS. For the complementary channels, the
+angles are \(\zeta+\pi/2\) and \(\eta+\pi/2\). Thus on the left side
+will be either light pulse retransmitted can be described either as
+\(e_\zeta\) or \(e_{\zeta+\pi/2}\), depending on which channel was
+taken. Similarly, on the right side, the retransmitted light pulse is
+\(e_\eta\) or \(e_{\eta+\pi/2}\).
+
+Thus the facts of the experiment, taking into account _everything_
+stated so far, can be written as a point in a tensor space. In the
+following proposition, \(P_1,P_2,P_3,P_4\) represent mutual
+probabilities of the possibilities represented by the matrix columns:
+
+$$
+\begin{align*}
+\text{prop}_2
+  = &\space P_1\begin{pmatrix}e_\zeta&e_1\\e_\eta&e_2\end{pmatrix}
+  + P_2\begin{pmatrix}e_{\zeta+\pi/2}&e_1\\e_\eta&e_2\end{pmatrix}
+  \\ &+ P_2\begin{pmatrix}e_\zeta&e_1\\e_{\eta+\pi/2}&e_2\end{pmatrix}
+  + P_2\begin{pmatrix}e_{\zeta+\pi/2}
+                &e_1\\e_{\eta+\pi/2}&e_2\end{pmatrix}
+\end{align*}
+$$
+
+Again the upper rows represent the left side of the apparatus and the
+lower rows represent the right side.
+
+The probability of \(\text{prop}_1 =
+{\begin{pmatrix}e_1&e_2\end{pmatrix}}^t\) is one, and thus each of
+\(P_1,P_2,P_3,P_4\) equals the conditional probability of the left
+column, given the facts described by the right column
+(\(\text{prop}_1\)). This is true by the definition of the conditional
+probability,
+
+$$
+\begin{equation}
+\text{P}(\text{prop}_x|\text{prop}_y) =
+\frac{\text{P}(\text{prop}_x\wedge\text{prop}_y)}{
+        \text{P}(\text{prop}_y)}
+\end{equation}
+$$
+
+where in this case \( \text{P}(\text{prop}_y) =
+\text{P}(\text{prop}_1) = 1 \).
+
+Although John S. Bell famously interpreted conditional probability as
+meaning “no action at a distance,” and uses this interpretation to
+justify eliding facts from the EPR-B experiment (whereas we, above,
+made certain to include _every fact_), conditional probability _has no
+such meaning_. The _mathematical definition_ of conditional
+probability is _exactly_ what is written above. You can look this up
+in a text on probability theory. You can also verify, though, by
+playing with collections of ordinary objects, that conditional
+probability as defined above has the following intuitive meaning: it
+is the probability \(\text{prop}_x\) is true, given that
+\(\text{prop}_y\) is true.
+
+This means we calculate \(P_1,P_2,P_3,P_4\) by assuming \(e_1\) on the
+left and \(e_2\) on the right. We would have done so, anyway, but it
+is nice to see the mathematics agreeing with us in subtle ways.
+
+
 
 
 
