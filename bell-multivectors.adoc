@@ -355,7 +355,7 @@ $$
 Above we have presumed light plane-polarized either \(e_1\)
 or{nbsp}\(e_2\), and there are two polarizers, the main channel
 \(e_\vartheta\) and the complementary channel \(e_{\vartheta+\pi/2}\).
-Therefore we have the following special instances:
+Therefore there are the following special instances:
 
 $$
 \begin{align*}

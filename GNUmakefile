@@ -1,10 +1,13 @@
-.DEFAULT_GOAL := bell-vectors.html
+BELLMVEC := bell-multivectors
+ASCDOC := asciidoctor
+
+.DEFAULT_GOAL := $(BELLMVEC).html
 
 .DELETE_ON_ERROR:
 
 %.html: %.adoc
-	asciidoctor --safe $(<) -o $(@)
+	$(ASCDOC) --safe $(<) -o $(@)
 
 .PHONY: clean
 clean:
-	-rm -f bell-vectors.html
+	-rm -f $(BELLMVEC).html
