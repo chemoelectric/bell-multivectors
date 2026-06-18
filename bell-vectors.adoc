@@ -160,6 +160,19 @@ e_1\wedge e_2 &= e_1 e_2 = -e_2 e_1 = -e_2\wedge e_1
 $$
 
 
+//
+// The plan for moving forwards:
+//
+//    Next demonstrate rotations and do the part where we show that we
+//    could simply have used the ordinary rule for components. But
+//    this way we impress the plebs.
+//
+//    Then we start with the initial state (e_1 e_2)' rather than the
+//    sum of two columns with probability 1/2 each. Why? BECAUSE THE
+//    POLARIZATION ANGLE IS ARBITRARY. So there was no need for the
+//    1/2 foo + 1/2 bar dice roll. THIS IS WHY THE PROBABILITIES END
+//    UP BEING COMBINED, ANYWAY.
+//
 
 
 
