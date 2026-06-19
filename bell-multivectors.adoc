@@ -514,6 +514,95 @@ P_1 + P_2 + P_3 + P_4
 \end{align*}
 $$
 
+== Correlation
+
+=== Expectation
+
+Let us make a small diversion onto topics of probability theory. The
+first will be _expectation_.
+
+An expectation is an average weighted by probabilities, by frequencies
+of occurrence, or by some similar fractions. For example, suppose
+there are probabilities \(P_i\) that add to one, and associated
+numbers \(f(i)\). Then the expectation of \(f\) is
+
+$$
+\begin{equation}
+\text{E}(f) = \sum_i P_i f(i)
+\end{equation}
+$$
+
+=== Variance and standard deviation
+
+Given the expectation of \(f\), it would seem interesting to measure
+the difference between \(f(i)\) and the expectation, but ignoring
+whether the difference is negative or positive. The sign can be
+ignored by squaring the difference.
+
+Thus we have the _variance_ of \(f\):
+
+$$
+\begin{align*}
+\text{Var}(f) = \sigma_f^2
+              &= \text{E}\left((f - \text{E}(f))^2\right) \\
+              &= \sum_i\left(P_i\,\left(f(i)
+                        - \sum_{i'}P_{i'} f({i'})\right)^2\right)
+\end{align*}
+$$
+
+The square root of the variance has the same dimensions as \(f\) and
+is called the _standard deviation_:
+
+$$
+\begin{equation}
+\sigma_f = \sqrt{\text{Var}(f)}
+\end{equation}
+$$
+
+=== Covariance and correlation
+
+If there are two sets of numbers, \(f(i)\) and{nbsp}\(g(j)\), it can
+be useful to compute a figure analogous to the variance, but involving
+both sets. Such a figure is called the _covariance_:
+
+$$
+\begin{align*}
+\text{cov}_{fg} = \sigma_{fg}
+ &= \text{E}\left(\mkern1mu\left(f-\text{E}(f)\right)
+                    \left(g-\text{E}(g)\right)\mkern1mu\right) \\
+ &= \sum_{i,j}
+        \left(\,\left(f(i)
+                - \sum_{i'}P_{i'} f({i'})\right)
+                \left(g(j)
+                - \sum_{j'}P_{j'} g({j'})\right)
+        \right)
+\end{align*}
+$$
+
+A dimensionless figure called the _correlation_ is obtained by
+dividing the covariance of \(f\) and{nbsp}\(g\) by the respective
+standard deviations:
+
+$$
+\begin{equation}
+\text{corr}_{fg} = \rho_{fg}
+ = \frac{\sigma_{fg}}{\sigma_f\,\sigma_g}
+\end{equation}
+$$
+
+For the two-channel optical Bell test, there is a dimensionless figure
+physicists call the “quantum correlation” that equals
+\(-\cos2(\alpha-\beta)\), where \(\alpha\) and{nbsp}\(\beta\) are the
+polarizer settings. If physicists are correct, this figure
+characterizes the supposedly “spooky action at a distance” of the
+experiment, and should not be derivable without quantum mechanics. Yet
+below we will derive it as the ordinary correlation, even though we
+use no quantum mechanics and obviously assume only action by direct
+contact.footnote:[I believe you will also find, if you go to the
+trouble, that violations of Bell or CHSH inequalities are inconsistent
+with this correlation function, no matter how it be derived. The
+inequalities are incorrect mathematics. The experimental technique of
+Alain Aspect and others must be flawed.]
 
 
 
