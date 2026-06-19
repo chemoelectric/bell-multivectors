@@ -465,6 +465,30 @@ the other polarizer setting, because both these settings are
 arbitrary. Thus computing \(P_n\) is simply multiplying the
 probabilities of the two rows.
 
+Now \(\text{prop}_2\) can be written out more fully:
+
+$$
+\begin{align*}
+\text{prop}_2
+  = &\space P_1\begin{pmatrix}e_\zeta&e_1\\e_\eta&e_2\end{pmatrix}
+  + P_2\begin{pmatrix}e_{\zeta+\pi/2}&e_1\\e_\eta&e_2\end{pmatrix}
+  \\ &+ P_2\begin{pmatrix}e_\zeta&e_1\\e_{\eta+\pi/2}&e_2\end{pmatrix}
+  + P_2\begin{pmatrix}e_{\zeta+\pi/2}
+                &e_1\\e_{\eta+\pi/2}&e_2\end{pmatrix}
+\end{align*}
+$$
+
+where
+
+$$
+\begin{align*}
+P_1 &= \cos^2\zeta \, \sin^2\eta \\
+P_2 &= \sin^2\zeta \, \sin^2\eta \\
+P_3 &= \cos^2\zeta \, \cos^2\eta \\
+P_4 &= \sin^2\zeta \, \cos^2\eta
+\end{align*}
+$$
+
 
 
 
