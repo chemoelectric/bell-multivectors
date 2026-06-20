@@ -465,6 +465,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_solving_two_problems_at_once">Solving two problems at once</a></li>
 <li><a href="#_a_naïve_attempt_to_derive_the_correlation_of_f_and_g">A naïve attempt to derive the correlation of \(f\) and \(g\)</a></li>
+<li><a href="#_a_solution_for_eta0">A solution for \(\eta=0\)</a></li>
 </ul>
 </li>
 </ul>
@@ -997,7 +998,7 @@ M_n =
 <div class="paragraph">
 <p>
 \begin{equation}
-P_n = (\text{proj}_{e_{\angle a}}e_1)^2
+P_n \stackrel{?}{=} (\text{proj}_{e_{\angle a}}e_1)^2
          (\text{proj}_{e_{\angle b}}e_2)^2
 \end{equation}
 </p>
@@ -1007,13 +1008,19 @@ P_n = (\text{proj}_{e_{\angle a}}e_1)^2
 not have to do probability theory calculations to eliminate \(e_1\)
 and&#xA0;\(e_2\), because the projection operations already have
 eliminated these vectors. Furthermore, the probability of one
-polarizer setting is obviously not conditional on the probability of
-the other polarizer setting, because both these settings are
+polarizer setting would seem not to be conditional on the probability
+of the other polarizer setting, because both these settings are
 arbitrary. Thus computing \(P_n\) is simply multiplying the
 probabilities of the two rows.</p>
 </div>
 <div class="paragraph">
-<p>Now \(\text{prop}_2\) can be written out more fully:</p>
+<p>Or is it? We will see later on that it is not so simple. In
+probability theory, when there seems to be an impediment, there
+probably <em>is</em> an impediment.</p>
+</div>
+<div class="paragraph">
+<p>Now \(\text{prop}_2\) can be written out more fully, but with doubt
+that what we are writing is correct:</p>
 </div>
 <div class="paragraph">
 <p>
@@ -1033,10 +1040,10 @@ probabilities of the two rows.</p>
 <div class="paragraph">
 <p>
 \begin{align*}
-P_1 &amp;= \cos^2\zeta \, \sin^2\eta \\
-P_2 &amp;= \sin^2\zeta \, \sin^2\eta \\
-P_3 &amp;= \cos^2\zeta \, \cos^2\eta \\
-P_4 &amp;= \sin^2\zeta \, \cos^2\eta
+P_1 &amp;\stackrel{?}{=} \cos^2\zeta \, \sin^2\eta \\
+P_2 &amp;\stackrel{?}{=} \sin^2\zeta \, \sin^2\eta \\
+P_3 &amp;\stackrel{?}{=} \cos^2\zeta \, \cos^2\eta \\
+P_4 &amp;\stackrel{?}{=} \sin^2\zeta \, \cos^2\eta
 \end{align*}
 </p>
 </div>
@@ -1223,7 +1230,7 @@ channel, \$-1\$ if it retransmits in its complementary channel.</p>
 <p>
 \begin{align*}
 \text{E}(f)
-  &amp;= \cos^2\zeta \, \sin^2\eta - \sin^2\zeta \, \sin^2\eta \\
+  &amp;\stackrel{?}{=} \cos^2\zeta \, \sin^2\eta - \sin^2\zeta \, \sin^2\eta \\
      &amp;\quad\quad +\cos^2\zeta \, \cos^2\eta - \sin^2\zeta \, \cos^2\eta \\
   &amp;= \cos^2\zeta - \sin^2\zeta
 \end{align*}
@@ -1234,12 +1241,17 @@ channel, \$-1\$ if it retransmits in its complementary channel.</p>
 the probability of a retransmission in the complementary channel.</p>
 </div>
 <div class="paragraph">
+<p>(There is reason to believe this is a correct answer, despite that it
+was derived by questionable means. The reason is that \(\eta\)
+disappears from the answer.)</p>
+</div>
+<div class="paragraph">
 <p>We would have liked for the expectation to equal zero. So let us use a
 trick.<sup class="footnote" id="_footnote_specialization">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup> Let us solve
 two problems simultaneously. Let us solve also for the case where the
 initial light pulses are \(\begin{pmatrix}e_2&amp;e_1\end{pmatrix}^t\).
 Towards that end, introduce \(\text{prop}_3\) and let us analyze
-\(\text{prop}_3\):</p>
+\(\text{prop}_3\), which has symmetry:</p>
 </div>
 <div class="paragraph">
 <p>
@@ -1274,12 +1286,12 @@ M_7 &amp;= \begin{pmatrix}e_\zeta&amp;e_2\\e_{\eta+\pi/2}&amp;e_1\end{pmatrix}
 </div>
 <div class="paragraph">
 <p>And I will leave it as an exercise for the reader to show that the new
-probability formula is</p>
+(but still questionable) probability formula is</p>
 </div>
 <div class="paragraph">
 <p>
 \begin{equation}
-P_n' =
+P_n' \stackrel{?}{=}
   \begin{cases}
   \frac12(\text{proj}_{e_{\angle a}}e_1)^2
          (\text{proj}_{e_{\angle b}}e_2)^2
@@ -1297,10 +1309,10 @@ P_n' =
 <div class="paragraph">
 <p>
 \begin{align*}
-P_1' &amp;= P_8' = (1/2)\cos^2\zeta \, \sin^2\eta \\
-P_2' &amp;= P_7' = (1/2)\sin^2\zeta \, \sin^2\eta \\
-P_3' &amp;= P_6' = (1/2)\cos^2\zeta \, \cos^2\eta \\
-P_4' &amp;= P_5' = (1/2)\sin^2\zeta \, \cos^2\eta
+P_1' &amp;= P_8' \stackrel{?}{=} (1/2)\cos^2\zeta \, \sin^2\eta \\
+P_2' &amp;= P_7' \stackrel{?}{=} (1/2)\sin^2\zeta \, \sin^2\eta \\
+P_3' &amp;= P_6' \stackrel{?}{=} (1/2)\cos^2\zeta \, \cos^2\eta \\
+P_4' &amp;= P_5' \stackrel{?}{=} (1/2)\sin^2\zeta \, \cos^2\eta
 \end{align*}
 </p>
 </div>
@@ -1322,7 +1334,8 @@ f(M_6) &amp;= f(M_8) = -1
 <p>
 \begin{align*}
 2\,\text{E}(f)
-  &amp;= \cos^2\zeta \, \sin^2\eta
+  &amp;\stackrel{?}{=}
+     \cos^2\zeta \, \sin^2\eta
      - \sin^2\zeta \, \sin^2\eta \\
      &amp;\quad\quad +\cos^2\zeta \, \cos^2\eta
                  - \sin^2\zeta \, \cos^2\eta \\
@@ -1344,7 +1357,8 @@ give us expectation and standard deviation that are easy to work with.</p>
 <p>
 \begin{align*}
 2\,\sigma_f^2
-  &amp;= (\cos^2\zeta \, \sin^2\eta)\,(+1 - 0)^2
+  &amp;\stackrel{?}{=}
+     (\cos^2\zeta \, \sin^2\eta)\,(+1 - 0)^2
      + (\sin^2\zeta \, \sin^2\eta)\,(-1 - 0)^2\\
      &amp;\quad\quad +(\cos^2\zeta \, \cos^2 \eta)\,(+1 - 0)^2
                  + (\sin^2\zeta \, \cos^2\eta)\,(-1 - 0)^2\\
@@ -1357,7 +1371,7 @@ give us expectation and standard deviation that are easy to work with.</p>
 </p>
 </div>
 <div class="paragraph">
-<p>Indeed, then, \(\sigma_f = 1\) as desired.</p>
+<p>Indeed, then, \(\sigma_f \stackrel{?}{=} 1\) as desired.</p>
 </div>
 <div class="paragraph">
 <p>Define a function \(g\) that is similar to&#160;\(f\), but responds to
@@ -1411,8 +1425,10 @@ formula</p>
 approach: the mathematics does not distinguish effects that are due to
 \(\zeta\) from those that are due to \(\eta\). Polarizers could be
 stuck willy-nilly anywhere within the apparatus, and the mathematics
-cannot tell the difference. We have made unwarranted assumptions about
-the mutual probabilities. The resulting expressions are useless.</p>
+cannot tell the difference. <em>We have made unwarranted assumptions
+about the mutual probabilities.</em> We have failed to consider the mutual
+probabilities might be any of many different functions of \(\zeta\)
+and \(\eta\). The resulting expressions are useless.</p>
 </div>
 <div class="paragraph">
 <p>The CHSH inequality also is useless.</p>
@@ -1421,20 +1437,68 @@ the mutual probabilities. The resulting expressions are useless.</p>
 <p>That physicists are <em>permitted</em> to be so immensely incompetent in
 probability theory is scandalous. They teach equal incompetence to
 students and a next generation, who are fleeced of their possessions
-for the privilege of being made so stupid. The defense of the United
-States and global peace are threatened. No scientific field should be
-allowed such ignorance.</p>
+for the privilege of being made so stupid. Global peace and the
+defense of the United States are threatened. No scientific field
+should be allowed such ignorance.</p>
 </div>
 <div class="paragraph">
 <p>My education was in signal processing, in the 1980s before electrical
 engineering was so badly corrupted with “quantum” nonsense. I look for
 the <em>actual</em> solution to a problem such as the Bell test, rather than
 for some fantasy about entangled fairies and teleporting unicorns. So
-I work at it until the necessary method comes to mind.</p>
+I work at it until an effective method comes to mind.</p>
 </div>
 <div class="paragraph">
-<p>It is necessary to <em>specialize</em> the problem so there is only one
-polarizer setting. (See <sup class="footnoteref">[<a class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>)</p>
+<p>What works is to <em>specialize</em> the problem so there is only one
+polarizer setting. Then that specialized solution can be generalized.
+(See <sup class="footnoteref">[<a class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>)</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_a_solution_for_eta0">A solution for \(\eta=0\)</h3>
+<div class="paragraph">
+<p>It \(\eta=0\), then on the right side every \(e_1\) is retransmitted
+and every \(e_2\) is blocked. Thus the symbol \(\eta\) disappears from
+expressions. Physically, it is as if we put only a photodetector on
+that side of the apparatus, and had no polarizing filters on the right
+at all.</p>
+</div>
+<div class="paragraph">
+<p>The difficulty with expressions containing both \(\zeta\) and \(\eta\)
+exists no longer. Effectively there is no right-side PBS. Now also all
+effects on the left are from the left-side PBS and are expressed
+through \(\zeta\).</p>
+</div>
+<div class="paragraph">
+<p>We now have</p>
+</div>
+<div class="paragraph">
+<p>
+\begin{align*}
+P_1' &amp;= P_8' = 0 \\
+P_2' &amp;= P_7' = 0 \\
+P_3' &amp;= P_6' = (1/2)\cos^2\zeta \\
+P_4' &amp;= P_5' = (1/2)\sin^2\zeta
+\end{align*}
+</p>
+</div>
+<div class="paragraph">
+<p>and can compute the correlation correctly:</p>
+</div>
+<div class="paragraph">
+<p>
+\begin{align*}
+\rho_{fg} = \text{cov}_{fg}
+  &amp;= (1/2)\,(\cos^2\zeta)\,(f(M_3)g(M_3) + f(M_6)g(M_6)) \\
+  &amp;\quad\quad + (1/2)\,(\sin^2\zeta)\,(f(M_4)g(M_4) + f(M_5)g(M_5)) \\
+  &amp;= \cos^2\zeta - \sin^2\zeta \\
+  &amp;= \cos2\mkern1.2mu\zeta \\
+  &amp;= \cos2(\zeta - \eta)
+\end{align*}
+</p>
+</div>
+<div class="paragraph">
+<p>The last step is true because \(\eta=0\).</p>
 </div>
 </div>
 </div>
@@ -1451,7 +1515,7 @@ polarizer setting. (See <sup class="footnoteref">[<a class="footnote" href="#_fo
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-06-20 13:15:39 -0500
+Last updated 2026-06-20 15:02:08 -0500
 </div>
 </div>
 <script type="text/x-mathjax-config">

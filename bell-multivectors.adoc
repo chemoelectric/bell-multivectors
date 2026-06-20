@@ -451,7 +451,7 @@ then
 
 $$
 \begin{equation}
-P_n = (\text{proj}_{e_{\angle a}}e_1)^2
+P_n \stackrel{?}{=} (\text{proj}_{e_{\angle a}}e_1)^2
          (\text{proj}_{e_{\angle b}}e_2)^2
 \end{equation}
 $$
@@ -460,12 +460,17 @@ which is the mutual probability of the top row and bottom row. We do
 not have to do probability theory calculations to eliminate \(e_1\)
 and&#xA0;\(e_2\), because the projection operations already have
 eliminated these vectors. Furthermore, the probability of one
-polarizer setting is obviously not conditional on the probability of
-the other polarizer setting, because both these settings are
+polarizer setting would seem not to be conditional on the probability
+of the other polarizer setting, because both these settings are
 arbitrary. Thus computing \(P_n\) is simply multiplying the
 probabilities of the two rows.
 
-Now \(\text{prop}_2\) can be written out more fully:
+Or is it? We will see later on that it is not so simple. In
+probability theory, when there seems to be an impediment, there
+probably _is_ an impediment.
+
+Now \(\text{prop}_2\) can be written out more fully, but with doubt
+that what we are writing is correct:
 
 $$
 \begin{align*}
@@ -482,10 +487,10 @@ where
 
 $$
 \begin{align*}
-P_1 &= \cos^2\zeta \, \sin^2\eta \\
-P_2 &= \sin^2\zeta \, \sin^2\eta \\
-P_3 &= \cos^2\zeta \, \cos^2\eta \\
-P_4 &= \sin^2\zeta \, \cos^2\eta
+P_1 &\stackrel{?}{=} \cos^2\zeta \, \sin^2\eta \\
+P_2 &\stackrel{?}{=} \sin^2\zeta \, \sin^2\eta \\
+P_3 &\stackrel{?}{=} \cos^2\zeta \, \cos^2\eta \\
+P_4 &\stackrel{?}{=} \sin^2\zeta \, \cos^2\eta
 \end{align*}
 $$
 
@@ -641,7 +646,7 @@ The expectation of \(f\) is
 $$
 \begin{align*}
 \text{E}(f)
-  &= \cos^2\zeta \, \sin^2\eta - \sin^2\zeta \, \sin^2\eta \\
+  &\stackrel{?}{=} \cos^2\zeta \, \sin^2\eta - \sin^2\zeta \, \sin^2\eta \\
      &\quad\quad +\cos^2\zeta \, \cos^2\eta - \sin^2\zeta \, \cos^2\eta \\
   &= \cos^2\zeta - \sin^2\zeta
 \end{align*}
@@ -649,6 +654,10 @@ $$
 
 which is the probability of a retransmission in the main channel minus
 the probability of a retransmission in the complementary channel.
+
+(There is reason to believe this is a correct answer, despite that it
+was derived by questionable means. The reason is that \(\eta\)
+disappears from the answer.)
 
 We would have liked for the expectation to equal zero. So let us use a
 trick.footnote:specialization[There is no “physics” reason for
@@ -659,7 +668,7 @@ It_. The specialization heuristic will reappear later.] Let us solve
 two problems simultaneously. Let us solve also for the case where the
 initial light pulses are \(\begin{pmatrix}e_2&e_1\end{pmatrix}^t\).
 Towards that end, introduce \(\text{prop}_3\) and let us analyze
-\(\text{prop}_3\):
+\(\text{prop}_3\), which has symmetry:
 
 $$
 \begin{equation}
@@ -689,11 +698,11 @@ M_7 &= \begin{pmatrix}e_\zeta&e_2\\e_{\eta+\pi/2}&e_1\end{pmatrix}
 $$
 
 And I will leave it as an exercise for the reader to show that the new
-probability formula is
+(but still questionable) probability formula is
 
 $$
 \begin{equation}
-P_n' =
+P_n' \stackrel{?}{=}
   \begin{cases}
   \frac12(\text{proj}_{e_{\angle a}}e_1)^2
          (\text{proj}_{e_{\angle b}}e_2)^2
@@ -709,10 +718,10 @@ so that
 
 $$
 \begin{align*}
-P_1' &= P_8' = (1/2)\cos^2\zeta \, \sin^2\eta \\
-P_2' &= P_7' = (1/2)\sin^2\zeta \, \sin^2\eta \\
-P_3' &= P_6' = (1/2)\cos^2\zeta \, \cos^2\eta \\
-P_4' &= P_5' = (1/2)\sin^2\zeta \, \cos^2\eta
+P_1' &= P_8' \stackrel{?}{=} (1/2)\cos^2\zeta \, \sin^2\eta \\
+P_2' &= P_7' \stackrel{?}{=} (1/2)\sin^2\zeta \, \sin^2\eta \\
+P_3' &= P_6' \stackrel{?}{=} (1/2)\cos^2\zeta \, \cos^2\eta \\
+P_4' &= P_5' \stackrel{?}{=} (1/2)\sin^2\zeta \, \cos^2\eta
 \end{align*}
 $$
 
@@ -730,7 +739,8 @@ so \(f\) still means stem:[+1] for the main channel. Then
 $$
 \begin{align*}
 2\,\text{E}(f)
-  &= \cos^2\zeta \, \sin^2\eta
+  &\stackrel{?}{=}
+     \cos^2\zeta \, \sin^2\eta
      - \sin^2\zeta \, \sin^2\eta \\
      &\quad\quad +\cos^2\zeta \, \cos^2\eta
                  - \sin^2\zeta \, \cos^2\eta \\
@@ -750,7 +760,8 @@ give us expectation and standard deviation that are easy to work with.
 $$
 \begin{align*}
 2\,\sigma_f^2
-  &= (\cos^2\zeta \, \sin^2\eta)\,(+1 - 0)^2
+  &\stackrel{?}{=}
+     (\cos^2\zeta \, \sin^2\eta)\,(+1 - 0)^2
      + (\sin^2\zeta \, \sin^2\eta)\,(-1 - 0)^2\\
      &\quad\quad +(\cos^2\zeta \, \cos^2 \eta)\,(+1 - 0)^2
                  + (\sin^2\zeta \, \cos^2\eta)\,(-1 - 0)^2\\
@@ -762,7 +773,7 @@ $$
 \end{align*}
 $$
 
-Indeed, then, \(\sigma_f = 1\) as desired.
+Indeed, then, \(\sigma_f \stackrel{?}{=} 1\) as desired.
 
 Define a function \(g\) that is similar to{nbsp}\(f\), but responds to
 the right-hand PBS instead of the left:
@@ -806,24 +817,65 @@ A little thought makes obvious a tremendous problem with this
 approach: the mathematics does not distinguish effects that are due to
 \(\zeta\) from those that are due to \(\eta\). Polarizers could be
 stuck willy-nilly anywhere within the apparatus, and the mathematics
-cannot tell the difference. We have made unwarranted assumptions about
-the mutual probabilities. The resulting expressions are useless.
+cannot tell the difference. _We have made unwarranted assumptions
+about the mutual probabilities._ We have failed to consider the mutual
+probabilities might be any of many different functions of \(\zeta\)
+and \(\eta\). The resulting expressions are useless.
 
 The CHSH inequality also is useless.
 
 That physicists are _permitted_ to be so immensely incompetent in
 probability theory is scandalous. They teach equal incompetence to
 students and a next generation, who are fleeced of their possessions
-for the privilege of being made so stupid. The defense of the United
-States and global peace are threatened. No scientific field should be
-allowed such ignorance.
+for the privilege of being made so stupid. Global peace and the
+defense of the United States are threatened. No scientific field
+should be allowed such ignorance.
 
 My education was in signal processing, in the 1980s before electrical
 engineering was so badly corrupted with “quantum” nonsense. I look for
 the _actual_ solution to a problem such as the Bell test, rather than
 for some fantasy about entangled fairies and teleporting unicorns. So
-I work at it until the necessary method comes to mind.
+I work at it until an effective method comes to mind.
 
-It is necessary to _specialize_ the problem so there is only one
-polarizer setting. (See footnote:specialization[])
+What works is to _specialize_ the problem so there is only one
+polarizer setting. Then that specialized solution can be generalized.
+(See footnote:specialization[])
 
+=== A solution for \(\eta=0\)
+
+It \(\eta=0\), then on the right side every \(e_1\) is retransmitted
+and every \(e_2\) is blocked. Thus the symbol \(\eta\) disappears from
+expressions. Physically, it is as if we put only a photodetector on
+that side of the apparatus, and had no polarizing filters on the right
+at all.
+
+The difficulty with expressions containing both \(\zeta\) and \(\eta\)
+exists no longer. Effectively there is no right-side PBS. Now also all
+effects on the left are from the left-side PBS and are expressed
+through \(\zeta\).
+
+We now have
+
+$$
+\begin{align*}
+P_1' &= P_8' = 0 \\
+P_2' &= P_7' = 0 \\
+P_3' &= P_6' = (1/2)\cos^2\zeta \\
+P_4' &= P_5' = (1/2)\sin^2\zeta
+\end{align*}
+$$
+
+and can compute the correlation correctly:
+
+$$
+\begin{align*}
+\rho_{fg} = \text{cov}_{fg}
+  &= (1/2)\,(\cos^2\zeta)\,(f(M_3)g(M_3) + f(M_6)g(M_6)) \\
+  &\quad\quad + (1/2)\,(\sin^2\zeta)\,(f(M_4)g(M_4) + f(M_5)g(M_5)) \\
+  &= \cos^2\zeta - \sin^2\zeta \\
+  &= \cos2\mkern1.2mu\zeta \\
+  &= \cos2(\zeta - \eta)
+\end{align*}
+$$
+
+The last step is true because \(\eta=0\).
