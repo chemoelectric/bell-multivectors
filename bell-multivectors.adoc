@@ -806,7 +806,8 @@ A little thought makes obvious a tremendous problem with this
 approach: the mathematics does not distinguish effects that are due to
 \(\zeta\) from those that are due to \(\eta\). Polarizers could be
 stuck willy-nilly anywhere within the apparatus, and the mathematics
-cannot tell the difference. The resulting expressions are useless.
+cannot tell the difference. We have made unwarranted assumptions about
+the mutual probabilities. The resulting expressions are useless.
 
 The CHSH inequality also is useless.
 
