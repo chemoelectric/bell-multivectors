@@ -633,8 +633,8 @@ Define \(f\) as follows:
 
 $$
 \begin{align*}
-f(M_1) &= f(M_3) = +1 \\
-f(M_2) &= f(M_4) = -1
+f(M_1) &= f(M_3) &= +1 \\
+f(M_2) &= f(M_4) &= -1
 \end{align*}
 $$
 
@@ -729,8 +729,8 @@ Define
 
 $$
 \begin{align*}
-f(M_5) &= f(M_7) = +1 \\
-f(M_6) &= f(M_8) = -1
+f(M_5) &= f(M_7) &= +1 \\
+f(M_6) &= f(M_8) &= -1
 \end{align*}
 $$
 
@@ -760,7 +760,7 @@ give us expectation and standard deviation that are easy to work with.
 $$
 \begin{align*}
 2\,\sigma_f^2
-  &\stackrel{?}{=}
+p  &\stackrel{?}{=}
      (\cos^2\zeta \, \sin^2\eta)\,(+1 - 0)^2
      + (\sin^2\zeta \, \sin^2\eta)\,(-1 - 0)^2\\
      &\quad\quad +(\cos^2\zeta \, \cos^2 \eta)\,(+1 - 0)^2
@@ -780,13 +780,21 @@ the right-hand PBS instead of the left:
 
 $$
 \begin{align*}
-g(M_1) = g(M_2) = g(M_3) &= g(M_4) = +1 \\
-g(M_5) = g(M_6) = g(M_7) &= g(M_8) = -1
+f(M_1) &= f(M_3) = f(M_5) = f(M_7) &= +1 \\
+f(M_2) &= f(M_4) = f(M_6) = f(M_8) &= -1 \\
+g(M_1) &= g(M_2) = g(M_5) = g(M_6) &= +1 \\
+g(M_3) &= g(M_4) = g(M_7) = g(M_8) &= -1
 \end{align*}
 $$
 
 The function \(g\), like \(f\), has expectation zero and standard
 deviation one.
+
+On either side, which channel has positive sign and which negative is
+a matter of preference. With some settings the correlation will have a
+plus sign in front of a “\(\cos\)” and others a negative sign, and
+again it makes no real difference. Sometimes you will see it one way,
+sometimes the other. Our result will have a minus sign.
 
 === A naïve attempt to derive the correlation of \(f\) and \(g\)
 
@@ -872,10 +880,16 @@ $$
 \rho_{fg} = \text{cov}_{fg}
   &= (1/2)\,(\cos^2\zeta)\,(f(M_3)g(M_3) + f(M_6)g(M_6)) \\
   &\quad\quad + (1/2)\,(\sin^2\zeta)\,(f(M_4)g(M_4) + f(M_5)g(M_5)) \\
-  &= \cos^2\zeta - \sin^2\zeta \\
-  &= \cos2\mkern1.2mu\zeta \\
-  &= \cos2(\zeta - \eta)
+  &= -(\cos^2\zeta - \sin^2\zeta) \\
+  &= -\cos2\mkern1.2mu\zeta \\
+  &= -\cos2(\zeta - \eta)
 \end{align*}
 $$
 
-The last step is true because \(\eta=0\).
+The next to last step is by one of the double-angle relations earlier
+quoted from the _CRC Handbook of Mathematical Sciences_. The last step
+is true because \(\eta=0\).
+
+The result is the same as what the “quantum correlation” for the PBS
+settings would be. Hope this hints we are on a correct path.
+

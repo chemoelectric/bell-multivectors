@@ -1214,8 +1214,8 @@ M_3 &amp;= \begin{pmatrix}e_\zeta&amp;e_1\\e_{\eta+\pi/2}&amp;e_2\end{pmatrix}
 <div class="paragraph">
 <p>
 \begin{align*}
-f(M_1) &amp;= f(M_3) = +1 \\
-f(M_2) &amp;= f(M_4) = -1
+f(M_1) &amp;= f(M_3) &amp;= +1 \\
+f(M_2) &amp;= f(M_4) &amp;= -1
 \end{align*}
 </p>
 </div>
@@ -1322,8 +1322,8 @@ P_4' &amp;= P_5' \stackrel{?}{=} (1/2)\sin^2\zeta \, \cos^2\eta
 <div class="paragraph">
 <p>
 \begin{align*}
-f(M_5) &amp;= f(M_7) = +1 \\
-f(M_6) &amp;= f(M_8) = -1
+f(M_5) &amp;= f(M_7) &amp;= +1 \\
+f(M_6) &amp;= f(M_8) &amp;= -1
 \end{align*}
 </p>
 </div>
@@ -1357,7 +1357,7 @@ give us expectation and standard deviation that are easy to work with.</p>
 <p>
 \begin{align*}
 2\,\sigma_f^2
-  &amp;\stackrel{?}{=}
+p  &amp;\stackrel{?}{=}
      (\cos^2\zeta \, \sin^2\eta)\,(+1 - 0)^2
      + (\sin^2\zeta \, \sin^2\eta)\,(-1 - 0)^2\\
      &amp;\quad\quad +(\cos^2\zeta \, \cos^2 \eta)\,(+1 - 0)^2
@@ -1380,14 +1380,23 @@ the right-hand PBS instead of the left:</p>
 <div class="paragraph">
 <p>
 \begin{align*}
-g(M_1) = g(M_2) = g(M_3) &amp;= g(M_4) = +1 \\
-g(M_5) = g(M_6) = g(M_7) &amp;= g(M_8) = -1
+f(M_1) &amp;= f(M_3) = f(M_5) = f(M_7) &amp;= +1 \\
+f(M_2) &amp;= f(M_4) = f(M_6) = f(M_8) &amp;= -1 \\
+g(M_1) &amp;= g(M_2) = g(M_5) = g(M_6) &amp;= +1 \\
+g(M_3) &amp;= g(M_4) = g(M_7) = g(M_8) &amp;= -1
 \end{align*}
 </p>
 </div>
 <div class="paragraph">
 <p>The function \(g\), like \(f\), has expectation zero and standard
 deviation one.</p>
+</div>
+<div class="paragraph">
+<p>On either side, which channel has positive sign and which negative is
+a matter of preference. With some settings the correlation will have a
+plus sign in front of a “\(\cos\)” and others a negative sign, and
+again it makes no real difference. Sometimes you will see it one way,
+sometimes the other. Our result will have a minus sign.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1491,14 +1500,20 @@ P_4' &amp;= P_5' = (1/2)\sin^2\zeta
 \rho_{fg} = \text{cov}_{fg}
   &amp;= (1/2)\,(\cos^2\zeta)\,(f(M_3)g(M_3) + f(M_6)g(M_6)) \\
   &amp;\quad\quad + (1/2)\,(\sin^2\zeta)\,(f(M_4)g(M_4) + f(M_5)g(M_5)) \\
-  &amp;= \cos^2\zeta - \sin^2\zeta \\
-  &amp;= \cos2\mkern1.2mu\zeta \\
-  &amp;= \cos2(\zeta - \eta)
+  &amp;= -(\cos^2\zeta - \sin^2\zeta) \\
+  &amp;= -\cos2\mkern1.2mu\zeta \\
+  &amp;= -\cos2(\zeta - \eta)
 \end{align*}
 </p>
 </div>
 <div class="paragraph">
-<p>The last step is true because \(\eta=0\).</p>
+<p>The next to last step is by one of the double-angle relations earlier
+quoted from the <em>CRC Handbook of Mathematical Sciences</em>. The last step
+is true because \(\eta=0\).</p>
+</div>
+<div class="paragraph">
+<p>The result is the same as what the “quantum correlation” for the PBS
+settings would be. Hope this hints we are on a correct path.</p>
 </div>
 </div>
 </div>
@@ -1515,7 +1530,7 @@ P_4' &amp;= P_5' = (1/2)\sin^2\zeta
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-06-20 15:02:08 -0500
+Last updated 2026-06-20 17:58:50 -0500
 </div>
 </div>
 <script type="text/x-mathjax-config">
