@@ -890,6 +890,7 @@ The next to last step is by one of the double-angle relations earlier
 quoted from the _CRC Handbook of Mathematical Sciences_. The last step
 is true because \(\eta=0\).
 
-The result is the same as what the “quantum correlation” for the PBS
-settings would be. Hope this hints we are on a correct path.
+The result is the same as the “quantum correlation” for the given PBS
+settings. Hopefully this correspondence hints we are on a correct
+path.
 
