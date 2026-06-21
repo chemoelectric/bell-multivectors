@@ -639,8 +639,8 @@ f(M_2) &= f(M_4) &= -1
 \end{align*}
 $$
 
-Thus \(f\) equals stem:[+1] if the left PBS retransmits in its main
-channel, stem:[-1] if it retransmits in its complementary channel.
+Thus \(f\) equals \(+1\) if the left PBS retransmits in its main
+channel, \(-1\) if it retransmits in its complementary channel.
 
 The expectation of \(f\) is
 
@@ -735,7 +735,7 @@ f(M_6) &= f(M_8) &= -1
 \end{align*}
 $$
 
-so \(f\) still means stem:[+1] for the main channel. Then
+so \(f\) still means \(+1\) for the main channel. Then
 
 $$
 \begin{align*}
