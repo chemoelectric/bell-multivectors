@@ -13,4 +13,5 @@ teleporting unicorns in the name of “physics.”
 
 The text is written in AsciiDoc for translation to HTML/MathJax. A
 browser with JavaScript support is needed to read the article as HTML.
-There is also PDF by conversion from the HTML, using node.js.
+There is also PDF by conversion from the HTML, using node.js and
+Firefox.
