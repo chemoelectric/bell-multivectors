@@ -1,2 +1,4 @@
 .*~$
 ^ATTIC$
+.*\.json$
+^node_modules$
