@@ -10,7 +10,9 @@ and Zeilinger are wrong. They did physics with absurd carelessness.
 Also I fault the physics community for endangering world peace with
 their nonfunctioning “quantum computers,” and for bankrupting
 university students while teaching them entangled fairies and
-teleporting unicorns in the name of “physics.”
+teleporting unicorns in the name of “physics.” I deplore that my own
+field of electrical engineering has been corrupted with the liturgy of
+fairies and unicorns.
 
 The text is written in AsciiDoc for translation to HTML/MathJax. A
 browser with JavaScript support is needed to read the article as HTML.
