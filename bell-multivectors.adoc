@@ -279,20 +279,21 @@ polynomials. Also we have impressed the plebeians with the fancy name
 
 === Notations
 
-The “complex tensor space” of quantum mechanics may seem like magic.
-Many do indeed seem to believe the space is magical, and that each
-point in it represents an instance in a phase of existence where
-“instantaneous action at a distance” occurs. Physicists use funny
-notations that are not used by mathematicians and therefore can be
-read as meaning “spooky” (that is, magical) _physical_ entities rather
-than mathematical, purely _verbal_ entities.
+The “complex tensor space” of quantum mechanics may seem like magic,
+for no reason other than its esoteric name. Many do indeed seem to
+believe the space is magical, and that each point in it represents a
+magical being in a phase of existence where “instantaneous action at a
+distance” occurs. Physicists use funny _bra_ and _ket_ notations that
+are not used by mathematicians, and which therefore can be read as
+preternatural _physical_ entities rather than as the purely _verbal_
+entities mathematical notations are.
 
 We instead will use notations similar to those used by mathematicians.
 My education was in electrical engineering, with some applied
 mathematics, and my trade was computer programming, so I do not write
 things as “pure” mathematicians do, and cannot read their abstruse
 papers. But also, despite electrical engineering being applied
-physics, I do not take anywhere near the liberties that “pure”
+physics, I do not take anywhere near the liberties “pure”
 physicists do. With the Dirac notation, they have drifted so far from
 mathematical notations that they do not read the notations as
 mathematics, but instead as liturgical incantations about physical
@@ -305,7 +306,7 @@ matrices. Thus a pulse of plane-polarized light whose plane of
 polarization is oriented along the \(x\)-axis can be represented by
 either \(e_1\) or&#xA0;\(-e_1\). Let us choose&#xA0;\(e_1\).
 Similarly, for a pulse of light plane-polarized normal to the first,
-the representation can be&#xA0;\(e_2\). Now suppose “There is a light
+the representation will be&#xA0;\(e_2\). Now suppose “There is a light
 source that transmits a light pulse \(e_1\) to the left arm of the
 apparatus and \(e_2\) to the right arm.” This initial _proposition_
 can be written as a matrix thus:
@@ -320,20 +321,21 @@ The upper row of such a matrix represents the left arm of the
 apparatus, and the lower row represents the right arm. The expression
 \(\text{prop}_1\) defines a point in a tensor space. Its meaning is
 _not_ a magical “entangled pair” of light pulses.footnote:[“Photons,”
-if we want to use a designation with stronger connotations.] If we had
-written the same thing in Dirac notation, that is what it _would have_
-meant, by “quantum physics” doctrine. But we wrote the same thing in a
-different notation that comes with no such doctrine, and thus it does
-not mean that. Instead it means a proposition.
+if I wanted to use a designation with stronger connotations than
+“light pulses.” I do not want to.] If we had written the same thing in
+Dirac notation, by orthodox doctrine that is what it _would have_
+meant. But we wrote the same thing in a different notation that comes
+with no such doctrine, and thus it does not mean that. Instead it
+means a proposition.
 
 That a point in a space might represent something _verbal_ rather than
 physical may seem strange to many physicists, and difficult to handle.
 If so, that is their problem, not ours. Let them get other jobs. They
 are costing university students a fortune for lessons in nonsense, and
 they are ruining the electronics profession and threatening global
-peace, with “quantum electronics” and “quantum computers” junk that
-cannot possibly work as advertised. A “quantum computer” is an
-expensive and unreliable `WAIT A WHILE THEN PRESS ENTER` device.
+peace, with “quantum electronics” and “quantum computers” that cannot
+possibly work as advertised. A “quantum computer” is an expensive and
+unreliable `WAIT A WHILE THEN PRESS ENTER` device.
 
 Later we will encounter matrices with multiple columns, representing
 propositions in tensor spaces of higher dimensionality, and weighted
@@ -346,9 +348,10 @@ described by the _Law of Malus_: the intensity of the retransmitted
 light is reduced by a factor of \(\cos^2(\vartheta-\varphi)\), where
 \(\vartheta\) is the angle of the filter’s axis of transmission and
 \(\varphi\) is the angle of polarization of the impinging light. Let
-us suppose the mechanism of light is such that a pulse either is or is
-not retransmitted. In that case intensity can be equated with
-probability of retransmission of a light pulse.
+us suppose the mechanism of a polarizing filter is such that a
+discrete light pulse either is or is not retransmitted. In that case
+intensity can be equated with probability of retransmission of a light
+pulse.
 
 Now let us proceed from simple polarizing filters to _polarizing beam
 splitters (PBS)_, also known as _beam-splitting polarizers_. These are
@@ -370,8 +373,8 @@ projection of the vector of the impinging light onto the axis of
 polarization of the filter. This gives a vector of magnitude reduced
 from unity, and the square of that magnitude is the intensity of the
 retransmitted light. If \(e_\vartheta\) is a unit vector representing
-the axis of transmission of the filter, and \(e_\varphi\) the angle of
-polarization of the impinging light, then the projection is
+the axis of transmission of the filter, and \(e_\varphi\) is the
+vector of polarization of the impinging light, then the projection is
 
 \[
 \begin{equation}
@@ -447,9 +450,9 @@ lower rows represent the right side.
 The probability of \(\text{prop}_1 =
 {\begin{pmatrix}e_1&e_2\end{pmatrix}}^t\) is one, and thus each of
 \(P_1,P_2,P_3,P_4\) equals the conditional probability of the left
-column, given the facts described by the right column
-(\(\text{prop}_1\)). This is true by the definition of the conditional
-probability,
+column, given the facts described by the right column (which in each
+case is \(\text{prop}_1\)). This is true by the definition of the
+conditional probability,
 
 \[
 \begin{equation}
@@ -476,15 +479,20 @@ defined above has _the following_ intuitive meaning (rather than
 Bell’s): it is the probability \(\text{prop}_x\) is true, given that
 \(\text{prop}_y\) is true.
 
-This means we calculate \(P_1,P_2,P_3,P_4\) by assuming \(e_1\) on the
-left and \(e_2\) on the right. We would have done so anyway, but it is
-nice to see the mathematics even subtly agreeing with us.
+This means we calculate \(P_1,P_2,P_3,P_4\) by assuming the light
+pulse has polarization \(e_1\) on the left and \(e_2\) on the right.
+We would have done so anyway, but it is nice to see the mathematics
+even subtly agreeing with us.
 
 Nothing in the formalism implies, as Bell assumes it does, anything
 about detections in opposite arms of the experiment affecting each
-other.
+other. Bell’s “encoding of no action at a distance” is meritless. Even
+Bell’s notation is not correct. The arguments of a probability should
+be propositions, not numeric quantities such as Bell writes. Bell has
+probabilities confused with functions representing causal processes.
 
-A tentative formula for computing the probabilities is as follows. If
+A tentative formula for computing \(P_1,P_2,P_3,P_4\) is as follows.
+If
 
 \[
 \begin{equation}
@@ -508,13 +516,13 @@ which is a mutual probability of the top row and bottom row. We do not
 have to do probability theory calculations to eliminate \(e_1\)
 and&#xA0;\(e_2\), because the projection operations already have
 eliminated these vectors. Furthermore, the probability of one
-polarizer setting would seem not to be conditional on the probability
-of the other polarizer setting, because both these settings are
-arbitrary. Thus computing \(P_n\) might simply be multiplying the
-probabilities of the two rows.
+polarizer setting _might_ seem not to be conditional on the
+probability of the other polarizer setting, because both these
+settings are arbitrary. Thus \(P_n\) _might_ simply be the product of
+the probabilities of the two rows.
 
 Or is it? We will see later on it is not so simple. In probability
-theory, where there seems to be an impediment, there probably _is_ an
+theory, where there _might_ be an impediment, there likely _is_ an
 impediment.
 
 Now \(\text{prop}_2\) can be written out more fully, but with doubt
@@ -544,10 +552,13 @@ P_4 &\stackrel{?}{=} \sin^2\zeta \, \cos^2\eta
 
 The tensor \(\text{prop}_2\) is a proposition stating the probability
 of each possible event in the two-channel Bell test experiment, in
-terms of \(\zeta\) and&#xA0;\(\eta\). Be very careful, though, in how
-you evaluate that! Those angles are defined relative to&#xA0;\(e_1\).
-But \(e_1\) itself points in some unstated direction. So how would you
-know whether the PBS were oriented correctly?
+terms of angles \(\zeta\) and&#xA0;\(\eta\). Be careful, though, how
+you evaluate that proposition! Those angles are defined relative
+to&#xA0;\(e_1\). But \(e_1\) itself points in some unstated direction.
+So how would you know whether the PBS were oriented correctly?
+
+(This difficulty is resolved <<ThePlaneMattersNot,in the final
+subsection>>.)
 
 We do, however, have a result that gives a probability for every
 possible event in the experiment and which can be checked for
@@ -952,6 +963,7 @@ The result is the same as the “quantum correlation” for the given PBS
 settings. But there is still one more step before we get the complete
 answer.
 
+[[ThePlaneMattersNot]]
 === Realizing that the plane of polarization does not matter
 
 That step is to add zero to \(\zeta - \eta\).
