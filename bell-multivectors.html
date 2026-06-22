@@ -702,15 +702,17 @@ thus:</p>
 <p>\[
 \begin{align*}
 e_\varphi &amp;= R_\varphi \, e_1 \, R_\varphi^{-1} \\
-      &amp;= (\cos\varphi' - e_1 e_2 \sin\varphi') \, e_1 \, (\cos\varphi' + e_1 e_2 \sin\varphi') \\
-      &amp;= e_1 \cos^2\varphi' - e_1 e_2 e_1 \cos\varphi'\sin\varphi' \\
+      &amp;= (\cos\varphi^{\prime} - e_1 e_2 \sin\varphi^{\prime}) \, e_1 \,
+         (\cos\varphi^{\prime} + e_1 e_2 \sin\varphi^{\prime}) \\
+      &amp;= e_1 \cos<sup>2\varphi</sup>{\prime} - e_1 e_2 e_1 \cos\varphi<sup>{\prime}\sin\varphi</sup>{\prime} \\
       &amp;\mkern3em
-      + e_1 e_1 e_2 \cos\varphi'\sin\varphi' - e_1 e_2 e_1 e_1 e_2 \sin^2\varphi'
+      + e_1 e_1 e_2 \cos\varphi<sup>{\prime}\sin\varphi</sup>{\prime}
+        - e_1 e_2 e_1 e_1 e_2 \sin<sup>2\varphi</sup>{\prime}
 \end{align*}
 \]</p>
 </div>
 <div class="paragraph">
-<p>where \(\varphi' = \varphi/2\). Identities mentioned above allow simplifications:</p>
+<p>where \(\varphi^{\prime} = \varphi/2\). Identities mentioned above allow simplifications:</p>
 </div>
 <div class="paragraph">
 <p>\[
@@ -727,7 +729,8 @@ e_1 e_1 e_2 &amp;= e_2 \\
 <div class="paragraph">
 <p>\[
 \begin{equation}
-e_\varphi = (\cos^2\varphi' - \sin^2\varphi')\,e_1 + (2\,\cos\varphi'\sin\varphi')\,e_2
+e_\varphi = (\cos<sup>2\varphi</sup>{\prime} - \sin<sup>2\varphi</sup>{\prime})\,e_1
+          + (2\,\cos\varphi<sup>{\prime}\sin\varphi</sup>{d\prime})\,e_2
 \end{equation}
 \]</p>
 </div>
@@ -1250,7 +1253,7 @@ f(M_2) &amp;= f(M_4) &amp;= -1
 channel, \(-1\) if it retransmits in its complementary channel.</p>
 </div>
 <div class="paragraph">
-<p>The expectation of \(f\) is</p>
+<p>The expectation of \(f\) is tentatively</p>
 </div>
 <div class="paragraph">
 <p>\[
@@ -1275,9 +1278,9 @@ disappears from the answer.)</p>
 <p>We would have liked for the expectation to equal zero. So let us use a
 trick.<sup class="footnote" id="_footnote_specialization">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup> Let us solve two problems
 simultaneously. Let us solve also for the case where the initial light
-pulses are \(\begin{pmatrix}e_2&amp;e_1\end{pmatrix}^t\). Towards that
-end, introduce \(\text{prop}_3\) and let us analyze \(\text{prop}_3\),
-which has symmetry:</p>
+pulses are \(\begin{pmatrix}e_2&amp;e_1\end{pmatrix}^t\). A weighted sum
+of the two light-pulse matrices gives \(\text{prop}_3\) that has
+symmetry:</p>
 </div>
 <div class="paragraph">
 <p>\[
@@ -1291,11 +1294,11 @@ which has symmetry:</p>
 <div class="paragraph">
 <p>Remember that in \(\text{prop}_1\) the axis of transmission was not
 specified. Thus \(\text{prop}_3\) is, in effect, the same problem as
-\(\text{prop}_1\). The new proposition says “the plane of polarization
-has one half probability of being a certain way, one half the
-complementary way, but in either case that plane is unspecified.” If
-we analyze that problem, we are analyzing the same problem as the
-original.</p>
+\(\text{prop}_1\). The new proposition says “The orthogonal planes of
+polarization have one half probability of being a certain way, one
+half the opposite way, but the ‘certain way’ is unspecified.” If we
+analyze that problem, we are for practical purposes analyzing the same
+problem as the original.</p>
 </div>
 <div class="paragraph">
 <p>We now need four more matrices:</p>
@@ -1317,7 +1320,7 @@ M_7 &amp;= \begin{pmatrix}e_\zeta&amp;e_2\\e_{\eta+\pi/2}&amp;e_1\end{pmatrix}
 <div class="paragraph">
 <p>\[
 \begin{equation}
-P_n' \stackrel{?}{=}
+P_n^{\prime} \stackrel{?}{=}
   \begin{cases}
   \frac12(\text{proj}_{e_{\angle a}}e_1)^2
          (\text{proj}_{e_{\angle b}}e_2)^2
@@ -1335,10 +1338,10 @@ P_n' \stackrel{?}{=}
 <div class="paragraph">
 <p>\[
 \begin{align*}
-P_1' &amp;= P_8 \stackrel{?}{=} (1/2)\cos^2\zeta \, \sin^2\eta \\
-P_2' &amp;= P_7' \stackrel{?}{=} (1/2)\sin^2\zeta \, \sin^2\eta \\
-P_3' &amp;= P_6' \stackrel{?}{=} (1/2)\cos^2\zeta \, \cos^2\eta \\
-P_4' &amp;= P_5' \stackrel{?}{=} (1/2)\sin^2\zeta \, \cos^2\eta
+P_1^{\prime} &amp;= P_8^{\prime} \stackrel{?}{=} (1/2)\cos^2\zeta \, \sin^2\eta \\
+P_2^{\prime} &amp;= P_7^{\prime} \stackrel{?}{=} (1/2)\sin^2\zeta \, \sin^2\eta \\
+P_3^{\prime} &amp;= P_6^{\prime} \stackrel{?}{=} (1/2)\cos^2\zeta \, \cos^2\eta \\
+P_4^{\prime} &amp;= P_5^{\prime} \stackrel{?}{=} (1/2)\sin^2\zeta \, \cos^2\eta
 \end{align*}
 \]</p>
 </div>
@@ -1462,8 +1465,8 @@ approach: the mathematics does not distinguish effects that are due to
 stuck willy-nilly anywhere within the apparatus, and the mathematics
 cannot tell the difference. <em>We have made unwarranted assumptions
 about the mutual probabilities.</em> We have failed to consider the mutual
-probabilities might be any of many different functions of \(\zeta\)
-and \(\eta\). The resulting expressions are useless.</p>
+probabilities might not be products of “independent” probabilities.
+The resulting expressions are useless.</p>
 </div>
 <div class="paragraph">
 <p>The CHSH inequality also is useless.</p>
@@ -1486,7 +1489,8 @@ I work at it until an effective method comes to mind.</p>
 <div class="paragraph">
 <p>What works is to <em>specialize</em> the problem so there is only one
 polarizer setting. Then that specialized solution can be generalized.
-(See <sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup>)</p>
+(This is the reappearance of <em>specialization</em> mentioned
+in&#xA0;<sup class="footnoteref">[<a class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup>)</p>
 </div>
 </div>
 <div class="sect2">
@@ -1510,10 +1514,10 @@ through \(\zeta\).</p>
 <div class="paragraph">
 <p>\[
 \begin{align*}
-P_1' &amp;= P_8' = 0 \\
-P_2' &amp;= P_7' = 0 \\
-P_3' &amp;= P_6' = (1/2)\cos^2\zeta \\
-P_4' &amp;= P_5' = (1/2)\sin^2\zeta
+P_1^{\prime} &amp;= P_8^{\prime} = 0 \\
+P_2^{\prime} &amp;= P_7^{\prime} = 0 \\
+P_3^{\prime} &amp;= P_6^{\prime} = (1/2)\cos^2\zeta \\
+P_4^{\prime} &amp;= P_5^{\prime} = (1/2)\sin^2\zeta
 \end{align*}
 \]</p>
 </div>
@@ -1528,7 +1532,7 @@ P_4' &amp;= P_5' = (1/2)\sin^2\zeta
   &amp;\mkern2em + (1/2)\,(\sin^2\zeta)\,(f(M_4)g(M_4) + f(M_5)g(M_5)) \\
   &amp;= -(\cos^2\zeta - \sin^2\zeta) \\
   &amp;= -\cos2\mkern1.2mu\zeta \\
-  &amp;= -\cos2(\zeta - \eta)
+  &amp;= -\cos2\mkern1mu(\zeta - \eta)
 \end{align*}
 \]</p>
 </div>
@@ -1555,11 +1559,11 @@ let \(\alpha=\zeta+\delta\) and \(\beta=\eta+\delta\). Then</p>
 <div class="paragraph">
 <p>\[
 \begin{align*}
--\cos2(\alpha-\beta)
-  &amp;= -\cos 2 ( ( \zeta+\delta ) - ( \eta+\delta ) ) \\
-  &amp;= -\cos 2 ( ( \zeta-\eta ) + ( \delta-\delta ) ) \\
-  &amp;= -\cos 2 ( ( \zeta-\eta ) + 0 ) \\
-  &amp;= -\cos 2 ( \zeta-\eta )
+-\cos 2 \mkern1mu(\alpha-\beta)
+  &amp;= -\cos 2 \mkern1mu( ( \zeta+\delta ) - ( \eta+\delta ) ) \\
+  &amp;= -\cos 2 \mkern1mu( ( \zeta-\eta ) + ( \delta-\delta ) ) \\
+  &amp;= -\cos 2 \mkern1mu( ( \zeta-\eta ) + 0 ) \\
+  &amp;= -\cos 2 \mkern1mu( \zeta-\eta )
 \end{align*}
 \]</p>
 </div>
@@ -1567,24 +1571,30 @@ let \(\alpha=\zeta+\delta\) and \(\beta=\eta+\delta\). Then</p>
 <p>Thus the PBS settings can be rotated together to any new calibration,
 without this rotation changing the form of the correlation. However,
 let us assume there is a standard calibration for PBS. We cannot
-recalibrated. There remains, however, an equivalent interpretation of
-adding zero this way: that the polarization angles of the initial
-light pulses do not matter towards the correlation, as long as the two
-planes of polarization are normal to each other.</p>
+recalibrate. There remains, however, an equivalent interpretation:
+that the polarization angles of the initial light pulses do not matter
+towards the correlation, as long as the two planes of polarization are
+normal to each other.</p>
 </div>
 <div class="paragraph">
 <p><em>This is because the correlation has turned out to be a function of
 relative angle, expressed as a cosine.</em></p>
 </div>
 <div class="paragraph">
-<p>There is a factor of two that does not appear if the experiment were
-to be done with spin-1 particles. Mathematically, the only difference
-is a change of factor in the independent variables. Physically, I
-would give polarizing filters have the “projection” interpretation
-described above, whereas, perhaps, for spin-1 particles the device
-(such as a Stern-Gerlach magnet) is more like a rectangular window
-that is open only a certain amount. I base this interpretation on some
-investigation of trigonometric identities.</p>
+<p>We needed this invariance over in-unison rotation of the PBS settings,
+anyway. We had no way to know how to set the PBS, otherwise. They must
+be set only relative to each other, not relative to the light source.</p>
+</div>
+<div class="paragraph">
+<p>There is a factor of two in \(-\cos 2 \mkern1mu(\alpha-\beta)\) that
+does not appear if the experiment were to be done with spin-1
+particles. Mathematically, the only difference is a change of factor
+in the independent variables. Physically, I would give polarizing
+filters the “projection” interpretation described above, whereas for
+spin-1 particles the device (such as a Stern-Gerlach magnet) is
+perhaps more like a rectangular window that is open only a certain
+amount. I base this interpretation on some investigation of
+trigonometric identities.</p>
 </div>
 <div class="paragraph">
 <p>In any instance, the goal is achieved. I have derived the correlation
@@ -1594,13 +1604,13 @@ assuming only action by direct contact. The correlation is</p>
 <div class="paragraph">
 <p>\[
 \begin{equation}
-\rho_{fg} = -\cos2(\alpha-\beta)
+\rho_{fg} = -\cos 2 \mkern1mu(\alpha-\beta)
 \end{equation}
 \]</p>
 </div>
 <div class="paragraph">
 <p>where \(\alpha\) and \(\beta\) are the respective axes of transmission
-of main channels the two PBS.</p>
+of main channels of the two PBS.</p>
 </div>
 <div class="paragraph">
 <p>This is the same expression as the so-called “quantum correlation,”
@@ -1616,16 +1626,17 @@ fallacious semi-solutions such as Bell’s and Clauser’s.</p>
 <p>Indeed, given the “quantum correlation” as written above, recognizing
 it is invariant as long as the difference \(\alpha-\beta\) is
 preserved, and so, setting \(\beta=0\), one could then work backwards
-and show that no quantum mechanics were necessary for a derivation.
+and show that no quantum mechanics was necessary for a derivation.
 That no such “reverse derivation” appears in the “elite journals” is
 testimony to the incompetence of a physics community that awarded the
-Nobel prize to Clauser, Aspect, and Zeilinger. Their research ought to
-have been withdrawn, instead.</p>
+Nobel prize to Clauser, Aspect, and Zeilinger. Their research should
+have been withdrawn instead of awarded.</p>
 </div>
 <div class="paragraph">
-<p>Bell’s <em>Speakable and Unspeakable in Quantum Mechanics</em> ought to be
-reclassified as “Pathological Science.” It would be one of the most
-pathological examples.</p>
+<p>Bell’s <em>Speakable and Unspeakable in Quantum
+Mechanics</em>&#8239;<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup> ought
+to be reclassified as “Pathological Science.” It would be one of the
+most pathological examples.</p>
 </div>
 <div class="paragraph">
 <p>Let me finish by repeating my harshness is because the defense of the
@@ -1634,18 +1645,21 @@ be taught nonsense. “Collegial politeness” is unaffordable. In any
 case I am not a colleague of “professional physicists,” and they would
 not hesitate to tell me so. I am an amateur with no institutional
 affiliation, my education is in electrical engineering, and my trade
-was computer programming. The politeness is one-way. Gone are the days
-when Benjamin Franklin or Michael Faraday could become Fellow of the
-Royal Society.</p>
+was computer programming. I am expected to be polite to professional
+physicists, but they are not polite to me. Gone are the days when
+Benjamin Franklin or Michael Faraday could become Fellow of the Royal
+Society.</p>
 </div>
 <div class="paragraph">
 <p>An excuse will be made that “specialization is necessary now and you
 cannot be a polymath,” and yet here they are, physicists, pretending
 to be able to do random process analysis without even bothering to
 study the subject. A reasonable conclusion is they believe they are so
-smart they need not study the subject. That they can intuit it all
-with their gigantic brains. And that Benjamin Franklin and Michael
-Faraday were too stupid to do what today’s physicists do.<sup class="footnote">[<a id="_footnoteref_7" class="footnote" href="#_footnotedef_7" title="View footnote.">7</a>]</sup></p>
+smart they need not study the subject. They can intuit it all with
+their gigantic brains, so much bigger than mine and yours. And that
+Benjamin Franklin and Michael Faraday were too stupid to do what
+today’s so very “professional” and specialized physicists
+do.<sup class="footnote">[<a id="_footnoteref_8" class="footnote" href="#_footnotedef_8" title="View footnote.">8</a>]</sup></p>
 </div>
 <div class="paragraph">
 <p>If they really were so smart, they would not believe in entangled
@@ -1653,9 +1667,9 @@ fairies and teleporting unicorns.</p>
 </div>
 <div class="paragraph">
 <p>I finish in this subsection, rather than with a separate formal
-conclusion, because, from a mathematical viewpoint, failure to realize
-one is free to recalibrate the apparatus is perhaps the worst mistake
-physicists have made.&#xA0;\(\square\)</p>
+conclusion, because failure to realize one is free to recalibrate the
+apparatus is perhaps the worst failure to read the plain meaning of a
+mathematical expression physicists have ever made.&#xA0;\(\square\)</p>
 </div>
 </div>
 </div>
@@ -1676,18 +1690,21 @@ physicists have made.&#xA0;\(\square\)</p>
 <a href="#_footnoteref_4">4</a>. I believe you will also find, if you go to the trouble, that violations of Bell or CHSH inequalities are inconsistent with this correlation function, no matter how it be derived. The inequalities are incorrect mathematics. The experimental technique of Alain Aspect and others must be flawed, for it should be impossible to obtain violations of the inequalities.
 </div>
 <div class="footnote" id="_footnotedef_5">
-<a href="#_footnoteref_5">5</a>. There is no “physics” reason for this trick. It is a <em>mathematical</em> maneuver to take advantage of symmetry, and I would classify it as an example of the <em>specialization</em> heuristic discussed by George Pólya. (G. Pólya, <em>How to Solve It: A New Aspect of Mathematical Method</em>, expanded Princeton Science Library&#160;ed., Princeton University Press, Princeton,&#160;NJ, 2004, With a foreword by John&#160;H. Conway.) The specialization heuristic will reappear later.
+<a href="#_footnoteref_5">5</a>. There is no “physics” in this trick. It is a <em>mathematical</em> maneuver to take advantage of symmetry, and I would classify it as an example of George&#160;Pólya called the <em>specialization</em> heuristic. (G. Pólya, <em>How to Solve It: A New Aspect of Mathematical Method</em>, expanded Princeton Science Library&#160;ed., Princeton University Press, Princeton,&#160;NJ, 2004, With a foreword by John&#160;H. Conway.) The specialization heuristic will <a href="#SpecializedSolution">reappear later</a>.
 </div>
 <div class="footnote" id="_footnotedef_6">
 <a href="#_footnoteref_6">6</a>. This was done by A.&#xA0;F. Kracklauer. Of course such coherence calculations are similar to ours, except they are done with continuous probability or measure theory.
 </div>
 <div class="footnote" id="_footnotedef_7">
-<a href="#_footnoteref_7">7</a>. As if either of these Fellows of past centuries would have run to <em>Nature</em>, with a paper declaring “faster than light motion” because he had a screw loose. Desiring knowledge rather than a Nobel prize, they would have overhauled their equipment.
+<a href="#_footnoteref_7">7</a>. J.&#xA0;S. Bell, <em>Speakable and Unspeakable in Quantum Mechanics</em>, Cambridge Univ. Press, Cambridge, 1987.
+</div>
+<div class="footnote" id="_footnotedef_8">
+<a href="#_footnoteref_8">8</a>. As if either of these Fellows of past centuries would have run to <em>Nature</em>, with a paper declaring “faster than light motion” because he had a screw loose. Desiring knowledge rather than a Nobel prize, and knowing the measurements were wrong, they would quietly have overhauled their equipment.
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-06-22 10:49:01 -0500
+Last updated 2026-06-22 12:04:50 -0500
 </div>
 </div>
 <script type="text/x-mathjax-config">

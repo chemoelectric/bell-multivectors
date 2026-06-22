@@ -1,3 +1,4 @@
+m4_changequote(«[,]»)m4_changecom«[]»m4_dnl
 = Analysis of the two-channel optical Bell test, using multivectors and matrices
 Barry Schwartz
 :doctype: doctype_attribute
@@ -196,14 +197,16 @@ thus:
 \[
 \begin{align*}
 e_\varphi &= R_\varphi \, e_1 \, R_\varphi^{-1} \\
-      &= (\cos\varphi' - e_1 e_2 \sin\varphi') \, e_1 \, (\cos\varphi' + e_1 e_2 \sin\varphi') \\
-      &= e_1 \cos^2\varphi' - e_1 e_2 e_1 \cos\varphi'\sin\varphi' \\
+      &= (\cos\varphi^{\prime} - e_1 e_2 \sin\varphi^{\prime}) \, e_1 \,
+         (\cos\varphi^{\prime} + e_1 e_2 \sin\varphi^{\prime}) \\
+      &= e_1 \cos^2\varphi^{\prime} - e_1 e_2 e_1 \cos\varphi^{\prime}\sin\varphi^{\prime} \\
       &\mkern3em
-      + e_1 e_1 e_2 \cos\varphi'\sin\varphi' - e_1 e_2 e_1 e_1 e_2 \sin^2\varphi'
+      + e_1 e_1 e_2 \cos\varphi^{\prime}\sin\varphi^{\prime}
+        - e_1 e_2 e_1 e_1 e_2 \sin^2\varphi^{\prime}
 \end{align*}
 \]
 
-where \(\varphi' = \varphi/2\). Identities mentioned above allow simplifications:
+where \(\varphi^{\prime} = \varphi/2\). Identities mentioned above allow simplifications:
 
 \[
 \begin{align*}
@@ -217,7 +220,8 @@ Therefore,
 
 \[
 \begin{equation}
-e_\varphi = (\cos^2\varphi' - \sin^2\varphi')\,e_1 + (2\,\cos\varphi'\sin\varphi')\,e_2
+e_\varphi = (\cos^2\varphi^{\prime} - \sin^2\varphi^{\prime})\,e_1
+          + (2\,\cos\varphi^{\prime}\sin\varphi^{d\prime})\,e_2
 \end{equation}
 \]
 
@@ -308,7 +312,7 @@ are costing university students a fortune for lessons in nonsense, and
 they are ruining the electronics profession and threatening global
 peace, with “quantum electronics” and “quantum computers” junk that
 cannot possibly work as advertised. A “quantum computer” is an
-expensive and unreliable ``WAIT A WHILE THEN PRESS ENTER` device.
+expensive and unreliable `WAIT A WHILE THEN PRESS ENTER` device.
 
 Later we will encounter matrices with multiple columns, representing
 propositions in tensor spaces of higher dimensionality, and weighted
@@ -669,7 +673,7 @@ f(M_2) &= f(M_4) &= -1
 Thus \(f\) equals \(+1\) if the left PBS retransmits in its main
 channel, \(-1\) if it retransmits in its complementary channel.
 
-The expectation of \(f\) is
+The expectation of \(f\) is tentatively
 
 \[
 \begin{align*}
@@ -688,18 +692,18 @@ was derived by questionable means. The reason is that \(\eta\)
 disappears from the answer.)
 
 We would have liked for the expectation to equal zero. So let us use a
-trick.footnote:specialization[There is no “physics” reason for this
-trick. It is a _mathematical_ maneuver to take advantage of symmetry,
-and I would classify it as an example of the _specialization_
-heuristic discussed by George Pólya. (G. Pólya, _How to Solve It: A
-New Aspect of Mathematical Method_, expanded Princeton Science
-Library{nbsp}ed., Princeton University Press, Princeton,{nbsp}NJ,
-2004, With a foreword by John{nbsp}H. Conway.) The specialization
-heuristic will reappear later.] Let us solve two problems
+trick.footnote:specialization[There is no “physics” in this trick. It
+is a _mathematical_ maneuver to take advantage of symmetry, and I
+would classify it as an example of George{nbsp}Pólya called the
+_specialization_ heuristic. (G. Pólya, _How to Solve It: A New Aspect
+of Mathematical Method_, expanded Princeton Science Library{nbsp}ed.,
+Princeton University Press, Princeton,{nbsp}NJ, 2004, With a foreword
+by John{nbsp}H. Conway.) The specialization heuristic will
+<<SpecializedSolution,reappear later>>.] Let us solve two problems
 simultaneously. Let us solve also for the case where the initial light
-pulses are \(\begin{pmatrix}e_2&e_1\end{pmatrix}^t\). Towards that
-end, introduce \(\text{prop}_3\) and let us analyze \(\text{prop}_3\),
-which has symmetry:
+pulses are \(\begin{pmatrix}e_2&e_1\end{pmatrix}^t\). A weighted sum
+of the two light-pulse matrices gives \(\text{prop}_3\) that has
+symmetry:
 
 \[
 \begin{equation}
@@ -711,11 +715,11 @@ which has symmetry:
 
 Remember that in \(\text{prop}_1\) the axis of transmission was not
 specified. Thus \(\text{prop}_3\) is, in effect, the same problem as
-\(\text{prop}_1\). The new proposition says “the plane of polarization
-has one half probability of being a certain way, one half the
-complementary way, but in either case that plane is unspecified.” If
-we analyze that problem, we are analyzing the same problem as the
-original.
+\(\text{prop}_1\). The new proposition says “The orthogonal planes of
+polarization have one half probability of being a certain way, one
+half the opposite way, but the ‘certain way’ is unspecified.” If we
+analyze that problem, we are for practical purposes analyzing the same
+problem as the original.
 
 We now need four more matrices:
 
@@ -733,7 +737,7 @@ And I will leave it as an exercise for the reader to show that the new
 
 \[
 \begin{equation}
-P_n' \stackrel{?}{=}
+P_n^{\prime} \stackrel{?}{=}
   \begin{cases}
   \frac12(\text{proj}_{e_{\angle a}}e_1)^2
          (\text{proj}_{e_{\angle b}}e_2)^2
@@ -749,10 +753,10 @@ so that
 
 \[
 \begin{align*}
-P_1' &= P_8' \stackrel{?}{=} (1/2)\cos^2\zeta \, \sin^2\eta \\
-P_2' &= P_7' \stackrel{?}{=} (1/2)\sin^2\zeta \, \sin^2\eta \\
-P_3' &= P_6' \stackrel{?}{=} (1/2)\cos^2\zeta \, \cos^2\eta \\
-P_4' &= P_5' \stackrel{?}{=} (1/2)\sin^2\zeta \, \cos^2\eta
+P_1^{\prime} &= P_8^{\prime} \stackrel{?}{=} (1/2)\cos^2\zeta \, \sin^2\eta \\
+P_2^{\prime} &= P_7^{\prime} \stackrel{?}{=} (1/2)\sin^2\zeta \, \sin^2\eta \\
+P_3^{\prime} &= P_6^{\prime} \stackrel{?}{=} (1/2)\cos^2\zeta \, \cos^2\eta \\
+P_4^{\prime} &= P_5^{\prime} \stackrel{?}{=} (1/2)\sin^2\zeta \, \cos^2\eta
 \end{align*}
 \]
 
@@ -858,8 +862,8 @@ approach: the mathematics does not distinguish effects that are due to
 stuck willy-nilly anywhere within the apparatus, and the mathematics
 cannot tell the difference. _We have made unwarranted assumptions
 about the mutual probabilities._ We have failed to consider the mutual
-probabilities might be any of many different functions of \(\zeta\)
-and \(\eta\). The resulting expressions are useless.
+probabilities might not be products of “independent” probabilities.
+The resulting expressions are useless.
 
 The CHSH inequality also is useless.
 
@@ -878,7 +882,8 @@ I work at it until an effective method comes to mind.
 
 What works is to _specialize_ the problem so there is only one
 polarizer setting. Then that specialized solution can be generalized.
-(See footnote:specialization[])
+(This is the reappearance of _specialization_ mentioned
+in&#xA0;footnote:specialization[])
 
 [[SpecializedSolution]]
 === A solution for \(\eta=0\)
@@ -898,10 +903,10 @@ We now have
 
 \[
 \begin{align*}
-P_1' &= P_8' = 0 \\
-P_2' &= P_7' = 0 \\
-P_3' &= P_6' = (1/2)\cos^2\zeta \\
-P_4' &= P_5' = (1/2)\sin^2\zeta
+P_1^{\prime} &= P_8^{\prime} = 0 \\
+P_2^{\prime} &= P_7^{\prime} = 0 \\
+P_3^{\prime} &= P_6^{\prime} = (1/2)\cos^2\zeta \\
+P_4^{\prime} &= P_5^{\prime} = (1/2)\sin^2\zeta
 \end{align*}
 \]
 
@@ -914,7 +919,7 @@ and can compute the correlation correctly:
   &\mkern2em + (1/2)\,(\sin^2\zeta)\,(f(M_4)g(M_4) + f(M_5)g(M_5)) \\
   &= -(\cos^2\zeta - \sin^2\zeta) \\
   &= -\cos2\mkern1.2mu\zeta \\
-  &= -\cos2(\zeta - \eta)
+  &= -\cos2\mkern1mu(\zeta - \eta)
 \end{align*}
 \]
 
@@ -935,33 +940,38 @@ let \(\alpha=\zeta+\delta\) and \(\beta=\eta+\delta\). Then
 
 \[
 \begin{align*}
--\cos2(\alpha-\beta)
-  &= -\cos 2 ( ( \zeta+\delta ) - ( \eta+\delta ) ) \\
-  &= -\cos 2 ( ( \zeta-\eta ) + ( \delta-\delta ) ) \\
-  &= -\cos 2 ( ( \zeta-\eta ) + 0 ) \\
-  &= -\cos 2 ( \zeta-\eta )
+-\cos 2 \mkern1mu(\alpha-\beta)
+  &= -\cos 2 \mkern1mu( ( \zeta+\delta ) - ( \eta+\delta ) ) \\
+  &= -\cos 2 \mkern1mu( ( \zeta-\eta ) + ( \delta-\delta ) ) \\
+  &= -\cos 2 \mkern1mu( ( \zeta-\eta ) + 0 ) \\
+  &= -\cos 2 \mkern1mu( \zeta-\eta )
 \end{align*}
 \]
 
 Thus the PBS settings can be rotated together to any new calibration,
 without this rotation changing the form of the correlation. However,
 let us assume there is a standard calibration for PBS. We cannot
-recalibrated. There remains, however, an equivalent interpretation of
-adding zero this way: that the polarization angles of the initial
-light pulses do not matter towards the correlation, as long as the two
-planes of polarization are normal to each other.
+recalibrate. There remains, however, an equivalent interpretation:
+that the polarization angles of the initial light pulses do not matter
+towards the correlation, as long as the two planes of polarization are
+normal to each other.
 
 _This is because the correlation has turned out to be a function of
 relative angle, expressed as a cosine._
 
-There is a factor of two that does not appear if the experiment were
-to be done with spin-1 particles. Mathematically, the only difference
-is a change of factor in the independent variables. Physically, I
-would give polarizing filters have the “projection” interpretation
-described above, whereas, perhaps, for spin-1 particles the device
-(such as a Stern-Gerlach magnet) is more like a rectangular window
-that is open only a certain amount. I base this interpretation on some
-investigation of trigonometric identities.
+We needed this invariance over in-unison rotation of the PBS settings,
+anyway. We had no way to know how to set the PBS, otherwise. They must
+be set only relative to each other, not relative to the light source.
+
+There is a factor of two in \(-\cos 2 \mkern1mu(\alpha-\beta)\) that
+does not appear if the experiment were to be done with spin-1
+particles. Mathematically, the only difference is a change of factor
+in the independent variables. Physically, I would give polarizing
+filters the “projection” interpretation described above, whereas for
+spin-1 particles the device (such as a Stern-Gerlach magnet) is
+perhaps more like a rectangular window that is open only a certain
+amount. I base this interpretation on some investigation of
+trigonometric identities.
 
 In any instance, the goal is achieved. I have derived the correlation
 of the two-channel optical Bell test, without quantum mechanics and
@@ -969,12 +979,12 @@ assuming only action by direct contact. The correlation is
 
 \[
 \begin{equation}
-\rho_{fg} = -\cos2(\alpha-\beta)
+\rho_{fg} = -\cos 2 \mkern1mu(\alpha-\beta)
 \end{equation}
 \]
 
 where \(\alpha\) and \(\beta\) are the respective axes of transmission
-of main channels the two PBS.
+of main channels of the two PBS.
 
 This is the same expression as the so-called “quantum correlation,”
 and it is correct, but we can see that “quantum” is a misnomer. It is
@@ -990,15 +1000,17 @@ fallacious semi-solutions such as Bell’s and Clauser’s.
 Indeed, given the “quantum correlation” as written above, recognizing
 it is invariant as long as the difference \(\alpha-\beta\) is
 preserved, and so, setting \(\beta=0\), one could then work backwards
-and show that no quantum mechanics were necessary for a derivation.
+and show that no quantum mechanics was necessary for a derivation.
 That no such “reverse derivation” appears in the “elite journals” is
 testimony to the incompetence of a physics community that awarded the
-Nobel prize to Clauser, Aspect, and Zeilinger. Their research ought to
-have been withdrawn, instead.
+Nobel prize to Clauser, Aspect, and Zeilinger. Their research should
+have been withdrawn instead of awarded.
 
-Bell’s _Speakable and Unspeakable in Quantum Mechanics_ ought to be
-reclassified as “Pathological Science.” It would be one of the most
-pathological examples.
+Bell’s _Speakable and Unspeakable in Quantum
+Mechanics_&#8239;footnote:[J.&#xA0;S. Bell, _Speakable and Unspeakable
+in Quantum Mechanics_, Cambridge Univ. Press, Cambridge, 1987.] ought
+to be reclassified as “Pathological Science.” It would be one of the
+most pathological examples.
 
 Let me finish by repeating my harshness is because the defense of the
 United States is at stake, and because students are being fleeced to
@@ -1006,26 +1018,29 @@ be taught nonsense. “Collegial politeness” is unaffordable. In any
 case I am not a colleague of “professional physicists,” and they would
 not hesitate to tell me so. I am an amateur with no institutional
 affiliation, my education is in electrical engineering, and my trade
-was computer programming. The politeness is one-way. Gone are the days
-when Benjamin Franklin or Michael Faraday could become Fellow of the
-Royal Society.
+was computer programming. I am expected to be polite to professional
+physicists, but they are not polite to me. Gone are the days when
+Benjamin Franklin or Michael Faraday could become Fellow of the Royal
+Society.
 
 An excuse will be made that “specialization is necessary now and you
 cannot be a polymath,” and yet here they are, physicists, pretending
 to be able to do random process analysis without even bothering to
 study the subject. A reasonable conclusion is they believe they are so
-smart they need not study the subject. That they can intuit it all
-with their gigantic brains. And that Benjamin Franklin and Michael
-Faraday were too stupid to do what today’s physicists do.footnote:[As
-if either of these Fellows of past centuries would have run to
-_Nature_, with a paper declaring “faster than light motion” because he
-had a screw loose. Desiring knowledge rather than a Nobel prize, they
-would have overhauled their equipment.]
+smart they need not study the subject. They can intuit it all with
+their gigantic brains, so much bigger than mine and yours. And that
+Benjamin Franklin and Michael Faraday were too stupid to do what
+today’s so very “professional” and specialized physicists
+do.footnote:[As if either of these Fellows of past centuries would
+have run to _Nature_, with a paper declaring “faster than light
+motion” because he had a screw loose. Desiring knowledge rather than a
+Nobel prize, and knowing the measurements were wrong, they would
+quietly have overhauled their equipment.]
 
 If they really were so smart, they would not believe in entangled
 fairies and teleporting unicorns.
 
 I finish in this subsection, rather than with a separate formal
-conclusion, because, from a mathematical viewpoint, failure to realize
-one is free to recalibrate the apparatus is perhaps the worst mistake
-physicists have made.&#xA0;\(\square\)
+conclusion, because failure to realize one is free to recalibrate the
+apparatus is perhaps the worst failure to read the plain meaning of a
+mathematical expression physicists have ever made.&#xA0;\(\square\)

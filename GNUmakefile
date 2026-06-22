@@ -17,7 +17,7 @@ all: $(BELLMVEC).html $(BELLMVEC).pdf
 	$(M4) -Ddoctype_attribute=article \
 	      -Dtoc_attribute=left \
 	      -Dstem_attribute=latexmath \
-	      $(<) > $(@).tmp.adoc && \
+	      -P $(<) > $(@).tmp.adoc && \
 	$(ASCDOC) -b html5 -S safe $(@).tmp.adoc -o $(@) && \
 	rm $(@).tmp.adoc
 
