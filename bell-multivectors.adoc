@@ -212,8 +212,10 @@ e_\varphi = (\cos^2\varphi' - \sin^2\varphi')\,e_1 + (2\,\cos\varphi'\sin\varphi
 \]
 
 Let us refer to the _CRC Handbook of Mathematical Sciences, 6th
-Edition_, where we find the following double-angle relations on
-page&#xA0;170:
+Edition_,footnote:[W.{nbsp}H. Beyer,{nbsp}ed., _CRC Handbook of
+Mathematical Sciences_, 6th{nbsp}ed., CRC{nbsp}Press, Boca
+Raton,{nbsp}FL, 1987.] where we find the following double-angle
+relations on page&#xA0;170:
 
 \[
 \begin{align*}
@@ -666,7 +668,10 @@ We would have liked for the expectation to equal zero. So let us use a
 trick.footnote:specialization[_There is no “physics” reason for this
 trick._ It is a _mathematical_ maneuver to take advantage of symmetry,
 and I would classify it as an example of the _specialization_
-heuristic discussed in George Pólya’s _How to Solve It_. The
+heuristic discussed in George Pólya’s _How to Solve It_. (_How to
+Solve It: A New Aspect of Mathematical Method_, expanded Princeton
+Science Library{nbsp}ed., Princeton University Press,
+Princeton,{nbsp}NJ, 2004, With a foreword by John{nbsp}H. Conway.) The
 specialization heuristic will reappear later.] Let us solve two
 problems simultaneously. Let us solve also for the case where the
 initial light pulses are \(\begin{pmatrix}e_2&e_1\end{pmatrix}^t\).
@@ -890,15 +895,15 @@ and can compute the correlation correctly:
 \end{align*}
 \]
 
-The next to last step is by one of the double-angle relations earlier
-quoted from the _CRC Handbook of Mathematical Sciences_. The last step
+The next to last step is by one of the double-angle relations <<Rotors,earlier
+quoted>> from the _CRC Handbook of Mathematical Sciences_. The last step
 is true because \(\eta=0\).
 
 The result is the same as the “quantum correlation” for the given PBS
 settings. But there is still one more step before we get the complete
 answer.
 
-=== Realizing that the particular polarization angle makes no difference
+=== Realizing that the plane of polarization does not matter
 
 That step is to add zero to \(\zeta - \eta\).
 
@@ -908,10 +913,10 @@ let \(\alpha=\zeta+\delta\) and \(\beta=\eta+\delta\). Then
 \[
 \begin{align*}
 -\cos2(\alpha-\beta)
-  &= -\cos2((\zeta+\delta)-(\eta+\delta)) \\
-  &= -\cos2((\zeta-\eta)+(\delta-\delta)) \\
-  &= -\cos2((\zeta-\eta)+0) \\
-  &= -\cos2(\zeta-\eta)
+  &= -\cos 2 ( ( \zeta+\delta ) - ( \eta+\delta ) ) \\
+  &= -\cos 2 ( ( \zeta-\eta ) + ( \delta-\delta ) ) \\
+  &= -\cos 2 ( ( \zeta-\eta ) + 0 ) \\
+  &= -\cos 2 ( \zeta-\eta )
 \end{align*}
 \]
 
@@ -994,4 +999,9 @@ had a screw loose. Desiring knowledge rather than a Nobel prize, they
 would have overhauled their equipment.]
 
 If they really were so smart, they would not believe in entangled
-fairies and teleporting unicorns.&#xA0;\(\square\)
+fairies and teleporting unicorns.
+
+I finish in this subsection, rather than with a separate formal
+conclusion, because, from a mathematical viewpoint, failure to realize
+one is free to recalibrate the apparatus is perhaps the worst mistake
+physicists have made.&#xA0;\(\square\)

@@ -470,7 +470,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_solving_two_problems_at_once">Solving two problems at once</a></li>
 <li><a href="#_a_naïve_attempt_to_derive_the_correlation_of_f_and_g">A naïve attempt to derive the correlation of \(f\) and \(g\)</a></li>
 <li><a href="#SpecializedSolution">A solution for \(\eta=0\)</a></li>
-<li><a href="#_realizing_that_the_particular_polarization_angle_makes_no_difference">Realizing that the particular polarization angle makes no difference</a></li>
+<li><a href="#_realizing_that_the_plane_of_polarization_does_not_matter">Realizing that the plane of polarization does not matter</a></li>
 </ul>
 </li>
 </ul>
@@ -723,8 +723,8 @@ e_\varphi = (\cos^2\varphi' - \sin^2\varphi')\,e_1 + (2\,\cos\varphi'\sin\varphi
 </div>
 <div class="paragraph">
 <p>Let us refer to the <em>CRC Handbook of Mathematical Sciences, 6th
-Edition</em>, where we find the following double-angle relations on
-page&#xA0;170:</p>
+Edition</em>,<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup> where we find the following double-angle
+relations on page&#xA0;170:</p>
 </div>
 <div class="paragraph">
 <p>\[
@@ -1180,7 +1180,7 @@ characterizes the supposedly “spooky action at a distance” of the
 experiment, and should not be derivable without quantum mechanics. Yet
 below we will derive it as the ordinary correlation, even though we
 use no quantum mechanics and obviously assume only action by direct
-contact.<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_footnotedef_1" title="View footnote.">1</a>]</sup></p>
+contact.<sup class="footnote">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup></p>
 </div>
 </div>
 </div>
@@ -1252,7 +1252,7 @@ disappears from the answer.)</p>
 </div>
 <div class="paragraph">
 <p>We would have liked for the expectation to equal zero. So let us use a
-trick.<sup class="footnote" id="_footnote_specialization">[<a id="_footnoteref_2" class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup> Let us solve two
+trick.<sup class="footnote" id="_footnote_specialization">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup> Let us solve two
 problems simultaneously. Let us solve also for the case where the
 initial light pulses are \(\begin{pmatrix}e_2&amp;e_1\end{pmatrix}^t\).
 Towards that end, introduce \(\text{prop}_3\) and let us analyze
@@ -1465,7 +1465,7 @@ I work at it until an effective method comes to mind.</p>
 <div class="paragraph">
 <p>What works is to <em>specialize</em> the problem so there is only one
 polarizer setting. Then that specialized solution can be generalized.
-(See <sup class="footnoteref">[<a class="footnote" href="#_footnotedef_2" title="View footnote.">2</a>]</sup>)</p>
+(See <sup class="footnoteref">[<a class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup>)</p>
 </div>
 </div>
 <div class="sect2">
@@ -1512,8 +1512,8 @@ P_4' &amp;= P_5' = (1/2)\sin^2\zeta
 \]</p>
 </div>
 <div class="paragraph">
-<p>The next to last step is by one of the double-angle relations earlier
-quoted from the <em>CRC Handbook of Mathematical Sciences</em>. The last step
+<p>The next to last step is by one of the double-angle relations <a href="#Rotors">earlier
+quoted</a> from the <em>CRC Handbook of Mathematical Sciences</em>. The last step
 is true because \(\eta=0\).</p>
 </div>
 <div class="paragraph">
@@ -1523,7 +1523,7 @@ answer.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_realizing_that_the_particular_polarization_angle_makes_no_difference">Realizing that the particular polarization angle makes no difference</h3>
+<h3 id="_realizing_that_the_plane_of_polarization_does_not_matter">Realizing that the plane of polarization does not matter</h3>
 <div class="paragraph">
 <p>That step is to add zero to \(\zeta - \eta\).</p>
 </div>
@@ -1535,10 +1535,10 @@ let \(\alpha=\zeta+\delta\) and \(\beta=\eta+\delta\). Then</p>
 <p>\[
 \begin{align*}
 -\cos2(\alpha-\beta)
-  &amp;= -\cos2\zeta+\delta)-(\eta+\delta \\
-  &amp;= -\cos2\zeta-\eta)+(\delta-\delta \\
-  &amp;= -\cos2((\zeta-\eta)+0) \\
-  &amp;= -\cos2(\zeta-\eta)
+  &amp;= -\cos 2 ( ( \zeta+\delta ) - ( \eta+\delta ) ) \\
+  &amp;= -\cos 2 ( ( \zeta-\eta ) + ( \delta-\delta ) ) \\
+  &amp;= -\cos 2 ( ( \zeta-\eta ) + 0 ) \\
+  &amp;= -\cos 2 ( \zeta-\eta )
 \end{align*}
 \]</p>
 </div>
@@ -1586,7 +1586,7 @@ of main channels the two PBS.</p>
 and it is correct, but we can see that “quantum” is a misnomer. It is
 the ordinary correlation from probability theory. It also can be
 derived from classical coherence theory of electromagnetic
-waves.<sup class="footnote">[<a id="_footnoteref_3" class="footnote" href="#_footnotedef_3" title="View footnote.">3</a>]</sup> The only
+waves.<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup> The only
 thing mysteriously “quantum” about the expression is how any “quantum”
 physicist obtained it by <em>some</em> means, given the field’s habit of
 uncritically publishing fallacious semi-solutions such as Bell’s and
@@ -1625,11 +1625,17 @@ to be able to do random process analysis without even bothering to
 study the subject. A reasonable conclusion is they believe they are so
 smart they need not study the subject. That they can intuit it all
 with their gigantic brains. And that Benjamin Franklin and Michael
-Faraday were too stupid to do what today’s physicists do.<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p>
+Faraday were too stupid to do what today’s physicists do.<sup class="footnote">[<a id="_footnoteref_5" class="footnote" href="#_footnotedef_5" title="View footnote.">5</a>]</sup></p>
 </div>
 <div class="paragraph">
 <p>If they really were so smart, they would not believe in entangled
-fairies and teleporting unicorns.&#xA0;\(\square\)</p>
+fairies and teleporting unicorns.</p>
+</div>
+<div class="paragraph">
+<p>I finish in this subsection, rather than with a separate formal
+conclusion, because, from a mathematical viewpoint, failure to realize
+one is free to recalibrate the apparatus is perhaps the worst mistake
+physicists have made.&#xA0;\(\square\)</p>
 </div>
 </div>
 </div>
@@ -1638,21 +1644,24 @@ fairies and teleporting unicorns.&#xA0;\(\square\)</p>
 <div id="footnotes">
 <hr>
 <div class="footnote" id="_footnotedef_1">
-<a href="#_footnoteref_1">1</a>. I believe you will also find, if you go to the trouble, that violations of Bell or CHSH inequalities are inconsistent with this correlation function, no matter how it be derived. The inequalities are incorrect mathematics. The experimental technique of Alain Aspect and others must be flawed.
+<a href="#_footnoteref_1">1</a>. W.&#160;H. Beyer,&#160;ed., <em>CRC Handbook of Mathematical Sciences</em>, 6th&#160;ed., CRC&#160;Press, Boca Raton,&#160;FL, 1987.
 </div>
 <div class="footnote" id="_footnotedef_2">
-<a href="#_footnoteref_2">2</a>. <em>There is no “physics” reason for this trick.</em> It is a <em>mathematical</em> maneuver to take advantage of symmetry, and I would classify it as an example of the <em>specialization</em> heuristic discussed in George Pólya’s <em>How to Solve It</em>. The specialization heuristic will reappear later.
+<a href="#_footnoteref_2">2</a>. I believe you will also find, if you go to the trouble, that violations of Bell or CHSH inequalities are inconsistent with this correlation function, no matter how it be derived. The inequalities are incorrect mathematics. The experimental technique of Alain Aspect and others must be flawed.
 </div>
 <div class="footnote" id="_footnotedef_3">
-<a href="#_footnoteref_3">3</a>. This was done by A.&#xA0;F. Kracklauer.
+<a href="#_footnoteref_3">3</a>. <em>There is no “physics” reason for this trick.</em> It is a <em>mathematical</em> maneuver to take advantage of symmetry, and I would classify it as an example of the <em>specialization</em> heuristic discussed in George Pólya’s <em>How to Solve It</em>. (<em>How to Solve It: A New Aspect of Mathematical Method</em>, expanded Princeton Science Library&#160;ed., Princeton University Press, Princeton,&#160;NJ, 2004, With a foreword by John&#160;H. Conway.) The specialization heuristic will reappear later.
 </div>
 <div class="footnote" id="_footnotedef_4">
-<a href="#_footnoteref_4">4</a>. As if either of these Fellows of past centuries would have run to <em>Nature</em>, with a paper declaring “faster than light motion” because he had a screw loose. Desiring knowledge rather than a Nobel prize, they would have overhauled their equipment.
+<a href="#_footnoteref_4">4</a>. This was done by A.&#xA0;F. Kracklauer.
+</div>
+<div class="footnote" id="_footnotedef_5">
+<a href="#_footnoteref_5">5</a>. As if either of these Fellows of past centuries would have run to <em>Nature</em>, with a paper declaring “faster than light motion” because he had a screw loose. Desiring knowledge rather than a Nobel prize, they would have overhauled their equipment.
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-06-21 21:15:42 -0500
+Last updated 2026-06-22 06:39:56 -0500
 </div>
 </div>
 <script type="text/x-mathjax-config">
