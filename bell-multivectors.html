@@ -5,6 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.26">
+<meta name="author" content="Barry Schwartz">
 <title>Analysis of the two-channel optical Bell test, using multivectors and matrices</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -437,6 +438,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <body class="article toc2 toc-left">
 <div id="header">
 <h1>Analysis of the two-channel optical Bell test, using multivectors and matrices</h1>
+<div class="details">
+<span id="author" class="author">Barry Schwartz</span><br>
+</div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
@@ -578,11 +582,11 @@ to a context but taught as if it were universal.</p>
 products. The <em>geometric product</em> \(uv\) of vectors \(u\) and \(v\) is</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 uv = u\cdot v + u\wedge v
 \end{equation}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>where \(u\cdot v\) is the familiar dot product, but the <em>wedge
@@ -601,31 +605,31 @@ the familiar cross product.</p>
 (<em>grade&#xA0;2</em>) part of a multivector:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 {\left\langle{5 + 2e_1 + 7e_1\wedge e_2}\right\rangle}_0 &amp;= 5 \\
 {\left\langle{5 + 2e_1 + 7e_1\wedge e_2}\right\rangle}_1 &amp;= 2e_1 \\
 {\left\langle{5 + 2e_1 + 7e_1\wedge e_2}\right\rangle}_2 &amp;= 7e_1\wedge e_2 \\
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>Given the grade operation, the dot and wedge products of two vectors
 can be obtained from their geometric product:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 u\cdot v &amp;= {\left\langle uv\right\rangle}_0 \\
 u\wedge v &amp;= {\left\langle uv\right\rangle}_2
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>Here are some identities:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 u\cdot v &amp;= \lVert u\rVert\lVert v\rVert &amp;\text{if } u\parallel v \\
 u\wedge v &amp;= 0 &amp;\text{if } u\parallel v \\
@@ -634,7 +638,7 @@ u\wedge v = uv = -vu &amp;= -v\wedge u &amp;\text{if } u\perp v \\
 u\cdot v  &amp;= v\cdot u &amp; \text{always} \\
 u\wedge v  &amp;= -v\wedge u &amp; \text{always}
 \end{align*}
-</p>
+\]</p>
 </div>
 </div>
 <div class="sect2">
@@ -649,14 +653,14 @@ magnitude&#xA0;1 in the \(y\)-direction.</p>
 <p>The following are useful identities:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 e_1\cdot e_2 &amp;= e_2\cdot e_1 = 0 \\
 e_1\wedge e_1 &amp;= e_2\wedge e_2 = 0 \\
 e_1\cdot e_1 &amp;= e_1 e_1 = e_2 e_2 = e_2\cdot e_2 = 1 \\
 e_1\wedge e_2 &amp;= e_1 e_2 = -e_2 e_1 = -e_2\wedge e_1
 \end{align*}
-</p>
+\]</p>
 </div>
 </div>
 <div class="sect2">
@@ -674,48 +678,48 @@ operation, one uses a <em>rotor</em>. To rotate counterclockwise
 by&#xA0;\(\varphi\), the rotor and its inverse are</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 R_\varphi &amp;= \cos(\varphi/2) - e_1 e_2 \sin(\varphi/2) \\
 R_\varphi^{-1} &amp;= \cos(\varphi/2) + e_1 e_2 \sin(\varphi/2)
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>Any vector around the clock face can be gotten by rotating \(e_1\),
 thus:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 e_\varphi &amp;= R_\varphi \, e_1 \, R_\varphi^{-1} \\
       &amp;= (\cos\varphi' - e_1 e_2 \sin\varphi') \, e_1 \, (\cos\varphi' + e_1 e_2 \sin\varphi') \\
       &amp;= e_1 \cos^2\varphi' - e_1 e_2 e_1 \cos\varphi'\sin\varphi'
           + e_1 e_1 e_2 \cos\varphi'\sin\varphi' - e_1 e_2 e_1 e_1 e_2 \sin^2\varphi'
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>where \(\varphi' = \varphi/2\). Identities mentioned above allow simplifications:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 -e_1 e_2 e_1 &amp;= e_2 \\
 e_1 e_1 e_2 &amp;= e_2 \\
 - e_1 e_2 e_1 e_1 e_2 &amp;= -e_1
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>Therefore,</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 e_\varphi = (\cos^2\varphi' - \sin^2\varphi')\,e_1 + (2\,\cos\varphi'\sin\varphi')\,e_2
 \end{equation}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>Let us refer to the <em>CRC Handbook of Mathematical Sciences, 6th
@@ -723,22 +727,22 @@ Edition</em>, where we find the following double-angle relations on
 page&#xA0;170:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
-\sin 2\alpha &amp;= 2\sin\alpha\cos\alpha \\
+\sin 2\alpha &amp;= 2 \mkern1mu \sin\alpha \mkern1mu \cos\alpha \\
 \cos 2\alpha &amp;= \cos^2\alpha - \sin^2\alpha
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>Therefore,</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 e_\varphi &amp;= e_1\cos\varphi + e_2\sin\varphi
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>or, in other words, we can use trigonometry and component addition.
@@ -795,11 +799,11 @@ to the left and \(e_2\) to the right. This initial <em>proposition</em> can
 be written as a matrix thus:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 \text{prop}_1 = \begin{pmatrix}e_1\\e_2\end{pmatrix}
 \end{equation}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>The upper row of such a matrix represents the left arm of the
@@ -865,25 +869,25 @@ the axis of transmission of the filter, and \(e_\varphi\) the angle of
 polarization of the impinging light, then the projection is</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 \text{proj}_{e_\vartheta}e_\varphi
         = (e_\varphi\cdot e_\vartheta)e_\vartheta
 \end{equation}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>The probability of retransmission is, conveniently, the geometric
 product of this projection with itself:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 (\text{proj}_{e_\vartheta}e_\varphi)^2
         = (e_\varphi\cdot e_\vartheta)^2 e_\vartheta e_\vartheta
         = \cos^2 (\vartheta - \varphi)
 \end{equation}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>Above we have presumed light plane-polarized either \(e_1\)
@@ -892,7 +896,7 @@ or&#xA0;\(e_2\), and there are two polarizers, the main channel
 Therefore there are the following special instances:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 (\text{proj}_{e_\vartheta}e_1)^2
         &amp;= (e_1\cdot e_\vartheta)^2 e_\vartheta^2
@@ -907,7 +911,7 @@ Therefore there are the following special instances:</p>
         &amp;= (e_2\cdot e_{\vartheta+\pi/2})^2 e_{\vartheta+\pi/2}^2
         = \sin^2(\vartheta+\pi/2) = \cos^2\vartheta
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>The apparatus of the experiment has two PBS. Let us call the angles of
@@ -926,7 +930,7 @@ following proposition, \(P_1,P_2,P_3,P_4\) represent mutual
 probabilities of the possibilities represented by the matrix columns:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 \text{prop}_2
   = &amp;\space P_1\begin{pmatrix}e_\zeta&amp;e_1\\e_\eta&amp;e_2\end{pmatrix}
@@ -935,7 +939,7 @@ probabilities of the possibilities represented by the matrix columns:</p>
   + P_2\begin{pmatrix}e_{\zeta+\pi/2}
                 &amp;e_1\\e_{\eta+\pi/2}&amp;e_2\end{pmatrix}
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>Again the upper rows represent the left side of the apparatus and the
@@ -950,13 +954,13 @@ column, given the facts described by the right column
 probability,</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 \text{P}(\text{prop}_x|\text{prop}_y) =
 \frac{\text{P}(\text{prop}_x\wedge\text{prop}_y)}{
         \text{P}(\text{prop}_y)}
 \end{equation}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>where in this case \( \text{P}(\text{prop}_y) =
@@ -984,25 +988,25 @@ nice to see the mathematics even subtly agreeing with us.</p>
 <p>A formula for computing the probabilities is as follows. If</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 M_n =
   \begin{pmatrix}
     e_{\angle a} &amp; e_1 \\ e_{\angle b} &amp; e_2
   \end{pmatrix}
 \end{equation}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>then</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 P_n \stackrel{?}{=} (\text{proj}_{e_{\angle a}}e_1)^2
          (\text{proj}_{e_{\angle b}}e_2)^2
 \end{equation}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>which is the mutual probability of the top row and bottom row. We do
@@ -1024,7 +1028,7 @@ probably <em>is</em> an impediment.</p>
 that what we are writing is correct:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 \text{prop}_2
   = &amp;\space P_1\begin{pmatrix}e_\zeta&amp;e_1\\e_\eta&amp;e_2\end{pmatrix}
@@ -1033,20 +1037,20 @@ that what we are writing is correct:</p>
   + P_2\begin{pmatrix}e_{\zeta+\pi/2}
                 &amp;e_1\\e_{\eta+\pi/2}&amp;e_2\end{pmatrix}
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>where</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 P_1 &amp;\stackrel{?}{=} \cos^2\zeta \, \sin^2\eta \\
 P_2 &amp;\stackrel{?}{=} \sin^2\zeta \, \sin^2\eta \\
 P_3 &amp;\stackrel{?}{=} \cos^2\zeta \, \cos^2\eta \\
 P_4 &amp;\stackrel{?}{=} \sin^2\zeta \, \cos^2\eta
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>The tensor \(\text{prop}_2\) is a proposition stating the probability
@@ -1062,19 +1066,19 @@ possible event in the experiment and which can be checked for
 summation to one:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 P_1 + P_2 + P_3 + P_4
   &amp;= \cos^2\zeta \, \sin^2\eta
      + \sin^2\zeta \, \sin^2\eta \\
-      &amp;\quad\quad + \cos^2\zeta \, \cos^2\eta
+      &amp;\mkern1em\mkern1em + \cos^2\zeta \, \cos^2\eta
           + \sin^2\zeta \, \cos^2\eta \\
-  &amp;= (\cos^2\zeta)(\sin^2\eta + \cos^2\eta) \\
-       &amp;\quad\quad + (\sin^2\zeta)(\sin^2\eta + \cos^2\eta) \\
+  &amp;= (\cos^2\zeta) (\sin^2\eta + \cos^2\eta) \\
+       &amp;\mkern1em\mkern1em + (\sin^2\zeta) (\sin^2\eta + \cos^2\eta) \\
   &amp;= \cos^2\zeta + \sin^2\zeta \\
   &amp;= 1
 \end{align*}
-</p>
+\]</p>
 </div>
 </div>
 </div>
@@ -1095,11 +1099,11 @@ there are probabilities \(P_i\) that add to one, and associated
 numbers \(f(i)\). Then the expectation of \(f\) is</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 \text{E}(f) = \sum_i P_i f(i)
 \end{equation}
-</p>
+\]</p>
 </div>
 </div>
 <div class="sect2">
@@ -1114,25 +1118,25 @@ ignored by squaring the difference.</p>
 <p>Thus we have the <em>variance</em> of \(f\):</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 \text{Var}(f) = \sigma_f^2
-              &amp;= \text{E}\left((f - \text{E}(f))^2\right) \\
-              &amp;= \sum_i\left(P_i\,\left(f(i)
-                        - \sum_{i'}P_{i'} f({i'})\right)^2\right)
+              &amp;= \text{E}\left( (f - \text{E}(f))^2 \right) \\
+              &amp;= \sum_i \left( P_i \, \left( f(i)
+                        - \sum_{i'}P_{i'} f(i') \right)^2 \right)
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>The square root of the variance has the same dimensions as \(f\) and
 is called the <em>standard deviation</em>:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 \sigma_f = \sqrt{\text{Var}(f)}
 \end{equation}
-</p>
+\]</p>
 </div>
 </div>
 <div class="sect2">
@@ -1143,7 +1147,7 @@ be useful to compute a figure analogous to the variance, but involving
 both sets. Such a figure is called the <em>covariance</em>:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 \text{cov}_{fg} = \sigma_{fg}
  &amp;= \text{E}\left(\mkern1mu\left(f-\text{E}(f)\right)
@@ -1152,7 +1156,7 @@ both sets. Such a figure is called the <em>covariance</em>:</p>
         \left(f(i) - \sum_{i'}P_{i'} f({i'})\right)
         \left(g(j) - \sum_{j'}P_{j'} g({j'})\right)
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>A dimensionless figure called the <em>correlation</em> is obtained by
@@ -1160,12 +1164,12 @@ dividing the covariance of \(f\) and&#xA0;\(g\) by the respective
 standard deviations:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 \text{corr}_{fg} = \rho_{fg}
  = \frac{\sigma_{fg}}{\sigma_f\,\sigma_g}
 \end{equation}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>For the two-channel optical Bell test, there is a dimensionless figure
@@ -1190,35 +1194,35 @@ contact.<sup class="footnote">[<a id="_footnoteref_1" class="footnote" href="#_f
 <p>Let</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 M_1 &amp;= \begin{pmatrix}e_\zeta&amp;e_1\\e_\eta&amp;e_2\end{pmatrix}
 &amp; M_2 &amp;= \begin{pmatrix}e_{\zeta+\pi/2}&amp;e_1\\e_\eta&amp;e_2\end{pmatrix} \\
 M_3 &amp;= \begin{pmatrix}e_\zeta&amp;e_1\\e_{\eta+\pi/2}&amp;e_2\end{pmatrix}
 &amp; M_4 &amp;= \begin{pmatrix}e_{\zeta+\pi/2}&amp;e_1\\e_{\eta+\pi/2}&amp;e_2\end{pmatrix}
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>Then</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 \text{prop}_2 = P_1M_1 + P_2M_2 + P_3M_3 + P_4M_4
 \end{equation}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>Define \(f\) as follows:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 f(M_1) &amp;= f(M_3) &amp;= +1 \\
 f(M_2) &amp;= f(M_4) &amp;= -1
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>Thus \(f\) equals \(+1\) if the left PBS retransmits in its main
@@ -1228,14 +1232,14 @@ channel, \(-1\) if it retransmits in its complementary channel.</p>
 <p>The expectation of \(f\) is</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 \text{E}(f)
   &amp;\stackrel{?}{=} \cos^2\zeta \, \sin^2\eta - \sin^2\zeta \, \sin^2\eta \\
      &amp;\quad\quad +\cos^2\zeta \, \cos^2\eta - \sin^2\zeta \, \cos^2\eta \\
   &amp;= \cos^2\zeta - \sin^2\zeta
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>which is the probability of a retransmission in the main channel minus
@@ -1255,13 +1259,13 @@ Towards that end, introduce \(\text{prop}_3\) and let us analyze
 \(\text{prop}_3\), which has symmetry:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 \text{prop}_3 =
   \frac12\begin{pmatrix}e_1\\e_2\end{pmatrix}
   + \frac12\begin{pmatrix}e_2\\e_1\end{pmatrix}
 \end{equation}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>Remember that in \(\text{prop}_1\) the axis of transmission was not
@@ -1276,21 +1280,21 @@ original.</p>
 <p>We now need four more matrices:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 M_5 &amp;= \begin{pmatrix}e_\zeta&amp;e_2\\e_\eta&amp;e_1\end{pmatrix}
 &amp; M_6 &amp;= \begin{pmatrix}e_{\zeta+\pi/2}&amp;e_2\\e_\eta&amp;e_1\end{pmatrix} \\
 M_7 &amp;= \begin{pmatrix}e_\zeta&amp;e_2\\e_{\eta+\pi/2}&amp;e_1\end{pmatrix}
 &amp; M_8 &amp;= \begin{pmatrix}e_{\zeta+\pi/2}&amp;e_2\\e_{\eta+\pi/2}&amp;e_1\end{pmatrix}
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>And I will leave it as an exercise for the reader to show that the new
 (but still questionable) probability formula is</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 P_n' \stackrel{?}{=}
   \begin{cases}
@@ -1302,37 +1306,37 @@ P_n' \stackrel{?}{=}
          &amp; \text{if } n\in\{5,6,7,8\}
   \end{cases}
 \end{equation}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>so that</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 P_1' &amp;= P_8' \stackrel{?}{=} (1/2)\cos^2\zeta \, \sin^2\eta \\
 P_2' &amp;= P_7' \stackrel{?}{=} (1/2)\sin^2\zeta \, \sin^2\eta \\
 P_3' &amp;= P_6' \stackrel{?}{=} (1/2)\cos^2\zeta \, \cos^2\eta \\
 P_4' &amp;= P_5' \stackrel{?}{=} (1/2)\sin^2\zeta \, \cos^2\eta
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>Define</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 f(M_5) &amp;= f(M_7) &amp;= +1 \\
 f(M_6) &amp;= f(M_8) &amp;= -1
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>so \(f\) still means \(+1\) for the main channel. Then</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 2\,\text{E}(f)
   &amp;\stackrel{?}{=}
@@ -1345,7 +1349,7 @@ f(M_6) &amp;= f(M_8) &amp;= -1
      &amp;\quad\quad\quad\quad +\sin^2\zeta \, \sin^2\eta
                            -\cos^2\zeta \, \sin^2\eta = 0
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>A desirable value for the variance, and thus also of the standard
@@ -1355,7 +1359,7 @@ functions such as \(f\), but that is what lets us choose our \(f\) to
 give us expectation and standard deviation that are easy to work with.</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 2\,\sigma_f^2
 p  &amp;\stackrel{?}{=}
@@ -1369,7 +1373,7 @@ p  &amp;\stackrel{?}{=}
                            +(\cos^2\zeta \, \sin^2\eta)\,(-1 - 0)^2
      = 2
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>Indeed, then, \(\sigma_f \stackrel{?}{=} 1\) as desired.</p>
@@ -1379,14 +1383,14 @@ p  &amp;\stackrel{?}{=}
 the right-hand PBS instead of the left:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 f(M_1) &amp;= f(M_3) = f(M_5) = f(M_7) &amp;= +1 \\
 f(M_2) &amp;= f(M_4) = f(M_6) = f(M_8) &amp;= -1 \\
 g(M_1) &amp;= g(M_2) = g(M_5) = g(M_6) &amp;= +1 \\
 g(M_3) &amp;= g(M_4) = g(M_7) = g(M_8) &amp;= -1
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>The function \(g\), like \(f\), has expectation zero and standard
@@ -1418,14 +1422,14 @@ correlation.</p>
 formula</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 \text{cov}_{fg}
   \stackrel{?}{=} \mkern-10mu
   \sum_{i,j\in {1,\ldots,8}}
       \mkern-10mu P_i P_j\,f(M_i) g(M_j)
 \end{equation}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>This results in expressions similar to those of the CHSH inequality.</p>
@@ -1483,20 +1487,20 @@ through \(\zeta\).</p>
 <p>We now have</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 P_1' &amp;= P_8' = 0 \\
 P_2' &amp;= P_7' = 0 \\
 P_3' &amp;= P_6' = (1/2)\cos^2\zeta \\
 P_4' &amp;= P_5' = (1/2)\sin^2\zeta
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>and can compute the correlation correctly:</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 \rho_{fg} = \text{cov}_{fg}
   &amp;= (1/2)\,(\cos^2\zeta)\,(f(M_3)g(M_3) + f(M_6)g(M_6)) \\
@@ -1505,7 +1509,7 @@ P_4' &amp;= P_5' = (1/2)\sin^2\zeta
   &amp;= -\cos2\mkern1.2mu\zeta \\
   &amp;= -\cos2(\zeta - \eta)
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>The next to last step is by one of the double-angle relations earlier
@@ -1528,15 +1532,15 @@ answer.</p>
 let \(\alpha=\zeta+\delta\) and \(\beta=\eta+\delta\). Then</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{align*}
 -\cos2(\alpha-\beta)
-  &amp;= -\cos2((\zeta+\delta)-(\eta+\delta)) \\
-  &amp;= -\cos2((\zeta-\eta)+(\delta-\delta)) \\
+  &amp;= -\cos2\zeta+\delta)-(\eta+\delta \\
+  &amp;= -\cos2\zeta-\eta)+(\delta-\delta \\
   &amp;= -\cos2((\zeta-\eta)+0) \\
   &amp;= -\cos2(\zeta-\eta)
 \end{align*}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>Thus the PBS settings can be rotated together to any new calibration,
@@ -1567,11 +1571,11 @@ of the two-channel optical Bell test, without quantum mechanics and
 assuming only action by direct contact. The correlation is</p>
 </div>
 <div class="paragraph">
-<p>
+<p>\[
 \begin{equation}
 \rho_{fg} = -\cos2(\alpha-\beta)
 \end{equation}
-</p>
+\]</p>
 </div>
 <div class="paragraph">
 <p>where \(\alpha\) and \(\beta\) are the respective axes of transmission
@@ -1625,7 +1629,7 @@ Faraday were too stupid to do what today’s physicists do.<sup class="footnote"
 </div>
 <div class="paragraph">
 <p>If they really were so smart, they would not believe in entangled
-fairies and teleporting unicorns.&#xA0;&#9756;</p>
+fairies and teleporting unicorns.&#xA0;\(\square\)</p>
 </div>
 </div>
 </div>
@@ -1648,7 +1652,7 @@ fairies and teleporting unicorns.&#xA0;&#9756;</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-06-21 09:59:32 -0500
+Last updated 2026-06-21 21:15:42 -0500
 </div>
 </div>
 <script type="text/x-mathjax-config">

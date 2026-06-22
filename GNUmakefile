@@ -2,6 +2,7 @@ BELLMVEC := bell-multivectors
 ASCDOC := asciidoctor
 NPM := npm
 NODEJS := node
+M4 := m4
 REALPATH := realpath
 
 .DEFAULT_GOAL := default
@@ -12,8 +13,13 @@ REALPATH := realpath
 default: all
 all: $(BELLMVEC).html $(BELLMVEC).pdf
 
-%.html: %.adoc
-	$(ASCDOC) --safe $(<) -o $(@)
+%.html: %.adoc GNUmakefile
+	$(M4) -Ddoctype_attribute=article \
+	      -Dtoc_attribute=left \
+	      -Dstem_attribute=mathjax \
+	      $(<) > $(@).tmp.adoc && \
+	$(ASCDOC) -b html5 -S safe $(@).tmp.adoc -o $(@) && \
+	rm $(@).tmp.adoc
 
 %.pdf: %.html
 	$(NPM) install selenium-webdriver
@@ -21,8 +27,8 @@ all: $(BELLMVEC).html $(BELLMVEC).pdf
 
 .PHONY: mostlyclean clean
 mostlyclean:
-	-rm -f $(BELLMVEC).{html,pdf}
+	-rm -f $(BELLMVEC).{html,pdf,xml,tex}
+	-rm -f *.tmp.adoc
 clean: mostlyclean
 	-rm -f *.json
 	-rm -R -f node_modules
-
