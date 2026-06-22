@@ -547,12 +547,12 @@ P_1 + P_2 + P_3 + P_4
 === Expectation
 
 Let us make a small diversion onto topics of probability theory. The
-first will be _expectation_.
+first topic will be _expectation_.
 
 An expectation is an average weighted by probabilities, by frequencies
-of occurrence, or by some similar fractions. For example, suppose
-there are probabilities \(P_i\) that add to one, and associated
-numbers \(f(i)\). Then the expectation of \(f\) is
+of occurrence, or by some similar fractions that add up to one. For
+example, suppose there are probabilities \(P_i\) that add to one, and
+associated numbers \(f(i)\). Then the expectation of \(f\) is
 
 \[
 \begin{equation}
@@ -574,7 +574,8 @@ Thus we have the _variance_ of \(f\):
 \text{Var}(f) = \sigma_f^2
               &= \text{E}\left( (f - \text{E}(f))^2 \right) \\
               &= \sum_i \left( P_i \, \left( f(i)
-                        - \sum_{i'}P_{i'} f(i') \right)^2 \right)
+                        - \sum_{\mu}P_{\mu} f({\mu})
+                                          \right)^2 \right)
 \end{align*}
 \]
 
@@ -583,7 +584,7 @@ is called the _standard deviation_:
 
 \[
 \begin{equation}
-\sigma_f = \sqrt{\text{Var}(f)}
+\sigma_f = \sqrt{\text{Var}(f)} = \sqrt{\sigma_f^2}
 \end{equation}
 \]
 
@@ -599,8 +600,8 @@ both sets. Such a figure is called the _covariance_:
  &= \text{E}\left(\mkern1mu\left(f-\text{E}(f)\right)
                     \left(g-\text{E}(g)\right)\mkern1mu\right) \\
  &= \sum_{i,j} P_{ij}
-        \left(f(i) - \sum_{i'}P_{i'} f({i'})\right)
-        \left(g(j) - \sum_{j'}P_{j'} g({j'})\right)
+        \left(f(i) - \sum_{\mu}P_{\mu} f({\mu})\right)
+        \left(g(j) - \sum_{\nu}P_{\nu} g({\nu})\right)
 \end{align*}
 \]
 
@@ -615,19 +616,23 @@ standard deviations:
 \end{equation}
 \]
 
+The sign of a correlation depends on the definitions of \(f\)
+and&#xA0;\(g\) and tends to vary by author.
+
 For the two-channel optical Bell test, there is a dimensionless figure
 physicists call the “quantum correlation” that equals
-\(-\cos2(\alpha-\beta)\), where \(\alpha\) and&#xA0;\(\beta\) are the
-polarizer settings. If physicists are correct, this figure
-characterizes the supposedly “spooky action at a distance” of the
-experiment, and should not be derivable without quantum mechanics. Yet
-below we will derive it as the ordinary correlation, even though we
-use no quantum mechanics and obviously assume only action by direct
+\(\pm\cos2(\alpha-\beta)\), where \(\alpha\) and&#xA0;\(\beta\) are
+the PBS settings. If physicists are correct, this figure characterizes
+the supposedly “spooky action at a distance” of the experiment, and
+should not be derivable without quantum mechanics. Yet below we will
+derive it as the ordinary correlation, even though we use no quantum
+mechanics and obviously assume only action by direct
 contact.footnote:[I believe you will also find, if you go to the
 trouble, that violations of Bell or CHSH inequalities are inconsistent
 with this correlation function, no matter how it be derived. The
 inequalities are incorrect mathematics. The experimental technique of
-Alain Aspect and others must be flawed.]
+Alain Aspect and others must be flawed, for it should be impossible to
+obtain violations of the inequalities.]
 
 == The correlation of the two-channel optical Bell test
 
@@ -683,8 +688,8 @@ was derived by questionable means. The reason is that \(\eta\)
 disappears from the answer.)
 
 We would have liked for the expectation to equal zero. So let us use a
-trick.footnote:specialization[_There is no “physics” reason for this
-trick._ It is a _mathematical_ maneuver to take advantage of symmetry,
+trick.footnote:specialization[There is no “physics” reason for this
+trick. It is a _mathematical_ maneuver to take advantage of symmetry,
 and I would classify it as an example of the _specialization_
 heuristic discussed by George Pólya. (G. Pólya, _How to Solve It: A
 New Aspect of Mathematical Method_, expanded Princeton Science

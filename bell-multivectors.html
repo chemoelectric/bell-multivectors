@@ -1106,13 +1106,13 @@ P_1 + P_2 + P_3 + P_4
 <h3 id="_expectation">Expectation</h3>
 <div class="paragraph">
 <p>Let us make a small diversion onto topics of probability theory. The
-first will be <em>expectation</em>.</p>
+first topic will be <em>expectation</em>.</p>
 </div>
 <div class="paragraph">
 <p>An expectation is an average weighted by probabilities, by frequencies
-of occurrence, or by some similar fractions. For example, suppose
-there are probabilities \(P_i\) that add to one, and associated
-numbers \(f(i)\). Then the expectation of \(f\) is</p>
+of occurrence, or by some similar fractions that add up to one. For
+example, suppose there are probabilities \(P_i\) that add to one, and
+associated numbers \(f(i)\). Then the expectation of \(f\) is</p>
 </div>
 <div class="paragraph">
 <p>\[
@@ -1139,7 +1139,8 @@ ignored by squaring the difference.</p>
 \text{Var}(f) = \sigma_f^2
               &amp;= \text{E}\left( (f - \text{E}(f))^2 \right) \\
               &amp;= \sum_i \left( P_i \, \left( f(i)
-                        - \sum_{i'}P_{i'} f(i) \right)^2 \right)
+                        - \sum_{\mu}P_{\mu} f({\mu})
+                                          \right)^2 \right)
 \end{align*}
 \]</p>
 </div>
@@ -1150,7 +1151,7 @@ is called the <em>standard deviation</em>:</p>
 <div class="paragraph">
 <p>\[
 \begin{equation}
-\sigma_f = \sqrt{\text{Var}(f)}
+\sigma_f = \sqrt{\text{Var}(f)} = \sqrt{\sigma_f^2}
 \end{equation}
 \]</p>
 </div>
@@ -1169,8 +1170,8 @@ both sets. Such a figure is called the <em>covariance</em>:</p>
  &amp;= \text{E}\left(\mkern1mu\left(f-\text{E}(f)\right)
                     \left(g-\text{E}(g)\right)\mkern1mu\right) \\
  &amp;= \sum_{i,j} P_{ij}
-        \left(f(i) - \sum_{i'}P_{i'} f({i'})\right)
-        \left(g(j) - \sum_{j'}P_{j'} g({j'})\right)
+        \left(f(i) - \sum_{\mu}P_{\mu} f({\mu})\right)
+        \left(g(j) - \sum_{\nu}P_{\nu} g({\nu})\right)
 \end{align*}
 \]</p>
 </div>
@@ -1188,14 +1189,18 @@ standard deviations:</p>
 \]</p>
 </div>
 <div class="paragraph">
+<p>The sign of a correlation depends on the definitions of \(f\)
+and&#xA0;\(g\) and tends to vary by author.</p>
+</div>
+<div class="paragraph">
 <p>For the two-channel optical Bell test, there is a dimensionless figure
 physicists call the “quantum correlation” that equals
-\(-\cos2(\alpha-\beta)\), where \(\alpha\) and&#xA0;\(\beta\) are the
-polarizer settings. If physicists are correct, this figure
-characterizes the supposedly “spooky action at a distance” of the
-experiment, and should not be derivable without quantum mechanics. Yet
-below we will derive it as the ordinary correlation, even though we
-use no quantum mechanics and obviously assume only action by direct
+\(\pm\cos2(\alpha-\beta)\), where \(\alpha\) and&#xA0;\(\beta\) are
+the PBS settings. If physicists are correct, this figure characterizes
+the supposedly “spooky action at a distance” of the experiment, and
+should not be derivable without quantum mechanics. Yet below we will
+derive it as the ordinary correlation, even though we use no quantum
+mechanics and obviously assume only action by direct
 contact.<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup></p>
 </div>
 </div>
@@ -1330,7 +1335,7 @@ P_n' \stackrel{?}{=}
 <div class="paragraph">
 <p>\[
 \begin{align*}
-P_1' &amp;= P_8' \stackrel{?}{=} (1/2)\cos^2\zeta \, \sin^2\eta \\
+P_1' &amp;= P_8 \stackrel{?}{=} (1/2)\cos^2\zeta \, \sin^2\eta \\
 P_2' &amp;= P_7' \stackrel{?}{=} (1/2)\sin^2\zeta \, \sin^2\eta \\
 P_3' &amp;= P_6' \stackrel{?}{=} (1/2)\cos^2\zeta \, \cos^2\eta \\
 P_4' &amp;= P_5' \stackrel{?}{=} (1/2)\sin^2\zeta \, \cos^2\eta
@@ -1668,10 +1673,10 @@ physicists have made.&#xA0;\(\square\)</p>
 <a href="#_footnoteref_3">3</a>. J.&#160;S. Bell, <em>Bertlmann’s socks and the nature of reality</em>, Preprint CERN-TH-2926, CERN, Geneva, 1980. <a href="https://cds.cern.ch/record/142461/files/198009299.pdf" class="bare">https://cds.cern.ch/record/142461/files/198009299.pdf</a>
 </div>
 <div class="footnote" id="_footnotedef_4">
-<a href="#_footnoteref_4">4</a>. I believe you will also find, if you go to the trouble, that violations of Bell or CHSH inequalities are inconsistent with this correlation function, no matter how it be derived. The inequalities are incorrect mathematics. The experimental technique of Alain Aspect and others must be flawed.
+<a href="#_footnoteref_4">4</a>. I believe you will also find, if you go to the trouble, that violations of Bell or CHSH inequalities are inconsistent with this correlation function, no matter how it be derived. The inequalities are incorrect mathematics. The experimental technique of Alain Aspect and others must be flawed, for it should be impossible to obtain violations of the inequalities.
 </div>
 <div class="footnote" id="_footnotedef_5">
-<a href="#_footnoteref_5">5</a>. <em>There is no “physics” reason for this trick.</em> It is a <em>mathematical</em> maneuver to take advantage of symmetry, and I would classify it as an example of the <em>specialization</em> heuristic discussed by George Pólya. (G. Pólya, <em>How to Solve It: A New Aspect of Mathematical Method</em>, expanded Princeton Science Library&#160;ed., Princeton University Press, Princeton,&#160;NJ, 2004, With a foreword by John&#160;H. Conway.) The specialization heuristic will reappear later.
+<a href="#_footnoteref_5">5</a>. There is no “physics” reason for this trick. It is a <em>mathematical</em> maneuver to take advantage of symmetry, and I would classify it as an example of the <em>specialization</em> heuristic discussed by George Pólya. (G. Pólya, <em>How to Solve It: A New Aspect of Mathematical Method</em>, expanded Princeton Science Library&#160;ed., Princeton University Press, Princeton,&#160;NJ, 2004, With a foreword by John&#160;H. Conway.) The specialization heuristic will reappear later.
 </div>
 <div class="footnote" id="_footnotedef_6">
 <a href="#_footnoteref_6">6</a>. This was done by A.&#xA0;F. Kracklauer. Of course such coherence calculations are similar to ours, except they are done with continuous probability or measure theory.
@@ -1682,7 +1687,7 @@ physicists have made.&#xA0;\(\square\)</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-06-22 09:55:10 -0500
+Last updated 2026-06-22 10:49:01 -0500
 </div>
 </div>
 <script type="text/x-mathjax-config">
