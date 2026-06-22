@@ -112,9 +112,9 @@ vector. Such an acquaintance is a person who has obtained a high
 school or university education, but has not _overcome_ that education.
 It is important to obtain an education, but current educations are
 very bad, and so it is necessary also to _overcome_ the damage done. A
-school education has solidified the brain rather than made it more
-plastic, and also much of what is taught is simply wrong, or limited
-to a context but taught as if it were universal. So wipe that
+school education solidifies the brain rather than makes it more
+plastic, and also teaches much that is simply wrong, or that is
+limited to a context but taught as if it were universal. So wipe the
 prejudice from your thoughts. We will be adding things together you
 may have thought you could not add.
 
@@ -136,7 +136,8 @@ the familiar cross product.
 The sum of any scalars, vectors, and bivectors is called a
 _multivector_. One can actually go past bivectors to any number of
 dimensions, and there are other ways things can be made more
-complicated, but we do not need any of that.
+complicated, but we do not need any of that. Our multivectors go up in
+complexity no farther than bivectors.
 
 Let us also introduce the _grade_ operator, which returns the scalar
 (_grade&#xA0;0_), vector (_grade&#xA0;1_), or bivector
@@ -144,9 +145,9 @@ Let us also introduce the _grade_ operator, which returns the scalar
 
 \[
 \begin{align*}
-{\left\langle{5 + 2e_1 + 7e_1\wedge e_2}\right\rangle}_0 &= 5 \\
-{\left\langle{5 + 2e_1 + 7e_1\wedge e_2}\right\rangle}_1 &= 2e_1 \\
-{\left\langle{5 + 2e_1 + 7e_1\wedge e_2}\right\rangle}_2 &= 7e_1\wedge e_2 \\
+{\left\langle {5 + 2e_1 + 7e_1 \wedge e_2} \right\rangle}_0 &= 5 \\
+{\left\langle {5 + 2e_1 + 7e_1 \wedge e_2} \right\rangle}_1 &= 2e_1 \\
+{\left\langle {5 + 2e_1 + 7e_1 \wedge e_2} \right\rangle}_2 &= 7e_1 \wedge e_2 \\
 \end{align*}
 \]
 
@@ -184,10 +185,10 @@ The following are useful identities:
 
 \[
 \begin{align*}
-e_1\cdot e_2 &= e_2\cdot e_1 = 0 \\
-e_1\wedge e_1 &= e_2\wedge e_2 = 0 \\
-e_1\cdot e_1 &= e_1 e_1 = e_2 e_2 = e_2\cdot e_2 = 1 \\
-e_1\wedge e_2 &= e_1 e_2 = -e_2 e_1 = -e_2\wedge e_1
+e_1 \cdot e_2 &= e_2\cdot e_1 = 0 \\
+e_1 \wedge e_1 &= e_2\wedge e_2 = 0 \\
+e_1 \cdot e_1 &= e_1 e_1 = e_2 e_2 = e_2\cdot e_2 = 1 \\
+e_1 \wedge e_2 &= e_1 e_2 = -e_2 e_1 = -e_2\wedge e_1
 \end{align*}
 \]
 
@@ -207,8 +208,8 @@ by&#xA0;\(\varphi\), the rotor and its inverse are
 
 \[
 \begin{align*}
-R_\varphi &= \cos(\varphi/2) - e_1 e_2 \sin(\varphi/2) \\
-R_\varphi^{-1} &= \cos(\varphi/2) + e_1 e_2 \sin(\varphi/2)
+  R_\varphi &= \cos ( \varphi / 2 ) - e_1 e_2 \sin ( \varphi / 2 ) \\
+  R_\varphi^{-1} &= \cos ( \varphi / 2 ) + e_1 e_2 \sin ( \varphi / 2 )
 \end{align*}
 \]
 
@@ -218,16 +219,16 @@ thus:
 \[
 \begin{align*}
 e_\varphi &= R_\varphi \, e_1 \, R_\varphi^{-1} \\
-      &= (\cos\varphi^{\prime} - e_1 e_2 \sin\varphi^{\prime}) \, e_1 \,
-         (\cos\varphi^{\prime} + e_1 e_2 \sin\varphi^{\prime}) \\
-      &= e_1 \cos^2\varphi^{\prime} - e_1 e_2 e_1 \cos\varphi^{\prime}\sin\varphi^{\prime} \\
+      &= (\cos\varphi' - e_1 e_2 \sin\varphi') \, e_1 \,
+         (\cos\varphi' + e_1 e_2 \sin\varphi') \\
+      &= e_1 \cos^2\varphi' - e_1 e_2 e_1 \cos\varphi'\sin\varphi' \\
       &\mkern3em
-      + e_1 e_1 e_2 \cos\varphi^{\prime}\sin\varphi^{\prime}
-        - e_1 e_2 e_1 e_1 e_2 \sin^2\varphi^{\prime}
+      + e_1 e_1 e_2 \cos\varphi'\sin\varphi'
+        - e_1 e_2 e_1 e_1 e_2 \sin^2\varphi'
 \end{align*}
 \]
 
-where \(\varphi^{\prime} = \varphi/2\). Identities mentioned above allow simplifications:
+where \(\varphi' = \varphi/2\). Identities mentioned above allow simplifications:
 
 \[
 \begin{align*}
@@ -241,16 +242,16 @@ Therefore,
 
 \[
 \begin{equation}
-e_\varphi = (\cos^2\varphi^{\prime} - \sin^2\varphi^{\prime})\,e_1
-          + (2\,\cos\varphi^{\prime}\sin\varphi^{d\prime})\,e_2
+e_\varphi = (\cos^2\varphi' - \sin^2\varphi')\,e_1
+          + (2\,\cos\varphi'\sin\varphi^{d\prime})\,e_2
 \end{equation}
 \]
 
 Let us refer to the _CRC Handbook of Mathematical Sciences, 6th
 Edition_,footnote:[W.{nbsp}H. Beyer,{nbsp}ed., _CRC Handbook of
 Mathematical Sciences_, 6th{nbsp}ed., CRC{nbsp}Press, Boca
-Raton,{nbsp}FL, 1987.] where we find the following double-angle
-relations on page&#xA0;170:
+Raton,{nbsp}FL, 1987.] where on page&#xA0;170 we find the following
+double-angle relations:
 
 \[
 \begin{align*}
@@ -269,11 +270,10 @@ e_\varphi &= e_1\cos\varphi + e_2\sin\varphi
 \end{align*}
 \]
 
-or, in other words, we can use trigonometry and component addition,
-just as with complex numbers, except now we are using actual vectors
-instead of roots of polynomials. Also we have impressed the plebeians
-with the fancy name “rotor” and by citing from a clinically titled
-reference book.
+or, in other words, we can do component addition, just as with complex
+numbers, except now we are using actual vectors instead of roots of
+polynomials. Also we have impressed the plebeians with the fancy name
+“rotor” and by citing from a clinically titled reference book.
 
 == Planes of polarization, vectors, and tensor spaces
 
@@ -758,7 +758,7 @@ And I will leave it as an exercise for the reader to show that the new
 
 \[
 \begin{equation}
-P_n^{\prime} \stackrel{?}{=}
+P_n' \stackrel{?}{=}
   \begin{cases}
   \frac12(\text{proj}_{e_{\angle a}}e_1)^2
          (\text{proj}_{e_{\angle b}}e_2)^2
@@ -774,10 +774,10 @@ so that
 
 \[
 \begin{align*}
-P_1^{\prime} &= P_8^{\prime} \stackrel{?}{=} (1/2)\cos^2\zeta \, \sin^2\eta \\
-P_2^{\prime} &= P_7^{\prime} \stackrel{?}{=} (1/2)\sin^2\zeta \, \sin^2\eta \\
-P_3^{\prime} &= P_6^{\prime} \stackrel{?}{=} (1/2)\cos^2\zeta \, \cos^2\eta \\
-P_4^{\prime} &= P_5^{\prime} \stackrel{?}{=} (1/2)\sin^2\zeta \, \cos^2\eta
+P_1' &= P_8' \stackrel{?}{=} (1/2)\cos^2\zeta \, \sin^2\eta \\
+P_2' &= P_7' \stackrel{?}{=} (1/2)\sin^2\zeta \, \sin^2\eta \\
+P_3' &= P_6' \stackrel{?}{=} (1/2)\cos^2\zeta \, \cos^2\eta \\
+P_4' &= P_5' \stackrel{?}{=} (1/2)\sin^2\zeta \, \cos^2\eta
 \end{align*}
 \]
 
@@ -924,10 +924,10 @@ We now have
 
 \[
 \begin{align*}
-P_1^{\prime} &= P_8^{\prime} = 0 \\
-P_2^{\prime} &= P_7^{\prime} = 0 \\
-P_3^{\prime} &= P_6^{\prime} = (1/2)\cos^2\zeta \\
-P_4^{\prime} &= P_5^{\prime} = (1/2)\sin^2\zeta
+P_1' &= P_8' = 0 \\
+P_2' &= P_7' = 0 \\
+P_3' &= P_6' = (1/2)\cos^2\zeta \\
+P_4' &= P_5' = (1/2)\sin^2\zeta
 \end{align*}
 \]
 

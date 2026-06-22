@@ -593,9 +593,9 @@ vector. Such an acquaintance is a person who has obtained a high
 school or university education, but has not <em>overcome</em> that education.
 It is important to obtain an education, but current educations are
 very bad, and so it is necessary also to <em>overcome</em> the damage done. A
-school education has solidified the brain rather than made it more
-plastic, and also much of what is taught is simply wrong, or limited
-to a context but taught as if it were universal. So wipe that
+school education solidifies the brain rather than makes it more
+plastic, and also teaches much that is simply wrong, or that is
+limited to a context but taught as if it were universal. So wipe the
 prejudice from your thoughts. We will be adding things together you
 may have thought you could not add.</p>
 </div>
@@ -621,7 +621,8 @@ the familiar cross product.</p>
 <p>The sum of any scalars, vectors, and bivectors is called a
 <em>multivector</em>. One can actually go past bivectors to any number of
 dimensions, and there are other ways things can be made more
-complicated, but we do not need any of that.</p>
+complicated, but we do not need any of that. Our multivectors go up in
+complexity no farther than bivectors.</p>
 </div>
 <div class="paragraph">
 <p>Let us also introduce the <em>grade</em> operator, which returns the scalar
@@ -631,9 +632,9 @@ complicated, but we do not need any of that.</p>
 <div class="paragraph">
 <p>\[
 \begin{align*}
-{\left\langle{5 + 2e_1 + 7e_1\wedge e_2}\right\rangle}_0 &amp;= 5 \\
-{\left\langle{5 + 2e_1 + 7e_1\wedge e_2}\right\rangle}_1 &amp;= 2e_1 \\
-{\left\langle{5 + 2e_1 + 7e_1\wedge e_2}\right\rangle}_2 &amp;= 7e_1\wedge e_2 \\
+{\left\langle {5 + 2e_1 + 7e_1 \wedge e_2} \right\rangle}_0 &amp;= 5 \\
+{\left\langle {5 + 2e_1 + 7e_1 \wedge e_2} \right\rangle}_1 &amp;= 2e_1 \\
+{\left\langle {5 + 2e_1 + 7e_1 \wedge e_2} \right\rangle}_2 &amp;= 7e_1 \wedge e_2 \\
 \end{align*}
 \]</p>
 </div>
@@ -679,10 +680,10 @@ magnitude&#xA0;1 in the \(y\)-direction.</p>
 <div class="paragraph">
 <p>\[
 \begin{align*}
-e_1\cdot e_2 &amp;= e_2\cdot e_1 = 0 \\
-e_1\wedge e_1 &amp;= e_2\wedge e_2 = 0 \\
-e_1\cdot e_1 &amp;= e_1 e_1 = e_2 e_2 = e_2\cdot e_2 = 1 \\
-e_1\wedge e_2 &amp;= e_1 e_2 = -e_2 e_1 = -e_2\wedge e_1
+e_1 \cdot e_2 &amp;= e_2\cdot e_1 = 0 \\
+e_1 \wedge e_1 &amp;= e_2\wedge e_2 = 0 \\
+e_1 \cdot e_1 &amp;= e_1 e_1 = e_2 e_2 = e_2\cdot e_2 = 1 \\
+e_1 \wedge e_2 &amp;= e_1 e_2 = -e_2 e_1 = -e_2\wedge e_1
 \end{align*}
 \]</p>
 </div>
@@ -705,8 +706,8 @@ by&#xA0;\(\varphi\), the rotor and its inverse are</p>
 <div class="paragraph">
 <p>\[
 \begin{align*}
-R_\varphi &amp;= \cos(\varphi/2) - e_1 e_2 \sin(\varphi/2) \\
-R_\varphi^{-1} &amp;= \cos(\varphi/2) + e_1 e_2 \sin(\varphi/2)
+  R_\varphi &amp;= \cos ( \varphi / 2 ) - e_1 e_2 \sin ( \varphi / 2 ) \\
+  R_\varphi^{-1} &amp;= \cos ( \varphi / 2 ) + e_1 e_2 \sin ( \varphi / 2 )
 \end{align*}
 \]</p>
 </div>
@@ -718,17 +719,17 @@ thus:</p>
 <p>\[
 \begin{align*}
 e_\varphi &amp;= R_\varphi \, e_1 \, R_\varphi^{-1} \\
-      &amp;= (\cos\varphi^{\prime} - e_1 e_2 \sin\varphi^{\prime}) \, e_1 \,
-         (\cos\varphi^{\prime} + e_1 e_2 \sin\varphi^{\prime}) \\
-      &amp;= e_1 \cos<sup>2\varphi</sup>{\prime} - e_1 e_2 e_1 \cos\varphi<sup>{\prime}\sin\varphi</sup>{\prime} \\
+      &amp;= (\cos\varphi' - e_1 e_2 \sin\varphi') \, e_1 \,
+         (\cos\varphi' + e_1 e_2 \sin\varphi') \\
+      &amp;= e_1 \cos^2\varphi' - e_1 e_2 e_1 \cos\varphi'\sin\varphi' \\
       &amp;\mkern3em
-      + e_1 e_1 e_2 \cos\varphi<sup>{\prime}\sin\varphi</sup>{\prime}
-        - e_1 e_2 e_1 e_1 e_2 \sin<sup>2\varphi</sup>{\prime}
+      + e_1 e_1 e_2 \cos\varphi'\sin\varphi'
+        - e_1 e_2 e_1 e_1 e_2 \sin^2\varphi'
 \end{align*}
 \]</p>
 </div>
 <div class="paragraph">
-<p>where \(\varphi^{\prime} = \varphi/2\). Identities mentioned above allow simplifications:</p>
+<p>where \(\varphi' = \varphi/2\). Identities mentioned above allow simplifications:</p>
 </div>
 <div class="paragraph">
 <p>\[
@@ -745,15 +746,15 @@ e_1 e_1 e_2 &amp;= e_2 \\
 <div class="paragraph">
 <p>\[
 \begin{equation}
-e_\varphi = (\cos<sup>2\varphi</sup>{\prime} - \sin<sup>2\varphi</sup>{\prime})\,e_1
-          + (2\,\cos\varphi<sup>{\prime}\sin\varphi</sup>{d\prime})\,e_2
+e_\varphi = (\cos^2\varphi' - \sin^2\varphi')\,e_1
+          + (2\,\cos\varphi'\sin\varphi^{d\prime})\,e_2
 \end{equation}
 \]</p>
 </div>
 <div class="paragraph">
 <p>Let us refer to the <em>CRC Handbook of Mathematical Sciences, 6th
-Edition</em>,<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup> where we find the following double-angle
-relations on page&#xA0;170:</p>
+Edition</em>,<sup class="footnote">[<a id="_footnoteref_4" class="footnote" href="#_footnotedef_4" title="View footnote.">4</a>]</sup> where on page&#xA0;170 we find the following
+double-angle relations:</p>
 </div>
 <div class="paragraph">
 <p>\[
@@ -776,11 +777,10 @@ e_\varphi &amp;= e_1\cos\varphi + e_2\sin\varphi
 \]</p>
 </div>
 <div class="paragraph">
-<p>or, in other words, we can use trigonometry and component addition,
-just as with complex numbers, except now we are using actual vectors
-instead of roots of polynomials. Also we have impressed the plebeians
-with the fancy name “rotor” and by citing from a clinically titled
-reference book.</p>
+<p>or, in other words, we can do component addition, just as with complex
+numbers, except now we are using actual vectors instead of roots of
+polynomials. Also we have impressed the plebeians with the fancy name
+“rotor” and by citing from a clinically titled reference book.</p>
 </div>
 </div>
 </div>
@@ -1336,7 +1336,7 @@ M_7 &amp;= \begin{pmatrix}e_\zeta&amp;e_2\\e_{\eta+\pi/2}&amp;e_1\end{pmatrix}
 <div class="paragraph">
 <p>\[
 \begin{equation}
-P_n^{\prime} \stackrel{?}{=}
+P_n' \stackrel{?}{=}
   \begin{cases}
   \frac12(\text{proj}_{e_{\angle a}}e_1)^2
          (\text{proj}_{e_{\angle b}}e_2)^2
@@ -1354,10 +1354,10 @@ P_n^{\prime} \stackrel{?}{=}
 <div class="paragraph">
 <p>\[
 \begin{align*}
-P_1^{\prime} &amp;= P_8^{\prime} \stackrel{?}{=} (1/2)\cos^2\zeta \, \sin^2\eta \\
-P_2^{\prime} &amp;= P_7^{\prime} \stackrel{?}{=} (1/2)\sin^2\zeta \, \sin^2\eta \\
-P_3^{\prime} &amp;= P_6^{\prime} \stackrel{?}{=} (1/2)\cos^2\zeta \, \cos^2\eta \\
-P_4^{\prime} &amp;= P_5^{\prime} \stackrel{?}{=} (1/2)\sin^2\zeta \, \cos^2\eta
+P_1' &amp;= P_8' \stackrel{?}{=} (1/2)\cos^2\zeta \, \sin^2\eta \\
+P_2' &amp;= P_7' \stackrel{?}{=} (1/2)\sin^2\zeta \, \sin^2\eta \\
+P_3' &amp;= P_6' \stackrel{?}{=} (1/2)\cos^2\zeta \, \cos^2\eta \\
+P_4' &amp;= P_5' \stackrel{?}{=} (1/2)\sin^2\zeta \, \cos^2\eta
 \end{align*}
 \]</p>
 </div>
@@ -1530,10 +1530,10 @@ through \(\zeta\).</p>
 <div class="paragraph">
 <p>\[
 \begin{align*}
-P_1^{\prime} &amp;= P_8^{\prime} = 0 \\
-P_2^{\prime} &amp;= P_7^{\prime} = 0 \\
-P_3^{\prime} &amp;= P_6^{\prime} = (1/2)\cos^2\zeta \\
-P_4^{\prime} &amp;= P_5^{\prime} = (1/2)\sin^2\zeta
+P_1' &amp;= P_8' = 0 \\
+P_2' &amp;= P_7' = 0 \\
+P_3' &amp;= P_6' = (1/2)\cos^2\zeta \\
+P_4' &amp;= P_5' = (1/2)\sin^2\zeta
 \end{align*}
 \]</p>
 </div>
@@ -1728,7 +1728,7 @@ mathematical expression physicists have ever made.&#xA0;\(\square\)</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-06-22 16:03:46 -0500
+Last updated 2026-06-22 16:21:13 -0500
 </div>
 </div>
 <script type="text/x-mathjax-config">
