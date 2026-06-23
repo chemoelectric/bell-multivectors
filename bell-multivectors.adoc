@@ -738,7 +738,7 @@ disappears from the answer.)
 We would have liked for the expectation to equal zero. So let us use a
 trick.footnote:specialization[There is no “physics” in this trick. It
 is a _mathematical_ maneuver to take advantage of symmetry, and I
-would classify it as an example of George{nbsp}Pólya called the
+would classify it as an example of what George{nbsp}Pólya called the
 _specialization_ heuristic. (G. Pólya, _How to Solve It: A New Aspect
 of Mathematical Method_, expanded Princeton Science Library{nbsp}ed.,
 Princeton University Press, Princeton,{nbsp}NJ, 2004, With a foreword
@@ -865,22 +865,24 @@ g(M_3) &= g(M_4) = g(M_7) = g(M_8) &= -1
 \end{align*}
 \]
 
-The function \(g\), like \(f\), has expectation zero and standard
-deviation one.
+The function \(g\), like \(f\), has (tentative) expectation zero and
+(tentative) standard deviation one.
 
 On either side, which channel has positive sign and which negative is
-a matter of preference. With some settings the correlation will have a
-plus sign in front of a “\(\cos\)” and others a negative sign, and
-again it makes no real difference. Sometimes you will see it one way,
-sometimes the other. Our result will have a minus sign.
+a matter of preference. With some definitions of \(f\) and&#xA0;\(g\)
+the correlation will have a plus sign in front of a “\(\cos\)” and
+others a negative sign, and again it makes no real difference.
+Sometimes you will see it one way, sometimes the other. Our result
+will have a minus sign.
 
 === A naïve attempt to derive the correlation of \(f\) and \(g\)
 
 Because the expectations of \(f\) and&#xA0;\(g\) are both zero, and
 their standard deviations are both one, the covariance and correlation
 of \(f\) and&#xA0;\(g\) are equal to each other. In general they would
-be different at least in that correlation is dimensionless, but our
-\(f\) and&#xA0;\(g\) already are dimensionless.
+be different at least in that correlation is dimensionless and
+covariance is not, but our \(f\) and&#xA0;\(g\) already are
+dimensionless, so our covariance is dimensionless.
 
 We can thus compute the covariance and treat the result as the
 correlation.
@@ -998,24 +1000,27 @@ let us assume there is a standard calibration for PBS. We cannot
 recalibrate. There remains, however, an equivalent interpretation:
 that the polarization angles of the initial light pulses do not matter
 towards the correlation, as long as the two planes of polarization are
-normal to each other.
+orthogonal to each other.
 
-_This is because the correlation has turned out to be a function of
-relative angle, expressed as a cosine._
+_This is because the correlation has turned out to be a function of_
+relative _angle, expressed as a cosine._ The cosine function is
+equivalent to a _dot product_, which is a measure of the angle between
+two vectors.
 
 We needed this invariance over in-unison rotation of the PBS settings,
 anyway. We had no way to know how to set the PBS, otherwise. _The PBS
-must be set relative only to each other, not relative to the light
-source._
+axes must be set relative only to each other, not relative to the
+light source._
 
-There is a factor of two in \(-\cos 2 \mkern1mu(\alpha-\beta)\) that
-does not appear if the experiment were done with spin-1 particles.
-Mathematically, the only difference is a change of factor in the
-independent variables. Physically, I would give polarizing filters the
-“projection of magnitude” interpretation, whereas for spin-1 particles
-the device (such as a Stern-Gerlach magnet) is perhaps more like a
-rectangular window that is open only a certain amount. I base this
-interpretation on some investigation of trigonometric identities.
+There is, by the way, a factor of two in \(-\cos 2
+\mkern1mu(\alpha-\beta)\) that _does not_ appear if the experiment
+were done with spin-1 particles. Mathematically, the only difference
+is a linear transformation of the independent variables. Physically, I
+would give polarizing filters the “projection of magnitude”
+interpretation, whereas for spin-1 particles the device (such as a
+Stern-Gerlach magnet) is perhaps more like a rectangular window that
+is open only a certain amount. I base this interpretation on some
+investigation of trigonometric identities.
 
 In any instance, the goal is achieved. I have derived the correlation
 of the two-channel optical Bell test, without quantum mechanics and
@@ -1034,12 +1039,12 @@ such and such a point. Please feel free to laugh at them. They are
 making a fool of themself.]
 
 This is the same expression as the so-called “quantum correlation,”
-and it is correct, but we can see that “quantum” is a misnomer. It is
-the ordinary correlation from probability theory. It also can be
-derived from classical coherence theory of electromagnetic
-waves.footnote:[This was done by A.&#xA0;F. Kracklauer. (_EPR-B
-correlations: non-locality or geometry?_ J. Nonlinear Math. Phys. 11
-(2004), suppl., 104–109. MR2117173.
+and it is correct even if I made an error somewhere, but we can see
+that “quantum” is a misnomer. It is the ordinary correlation from
+probability theory. It also can be derived from classical coherence
+theory of electromagnetic waves.footnote:[This was done by A.&#xA0;F.
+Kracklauer. (_EPR-B correlations: non-locality or geometry?_ J.
+Nonlinear Math. Phys. 11 (2004), suppl., 104–109. MR2117173.
 https://doi.org/10.2991/jnmp.2004.11.s1.13) Of course such coherence
 calculations have derivations that are similar to ours, except the
 derivations are done with continuous probability or measure theory.]
@@ -1080,15 +1085,16 @@ physicists, pretending to be able to do random process analysis
 without even bothering to study the subject. A reasonable conclusion
 is they believe they are so smart they need not study the subject.
 They can intuit it all with their gigantic brains, so much bigger than
-mine and yours. And they believe Benjamin Franklin and Michael Faraday were
-too stupid to do what today’s so very “professional” and specialized
-physicists do.footnote:[As if either of those Fellows of past
-centuries would have run to _Nature_, with a paper declaring “faster
-than light motion” because he had a screw loose. Desiring knowledge
-rather than a Nobel prize, and knowing the measurements were wrong,
-they would quietly have overhauled their equipment.]
+mine and yours. And they believe Benjamin Franklin and Michael Faraday
+were too stupid to do what today’s so very “professional” and
+specialized physicists do.footnote:[As if either of those
+undereducated Fellows of the Royal Society would have run to _Nature_,
+with a paper declaring “faster than light motion” because they had a
+screw loose. Desiring knowledge rather than a Nobel prize, and knowing
+the measurements were wrong, they would quietly have overhauled their
+equipment.]
 
-If physicists really were so smart, they would not believe in
+If today’s physicists really were so smart, they would not believe in
 entangled fairies and teleporting unicorns. And it is not true that
 specialization is necessary now. Physicists have demonstrated, indeed,
 that a tightly knit community of specialists causes isolation and

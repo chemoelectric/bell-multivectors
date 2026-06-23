@@ -1456,15 +1456,16 @@ g(M_3) &amp;= g(M_4) = g(M_7) = g(M_8) &amp;= -1
 \]</p>
 </div>
 <div class="paragraph">
-<p>The function \(g\), like \(f\), has expectation zero and standard
-deviation one.</p>
+<p>The function \(g\), like \(f\), has (tentative) expectation zero and
+(tentative) standard deviation one.</p>
 </div>
 <div class="paragraph">
 <p>On either side, which channel has positive sign and which negative is
-a matter of preference. With some settings the correlation will have a
-plus sign in front of a “\(\cos\)” and others a negative sign, and
-again it makes no real difference. Sometimes you will see it one way,
-sometimes the other. Our result will have a minus sign.</p>
+a matter of preference. With some definitions of \(f\) and&#xA0;\(g\)
+the correlation will have a plus sign in front of a “\(\cos\)” and
+others a negative sign, and again it makes no real difference.
+Sometimes you will see it one way, sometimes the other. Our result
+will have a minus sign.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1473,8 +1474,9 @@ sometimes the other. Our result will have a minus sign.</p>
 <p>Because the expectations of \(f\) and&#xA0;\(g\) are both zero, and
 their standard deviations are both one, the covariance and correlation
 of \(f\) and&#xA0;\(g\) are equal to each other. In general they would
-be different at least in that correlation is dimensionless, but our
-\(f\) and&#xA0;\(g\) already are dimensionless.</p>
+be different at least in that correlation is dimensionless and
+covariance is not, but our \(f\) and&#xA0;\(g\) already are
+dimensionless, so our covariance is dimensionless.</p>
 </div>
 <div class="paragraph">
 <p>We can thus compute the covariance and treat the result as the
@@ -1613,27 +1615,30 @@ let us assume there is a standard calibration for PBS. We cannot
 recalibrate. There remains, however, an equivalent interpretation:
 that the polarization angles of the initial light pulses do not matter
 towards the correlation, as long as the two planes of polarization are
-normal to each other.</p>
+orthogonal to each other.</p>
 </div>
 <div class="paragraph">
-<p><em>This is because the correlation has turned out to be a function of
-relative angle, expressed as a cosine.</em></p>
+<p><em>This is because the correlation has turned out to be a function of</em>
+relative <em>angle, expressed as a cosine.</em> The cosine function is
+equivalent to a <em>dot product</em>, which is a measure of the angle between
+two vectors.</p>
 </div>
 <div class="paragraph">
 <p>We needed this invariance over in-unison rotation of the PBS settings,
 anyway. We had no way to know how to set the PBS, otherwise. <em>The PBS
-must be set relative only to each other, not relative to the light
-source.</em></p>
+axes must be set relative only to each other, not relative to the
+light source.</em></p>
 </div>
 <div class="paragraph">
-<p>There is a factor of two in \(-\cos 2 \mkern1mu(\alpha-\beta)\) that
-does not appear if the experiment were done with spin-1 particles.
-Mathematically, the only difference is a change of factor in the
-independent variables. Physically, I would give polarizing filters the
-“projection of magnitude” interpretation, whereas for spin-1 particles
-the device (such as a Stern-Gerlach magnet) is perhaps more like a
-rectangular window that is open only a certain amount. I base this
-interpretation on some investigation of trigonometric identities.</p>
+<p>There is, by the way, a factor of two in \(-\cos 2
+\mkern1mu(\alpha-\beta)\) that <em>does not</em> appear if the experiment
+were done with spin-1 particles. Mathematically, the only difference
+is a linear transformation of the independent variables. Physically, I
+would give polarizing filters the “projection of magnitude”
+interpretation, whereas for spin-1 particles the device (such as a
+Stern-Gerlach magnet) is perhaps more like a rectangular window that
+is open only a certain amount. I base this interpretation on some
+investigation of trigonometric identities.</p>
 </div>
 <div class="paragraph">
 <p>In any instance, the goal is achieved. I have derived the correlation
@@ -1653,10 +1658,10 @@ of the main channels of the two PBS.<sup class="footnote">[<a id="_footnoteref_9
 </div>
 <div class="paragraph">
 <p>This is the same expression as the so-called “quantum correlation,”
-and it is correct, but we can see that “quantum” is a misnomer. It is
-the ordinary correlation from probability theory. It also can be
-derived from classical coherence theory of electromagnetic
-waves.<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup>
+and it is correct even if I made an error somewhere, but we can see
+that “quantum” is a misnomer. It is the ordinary correlation from
+probability theory. It also can be derived from classical coherence
+theory of electromagnetic waves.<sup class="footnote">[<a id="_footnoteref_10" class="footnote" href="#_footnotedef_10" title="View footnote.">10</a>]</sup>
 The only thing mysteriously “quantum” about the expression is how any
 “quantum” physicist obtained it by <em>some</em> means, given the field’s
 habit of uncritically publishing <em>mistakes</em> such as Bell’s and
@@ -1696,12 +1701,12 @@ physicists, pretending to be able to do random process analysis
 without even bothering to study the subject. A reasonable conclusion
 is they believe they are so smart they need not study the subject.
 They can intuit it all with their gigantic brains, so much bigger than
-mine and yours. And they believe Benjamin Franklin and Michael Faraday were
-too stupid to do what today’s so very “professional” and specialized
-physicists do.<sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnotedef_12" title="View footnote.">12</a>]</sup></p>
+mine and yours. And they believe Benjamin Franklin and Michael Faraday
+were too stupid to do what today’s so very “professional” and
+specialized physicists do.<sup class="footnote">[<a id="_footnoteref_12" class="footnote" href="#_footnotedef_12" title="View footnote.">12</a>]</sup></p>
 </div>
 <div class="paragraph">
-<p>If physicists really were so smart, they would not believe in
+<p>If today’s physicists really were so smart, they would not believe in
 entangled fairies and teleporting unicorns. And it is not true that
 specialization is necessary now. Physicists have demonstrated, indeed,
 that a tightly knit community of specialists causes isolation and
@@ -1742,7 +1747,7 @@ mathematical expression physicists have ever made.&#xA0;\(\square\)</p>
 <a href="#_footnoteref_7">7</a>. I believe you will also find, if you go to the trouble, that violations of Bell or CHSH inequalities are inconsistent with this correlation function, no matter how it be derived. The inequalities are incorrect mathematics. The experimental technique of Alain Aspect and others must be flawed, for it should be impossible to obtain violations of the inequalities.
 </div>
 <div class="footnote" id="_footnotedef_8">
-<a href="#_footnoteref_8">8</a>. There is no “physics” in this trick. It is a <em>mathematical</em> maneuver to take advantage of symmetry, and I would classify it as an example of George&#160;Pólya called the <em>specialization</em> heuristic. (G. Pólya, <em>How to Solve It: A New Aspect of Mathematical Method</em>, expanded Princeton Science Library&#160;ed., Princeton University Press, Princeton,&#160;NJ, 2004, With a foreword by John&#160;H. Conway.) The specialization heuristic will <a href="#SpecializedSolution">reappear later</a>.
+<a href="#_footnoteref_8">8</a>. There is no “physics” in this trick. It is a <em>mathematical</em> maneuver to take advantage of symmetry, and I would classify it as an example of what George&#160;Pólya called the <em>specialization</em> heuristic. (G. Pólya, <em>How to Solve It: A New Aspect of Mathematical Method</em>, expanded Princeton Science Library&#160;ed., Princeton University Press, Princeton,&#160;NJ, 2004, With a foreword by John&#160;H. Conway.) The specialization heuristic will <a href="#SpecializedSolution">reappear later</a>.
 </div>
 <div class="footnote" id="_footnotedef_9">
 <a href="#_footnoteref_9">9</a>. Some joker may come along and insist I assumed “instantaneous action at a distance” at such and such a point. Please feel free to laugh at them. They are making a fool of themself.
@@ -1754,12 +1759,12 @@ mathematical expression physicists have ever made.&#xA0;\(\square\)</p>
 <a href="#_footnoteref_11">11</a>. J.&#xA0;S. Bell, <em>Speakable and Unspeakable in Quantum Mechanics</em>, Cambridge Univ. Press, Cambridge, 1987.
 </div>
 <div class="footnote" id="_footnotedef_12">
-<a href="#_footnoteref_12">12</a>. As if either of those Fellows of past centuries would have run to <em>Nature</em>, with a paper declaring “faster than light motion” because he had a screw loose. Desiring knowledge rather than a Nobel prize, and knowing the measurements were wrong, they would quietly have overhauled their equipment.
+<a href="#_footnoteref_12">12</a>. As if either of those undereducated Fellows of the Royal Society would have run to <em>Nature</em>, with a paper declaring “faster than light motion” because they had a screw loose. Desiring knowledge rather than a Nobel prize, and knowing the measurements were wrong, they would quietly have overhauled their equipment.
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2026-06-23 08:04:25 -0500
+Last updated 2026-06-23 08:40:43 -0500
 </div>
 </div>
 <script type="text/x-mathjax-config">
