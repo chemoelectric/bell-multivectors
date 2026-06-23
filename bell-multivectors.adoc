@@ -195,7 +195,7 @@ Complex numbers around the clock face are obtained by rotating the
 number&#xA0;1: the number&#xA0;1 is rotated counterclockwise by an
 angle&#xA0;\(\varphi\) by multiplying it by \(e^{i\varphi} =
 \cos\varphi + i\sin\varphi\). The operation is equivalent to breaking
-a rightwards-pointing unit vector into components.
+a unit vector into components.
 
 There is an analogous operation in geometric algebra. For this
 operation, one uses a _rotor_. To rotate counterclockwise
@@ -265,10 +265,11 @@ e_\varphi &= e_1\cos\varphi + e_2\sin\varphi
 \end{align*}
 \]
 
-or, in other words, we can do component addition, just as with complex
-numbers, except now we are using actual vectors instead of roots of
-polynomials. Also we have impressed the plebeians with the fancy name
-“rotor” and by citing from a clinically titled reference book.
+or, in other words, we can rotate by doing component addition, just as
+with complex numbers, except now we are using actual vectors instead
+of roots of polynomials. Also we have impressed the plebeians with the
+fancy name “rotor” and by citing from a clinically titled reference
+book.
 
 == Planes of polarization, vectors, and tensor spaces
 
