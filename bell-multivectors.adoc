@@ -13,18 +13,18 @@ I have had it up to my eyeballs with physicists who believe in magical
 Yes, I said _magical_.
 
 Some will fault me for calling what appears in “serious” scientific
-journals&#x202F;footnote:[This includes _Science_, to which I
-subscribe.] as _magic_, but it is nothing less. No physicist should
-believe in “action at a distance,” and if they do they should be
-looking for another career. People like Maxwell and Heaviside went to
-enormous trouble to base physics on action by direct contact.
-Maxwell’s theory of electromagnetism is thus _explicitly_ one of
-action by direct contact,footnote:[The \(\varepsilon \text{-}\delta\)
-limits of a field represent activity by direct contact.] and the
-electromagnetic field obeys Newton’s laws of motion. Einstein’s
-attempt at a theory of gravity, which as far as I know is the best we
-have so far, is also based _explicitly_ on action by direct contact,
-and therefore predicts gravity waves.
+journals&#x202F;footnote:[Including _Science_, to which I subscribe.]
+as _magic_, but it is nothing less. No physicist should believe in
+“action at a distance,” and if they do they should be looking for
+another career. People like Maxwell and Heaviside went to enormous
+trouble to base physics on action by direct contact. Maxwell’s theory
+of electromagnetism is thus _explicitly_ one of action by direct
+contact,footnote:[The \(\varepsilon \text{-}\delta\) limits of a field
+represent activity by direct contact.] and the electromagnetic field
+obeys Newton’s laws of motion. Einstein’s attempt at a theory of
+gravity, which as far as I know is the best we have so far, is also
+based _explicitly_ on action by direct contact, and therefore predicts
+gravity waves.
 
 Yet we are told by physicists that two or more pulses of light can be
 “entangled,” thus forming a single physical entity spanning any
