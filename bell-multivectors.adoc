@@ -131,7 +131,8 @@ The sum of any scalars, vectors, and bivectors is called a
 _multivector_. One can actually go past bivectors to any number of
 dimensions, and there are other ways things can be made more
 complicated, but we do not need any of that. The multivectors in this
-essay go up in complexity no farther than bivectors.
+essay go up in complexity no farther than bivectors (and they have the
+usual Euclidean metric).
 
 Let us also introduce the _grade_ operator, which returns the scalar
 (_grade&#xA0;0_), vector (_grade&#xA0;1_), or bivector
