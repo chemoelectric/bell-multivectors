@@ -20,7 +20,10 @@ looking for another career. People like Maxwell and Heaviside went to
 enormous trouble to base physics on action by direct contact.
 Maxwell’s theory of electromagnetism is thus _explicitly_ one of
 action by direct contact,footnote:[The \(\varepsilon \text{-}\delta\)
-limits of a field represent activity by direct contact.] and the
+limits of a field represent activity by direct contact. The
+“infinitesimals” of nonstandard analysis also must do so, although in
+a way less like a mechanical iris closing in. Being an engineering
+graduate, I prefer the intuition of a mechanical iris.] and the
 electromagnetic field obeys Newton’s laws of motion. Einstein’s
 attempt at a theory of gravity, which as far as I know is the best we
 have so far, is also based _explicitly_ on action by direct contact,
