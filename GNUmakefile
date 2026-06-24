@@ -4,6 +4,8 @@ NPM := npm
 NODEJS := node
 M4 := m4
 REALPATH := realpath
+SCP := scp
+WEBSITE := crudfact@crudfactory.com:www/website_f9a02530
 
 .DEFAULT_GOAL := default
 
@@ -27,8 +29,13 @@ all: $(BELLMVEC).html $(BELLMVEC).pdf
 
 .PHONY: mostlyclean clean
 mostlyclean:
-	-rm -f $(BELLMVEC).{html,pdf,xml,tex}
+	-rm -f $(BELLMVEC).{html,pdf}
 	-rm -f *.tmp.adoc
 clean: mostlyclean
 	-rm -f *.json
 	-rm -R -f node_modules
+
+.PHONY: upload upload-html
+upload: upload-html
+upload-html: $(BELLMVEC).html
+	$(SCP) $(^) $(WEBSITE)/index.html
