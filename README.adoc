@@ -19,3 +19,6 @@ The text is written in AsciiDoc for translation to HTML/MathJax. A
 browser with JavaScript support is needed to read the article as HTML.
 There is also PDF by conversion from the HTML, using node.js and
 Firefox.
+
+License: Creative Commons Attribution-NoDerivatives 4.0 International.
+https://creativecommons.org/licenses/by-nd/4.0/
