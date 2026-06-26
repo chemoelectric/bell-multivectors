@@ -35,7 +35,9 @@ clean: mostlyclean
 	-rm -f *.json
 	-rm -R -f node_modules
 
-.PHONY: upload upload-html
-upload: upload-html
+.PHONY: upload upload-html upload-pdf
+upload: upload-html upload-pdf
 upload-html: $(BELLMVEC).html
 	$(SCP) $(^) $(WEBSITE)/index.html
+upload-pdf: $(BELLMVEC).pdf
+	$(SCP) $(^) $(WEBSITE)
